@@ -11,10 +11,7 @@ document.querySelector('.out-1').textContent = a_1;
 const a = 10;
 const b = 20;
 document.querySelector('.out-2').textContent = a + b;
-<<<<<<< HEAD
-=======
 console.log (a + b);
->>>>>>> 195d2115fe7384ea4f39bb112c70b445574ee821
 
 
 // Task 3
