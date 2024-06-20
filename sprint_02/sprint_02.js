@@ -53,12 +53,12 @@ document.querySelector('.out-8').textContent = 'JS 24';
 // Task 9
 // Поскольку мы применяем querySelector, то можем писать любые валидные селекторы CSS, изучите пример ниже. У нас в HTML написан класс .out-8, а в нем span. Посмотрите на пример - как мы запишем текст в данный блок (при этом элемент с классом .out-8 из 8 таска не изменится).
 
-// document.querySelector('.out-8 span').textContent = 'Task 9 - done';
+document.querySelector('.out-8 span').textContent = 'Task 9 - done';
 
 
 // Task 10
 // Применяя querySelector запишите в параграф внутри .out-8 текст .out-8.
-
+document.querySelector('.out-8 p').textContent = '.out-8';
 
 // Task 11
 // Особенностью querySelector(), является то, что если элементов на странице несколько, то метод выбирает только первый встреченный. Изучите пример ниже.
@@ -109,8 +109,6 @@ document.querySelector('.out-13').innerHTML = '<b>13</b>';
 // Получите с помощью textContent текст из .out-20. Выведите полученный текст в консоль.
 
 // *******************************
-// Task 9
-// Task 10
 // Task 11
 // Task 12
 // Task 13
