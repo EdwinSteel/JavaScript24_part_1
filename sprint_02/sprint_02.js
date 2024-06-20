@@ -89,23 +89,27 @@ document.querySelector('.out-14').innerHTML = '<p>The Bath Item <em>Gift</em> Hy
 // Task 15
 // Простое свойство innerHTML позволяет создавать элементы на странице. В примере выше был создан параграф. Давайте создадим изображение. Выведите в .out-15 строку '<img src="./images/spaceship.png" alt="rocket">'.
 
+document.querySelector('.out-15').innerHTML = '<img src="./images/spaceship.png" alt="rocket">';
 
 
 // Task 16
 // Выше мы применяли команды textContent и innerHTML. Обе эти команды перезаписывали содержимое элементов. Изучите что написано в элементе .out-16. Затем снимите комментарий с первой команды. Затем и со второй команды. Посмотрите что выведено в .out-16 в итоге.
 
-// document.querySelector('.out-16').textContent = '222';
-// document.querySelector('.out-16').textContent = '333';
-// document.querySelector('.out-16').textContent = '444';
+document.querySelector('.out-16').textContent = '222';
+document.querySelector('.out-16').textContent = '333';
+document.querySelector('.out-16').textContent = '444';
+
 
 // Task 17
 // Можно ли делать не перезапись, а добавление информации в элемент? Да, можно. Посмотрите на синтаксис ниже. Данная команда дописывает информации в элемент на странице.
 
-// document.querySelector('.out-17').textContent += 888;
+document.querySelector('.out-17').textContent += 888;
 
 
 // Task 18
 // Допишите с помощью innerHTML в .out-18 строку следующего вида '<img src="./images/tree.png" alt="Tree">'.
+
+document.querySelector('.out-18').innerHTML += '<img src="./images/tree.png" alt="Tree">';
 
 
 // Task 19
@@ -117,9 +121,6 @@ document.querySelector('.out-14').innerHTML = '<p>The Bath Item <em>Gift</em> Hy
 // Получите с помощью textContent текст из .out-20. Выведите полученный текст в консоль.
 
 // *******************************
-// Task 15
-// Task 16
-// Task 17
-// Task 18
+
 // Task 19
 // Task 20
