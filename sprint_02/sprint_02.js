@@ -33,18 +33,21 @@ document.getElementById('out-5').textContent = 'task 5 - done';
 
 // Task 6
 // Напишите код, который получает элемент out-6 по id (пишут иногда #out-6) и выведите в него текст 'Task 6 - done'.
+
 document.getElementById('out-6').textContent = 'Task 6 - done';
 
 
 // Task 7
 // Мы получали элемент по id, однако последние годы данный метод (getElementById) применяют редко. Более используемым становится метод querySelector(), который позволяет получать элементы по селектору CSS. Изучите пример ниже. Обратите внимание - в querySelector, поскольку применяется синтаксис css, то мы пишем точку, решетку, в зависимости от вида селектора.
 
-// console.log(document.querySelector('.out-7'));
-// document.querySelector('.out-7').textContent = 'querySelector - work';
+console.log(document.querySelector('.out-7'));
+document.querySelector('.out-7').textContent = 'querySelector - work';
 
 
 // Task 8
 // Выведите в элемент .out-8 текст 'JS 24', примените querySelector.
+
+document.querySelector('.out-8').textContent = 'JS 24';
 
 
 // Task 9
