@@ -1,19 +1,31 @@
 // Task 1
 // Создайте переменную a_1 равную 7. Выведите в .out-1 переменную a_1.
 
+let a_1 = 7;
+document.querySelector('.out-1').textContent = a_1;
+
 
 // Task 2
 // Создайте константу a равную 10 и константу b равную 20. Выведите в .out-2 сумму констант a и b.
 
+const a = 10;
+const b = 20;
+document.querySelector('.out-2').textContent = a + b;
+console.log (a + b);
+
 
 // Task 3
 // Выведите в .out-3 константу b умноженную на 10.
+
+document.querySelector('.out-3').textContent = b * 10;
 
 
 // Task 4
 // Создана константа STR_4, которая содержит пустую строку. Выведите ее в .out-4.
 
 const STR_4 = '';
+document.querySelector('.out-4').textContent = STR_4;
+
 
 // Task 5
 // Создайте переменную name_1 равную 'Regulus', и переменную name_2 равную 'Black'. Выведите конкатенацию name_1 и name_2 в .out-5, так, чтобы между словами был пробел.
@@ -91,11 +103,7 @@ const f03 = '<li>Astoria Greengrass</li>';
 // Task 20
 // Создайте константу li, куда получите текст из элемента li внутри .out-20. Выведите li в консоль.
 
-// ********************************************************
-// Task 1
-// Task 2
-// Task 3
-// Task 4
+// ************************************************
 // Task 5
 // Task 6
 // Task 7
