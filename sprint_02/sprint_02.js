@@ -115,12 +115,9 @@ document.querySelector('.out-18').innerHTML += '<img src="./images/tree.png" alt
 // Task 19
 // Изучите пример ниже. В нем мы расписываем операцию += подробно. Давайте расшифруем что тут написано. Начнем с правой части: document.querySelector('.out-19').textContent + 888; Операция document.querySelector('.out-19').textContent в этом контексте применяется для получения текста из элемента document.querySelector('.out-19'). Т.е. мы извлекаем текст, затем прилепляем к нему 888 и записываем все в .out-19. Как видите свойство innerHTML может применяться как для записи, так и для получения текста из элемента.
 
-// document.querySelector('.out-19').textContent = document.querySelector('.out-19').textContent + 888;
+document.querySelector('.out-19').textContent = document.querySelector('.out-19').textContent + 888;
+
 
 // Task 20
 // Получите с помощью textContent текст из .out-20. Выведите полученный текст в консоль.
-
-// *******************************
-
-// Task 19
-// Task 20
+console.log(document.querySelector('.out-20').textContent);
