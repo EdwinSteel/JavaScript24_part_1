@@ -28,11 +28,12 @@ console.log(document.getElementById('out-4'));
 // Task 5
 // Выше мы научились получать элемент по id, однако давайте теперь не просто получим элемент по id, но и запишем в него новую информацию. Изучите пример. В нем мы получаем элемент по id ="out-5" и записываем в него строку 'task 5 - done'. Изучите, что выводится на странице, затем снимите комментарий и обновите страницу, изучите, как изменился вывод.
 
-// document.getElementById('out-5').textContent = 'task 5 - done';
+document.getElementById('out-5').textContent = 'task 5 - done';
+
 
 // Task 6
 // Напишите код, который получает элемент out-6 по id (пишут иногда #out-6) и выведите в него текст 'Task 6 - done'.
-
+document.getElementById('out-6').textContent = 'Task 6 - done';
 
 
 // Task 7
@@ -105,8 +106,6 @@ document.querySelector('.out-13').innerHTML = '<b>13</b>';
 // Получите с помощью textContent текст из .out-20. Выведите полученный текст в консоль.
 
 // *******************************
-// Task 5
-// Task 6
 // Task 7
 // Task 8
 // Task 9
