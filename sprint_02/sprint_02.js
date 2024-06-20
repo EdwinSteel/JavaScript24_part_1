@@ -58,15 +58,20 @@ document.querySelector('.out-8 span').textContent = 'Task 9 - done';
 
 // Task 10
 // Применяя querySelector запишите в параграф внутри .out-8 текст .out-8.
+
 document.querySelector('.out-8 p').textContent = '.out-8';
+
 
 // Task 11
 // Особенностью querySelector(), является то, что если элементов на странице несколько, то метод выбирает только первый встреченный. Изучите пример ниже.
 
 document.querySelector('.out-11').textContent = 777;
 
+
 // Task 12
 // Мы все время применяем свойство textContent для вывода. Выведите в .out-12 с помощью textContent следующую строку '<h4>header 4</h4>'. Как видите при таком выводе информации теги не обрабатываются, а выводятся как текст.
+
+document.querySelector('.out-12').textContent = '<h4>header 4</h4>';
 
 
 // Task 13
@@ -74,8 +79,11 @@ document.querySelector('.out-11').textContent = 777;
 
 document.querySelector('.out-13').innerHTML = '<b>13</b>';
 
+
 // Task 14
 // Выведите в .out-14 строку '<p>The Bath Item <em>Gift</em> Hypothesis</p>' c помощью innerHTML.
+
+document.querySelector('.out-14').innerHTML = '<p>The Bath Item <em>Gift</em> Hypothesis</p>';
 
 
 // Task 15
@@ -109,10 +117,6 @@ document.querySelector('.out-13').innerHTML = '<b>13</b>';
 // Получите с помощью textContent текст из .out-20. Выведите полученный текст в консоль.
 
 // *******************************
-// Task 11
-// Task 12
-// Task 13
-// Task 14
 // Task 15
 // Task 16
 // Task 17
