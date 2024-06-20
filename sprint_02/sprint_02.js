@@ -120,4 +120,5 @@ document.querySelector('.out-19').textContent = document.querySelector('.out-19'
 
 // Task 20
 // Получите с помощью textContent текст из .out-20. Выведите полученный текст в консоль.
+
 console.log(document.querySelector('.out-20').textContent);
