@@ -109,8 +109,6 @@ document.querySelector('.out-13').innerHTML = '<b>13</b>';
 // Получите с помощью textContent текст из .out-20. Выведите полученный текст в консоль.
 
 // *******************************
-// Task 7
-// Task 8
 // Task 9
 // Task 10
 // Task 11
