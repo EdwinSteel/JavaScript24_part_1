@@ -40,10 +40,15 @@ document.querySelector('.out-5').textContent = name_1 + ' ' + name_2;
 
 let g61 = 100;
 let g62 = 200;
+let g6 = g61 + g62;
+document.querySelector('.out-6').textContent = g6;
 
 
 // Task 7
 // Получите в переменную out7 элемент .out-7. Выведите out7 в консоль.
+
+let out7 = document.querySelector('.out-7');
+console.log(out7);
 
 
 // Task 8
