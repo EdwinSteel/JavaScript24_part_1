@@ -49,11 +49,13 @@ document.querySelector('.out-6').textContent = g6;
 
 let out7 = document.querySelector('.out-7');
 console.log(out7);
-console.log(out7.textContent);
+
+// console.log(out7.textContent);
 
 
 // Task 8
 // Используя out7 и textContent выведите в out7 переменную g62.
+
 // out7.textContent = g62;
 // console.log(out7);
 
