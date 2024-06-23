@@ -28,6 +28,7 @@ document.querySelector('.out-4').textContent = STR_4;
 
 // Task 5
 // Создайте переменную name_1 равную 'Regulus', и переменную name_2 равную 'Black'. Выведите конкатенацию name_1 и name_2 в .out-5, так, чтобы между словами был пробел.
+
 let name_1 = 'Regulus'; 
 let name_2 = 'Black';
 document.querySelector('.out-5').textContent = name_1 + ' ' + name_2;
@@ -41,8 +42,12 @@ let g62 = 200;
 let g6 = g61 + g62;
 document.querySelector('.out-6').textContent = g6;
 
+
 // Task 7
 // Получите в переменную out7 элемент .out-7. Выведите out7 в консоль.
+
+let out7 = document.querySelector('.out-7');
+console.log(out7);
 
 
 // Task 8
@@ -107,7 +112,6 @@ const f03 = '<li>Astoria Greengrass</li>';
 // Создайте константу li, куда получите текст из элемента li внутри .out-20. Выведите li в консоль.
 
 // ************************************************
-// Task 7
 // Task 8
 // Task 9
 // Task 10
