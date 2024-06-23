@@ -89,6 +89,9 @@ document.querySelector('.out-121').innerHTML = document.querySelector('.out-120'
 // Task 13
 // Создайте переменную out13 куда получите объект .out-13. Используя переменную out13 ДОПИШИТЕ в .out-13 строку 'Flamel'.
 
+let out13 = document.querySelector('.out-13');
+out13.textContent += 'Flamel';
+
 
 // Task 14
 // Создайте переменную g141 куда получите ЧИСЛО из .out-141. Создайте переменную g142, куда получите ЧИСЛО из .out-142. Выведите сумму переменных g141 и g142 в .out-14.
