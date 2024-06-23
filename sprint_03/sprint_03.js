@@ -93,9 +93,12 @@ let out13 = document.querySelector('.out-13');
 out13.textContent += 'Flamel';
 
 
-// Task 14
+// Task 14 ???????????
 // Создайте переменную g141 куда получите ЧИСЛО из .out-141. Создайте переменную g142, куда получите ЧИСЛО из .out-142. Выведите сумму переменных g141 и g142 в .out-14.
 
+// let g141 = document.querySelector('.out-141');
+// let g142 = document.querySelector('.out-142');
+// document.querySelector('.out-14') = g141 + g142;
 
 // Task 15
 // Создайте константу h2 куда получите заголовок второго уровня со страницы. Выведите свойство .textContent константы h2 в .out-15.
@@ -129,9 +132,8 @@ const f03 = '<li>Astoria Greengrass</li>';
 // ************************************************
 // Task 8 -- не выполнен
 // Task 10 -- просмотреть еще раз !!!
+// Task 14 -- не выполнен
 
-// Task 13
-// Task 14
 // Task 15
 // Task 16
 // Task 17
