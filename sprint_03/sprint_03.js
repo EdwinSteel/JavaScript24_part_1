@@ -76,6 +76,9 @@ console.log(out9, out9Text);
 // Task 11
 // Используя как основу предыдущий пример получите текст из .out-110 (c помощью innerHTML) и выведите с помощью innerHTML в .out-111.
 
+let out110 = document.querySelector('.out-110').innerHTML
+document.querySelector('.out-111').innerHTML = out110;
+
 
 // Task 12
 // Используя как основу предыдущий пример получите текст из .out-120 (c помощью innerHTML) и выведите с помощью innerHTML в .out-121. Постарайтесь обойтись без получения элемента .out-121 в переменную.
