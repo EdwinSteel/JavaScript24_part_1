@@ -83,6 +83,8 @@ document.querySelector('.out-111').innerHTML = out110;
 // Task 12
 // Используя как основу предыдущий пример получите текст из .out-120 (c помощью innerHTML) и выведите с помощью innerHTML в .out-121. Постарайтесь обойтись без получения элемента .out-121 в переменную.
 
+document.querySelector('.out-121').innerHTML = document.querySelector('.out-120').innerHTML;
+
 
 // Task 13
 // Создайте переменную out13 куда получите объект .out-13. Используя переменную out13 ДОПИШИТЕ в .out-13 строку 'Flamel'.
@@ -123,9 +125,8 @@ const f03 = '<li>Astoria Greengrass</li>';
 
 // ************************************************
 // Task 8 -- не выполнен
-// Task 10
-// Task 11
-// Task 12
+// Task 10 -- просмотреть еще раз !!!
+
 // Task 13
 // Task 14
 // Task 15
