@@ -50,8 +50,11 @@ let out7 = document.querySelector('.out-7');
 console.log(out7);
 
 
-// Task 8
+// Task 8 ??????????????
 // Используя out7 и textContent выведите в out7 переменную g62.
+
+// out7.textContent = g62;
+// console.log(out7);
 
 
 // Task 9
