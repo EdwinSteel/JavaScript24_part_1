@@ -38,7 +38,8 @@ document.querySelector('.out-5').textContent = name_1 + ' ' + name_2;
 
 let g61 = 100;
 let g62 = 200;
-
+let g6 = g61 + g62;
+document.querySelector('.out-6').textContent = g6;
 
 // Task 7
 // Получите в переменную out7 элемент .out-7. Выведите out7 в консоль.
@@ -106,7 +107,6 @@ const f03 = '<li>Astoria Greengrass</li>';
 // Создайте константу li, куда получите текст из элемента li внутри .out-20. Выведите li в консоль.
 
 // ************************************************
-// Task 6
 // Task 7
 // Task 8
 // Task 9
