@@ -119,6 +119,8 @@ title.textContent = 'Sprint 3';
 // Создана переменная g17. Запишите в нее значение g17 * 10. Выведите g17 в .out-17.
 
 let g17 = 55;
+g17 = g17 * 10;
+document.querySelector('.out-17').textContent = g17;
 
 
 // Task 18
@@ -139,8 +141,6 @@ const f03 = '<li>Astoria Greengrass</li>';
 // Task 8 -- не выполнен
 // Task 10 -- просмотреть еще раз !!!
 
-// Task 16
-// Task 17
 // Task 18
 // Task 19
 // Task 20
