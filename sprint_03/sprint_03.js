@@ -144,4 +144,3 @@ ul19.innerHTML = f01 + f02 + f03;
 
 const li = document.querySelector('.out-20').textContent;
 console.log(li);
-
