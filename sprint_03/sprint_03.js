@@ -136,6 +136,9 @@ document.querySelector('.out-18').textContent = m18;
 const f01 = '<li>Blaise Zabini</li>';
 const f02 = '<li>Evan Rosier</li>';
 const f03 = '<li>Astoria Greengrass</li>';
+const ul19 = document.querySelector('.out-19');
+ul19.innerHTML = f01 + f02 + f03;
+
 
 // Task 20
 // Создайте константу li, куда получите текст из элемента li внутри .out-20. Выведите li в консоль.
