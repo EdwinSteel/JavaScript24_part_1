@@ -50,11 +50,11 @@ let out7 = document.querySelector('.out-7');
 console.log(out7);
 
 
-// Task 8 ??????????????
+// Task 8
 // Используя out7 и textContent выведите в out7 переменную g62.
 
-// out7.textContent = g62;
-// console.log(out7);
+out7.textContent = g62;
+
 
 // Task 9
 // Создайте переменную out9 куда получите элемент .out-9 со страницы. Создайте переменную out9Text куда получите текст из .out-9. Выведите обе переменные в консоль.
@@ -92,7 +92,7 @@ let out13 = document.querySelector('.out-13');
 out13.textContent += 'Flamel';
 
 
-// Task 14 ???????????
+// Task 14
 // Создайте переменную g141 куда получите ЧИСЛО из .out-141. Создайте переменную g142, куда получите ЧИСЛО из .out-142. Выведите сумму переменных g141 и g142 в .out-14.
 
 let g141 = +document.querySelector('.out-141').innerHTML;
@@ -145,6 +145,3 @@ ul19.innerHTML = f01 + f02 + f03;
 const li = document.querySelector('.out-20').textContent;
 console.log(li);
 
-// ************************************************
-// Task 8 -- не выполнен
-// Task 10 -- просмотреть еще раз !!!
