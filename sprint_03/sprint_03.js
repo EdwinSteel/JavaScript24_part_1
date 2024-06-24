@@ -100,13 +100,19 @@ let g141 = +document.querySelector('.out-141').innerHTML;
 let g142 = +document.querySelector('.out-142').innerHTML;
 document.querySelector('.out-14').innerHTML = g141 + g142;
 
+
 // Task 15
 // Создайте константу h2 куда получите заголовок второго уровня со страницы. Выведите свойство .textContent константы h2 в .out-15.
+
+const h2 = document.querySelector('h2');
+document.querySelector('.out-15').textContent = h2.textContent;
 
 
 // Task 16
 // Создайте константу title, куда получите элемент title из head. Запишите в свойство .textContent константы title строку 'Sprint 3'. Изучите как изменится title страницы.
 
+const title = document.querySelector('head > title');
+title.textContent = 'Sprint 3';
 
 
 // Task 17
@@ -133,7 +139,6 @@ const f03 = '<li>Astoria Greengrass</li>';
 // Task 8 -- не выполнен
 // Task 10 -- просмотреть еще раз !!!
 
-// Task 15
 // Task 16
 // Task 17
 // Task 18
