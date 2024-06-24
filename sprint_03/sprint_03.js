@@ -126,6 +126,9 @@ document.querySelector('.out-17').textContent = g17;
 // Task 18
 // Создайте константу m18 содержащую пустую строку. Выведите константу в .out-18.
 
+const m18 = "";
+document.querySelector('.out-18').textContent = m18;
+
 
 // Task 19
 // Создайте константу ul19, куда получите элемент .out-19. Допишите (через innerHTML) в ul19 константу f01 затем f02 и затем f03.
@@ -141,6 +144,5 @@ const f03 = '<li>Astoria Greengrass</li>';
 // Task 8 -- не выполнен
 // Task 10 -- просмотреть еще раз !!!
 
-// Task 18
 // Task 19
 // Task 20
