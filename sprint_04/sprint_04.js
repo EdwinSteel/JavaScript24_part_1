@@ -39,12 +39,13 @@ function t04 () {
 document.querySelector('.b-4').onclick = t04;
 
 
-// Task 5 ---------
+// Task 5
 // Создана функция t05. Напишите код внутри функции, который выводит переменную g5 в .out-5.
 
 function t05 () {
     let g5 = 33;
     // код напишите тут
+    document.querySelector('.out-5').textContent = g5;
 }
 
 document.querySelector('.b-5').onclick = t05;
@@ -108,7 +109,6 @@ function t10 () {
 
 // ************************************
 
-// Task 5
 // Task 6
 // Task 7
 // Task 8
