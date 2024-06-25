@@ -28,11 +28,12 @@ document.querySelector('.b-2').onclick = t02;
 
 document.querySelector('.b-3').onclick = t02;
 
-// Task 4 ---------
+// Task 4
 // Создана функция t04, напишите в ней код, который получает ЧИСЛО из .out-4, умножает его на 2 и записывает обратно в .out-4.
 
 function t04 () {
-
+    
+    document.querySelector('.out-4').textContent = +document.querySelector('.out-4').textContent * 2;
 }
 
 document.querySelector('.b-4').onclick = t04;
@@ -107,7 +108,6 @@ function t10 () {
 
 // ************************************
 
-// Task 4
 // Task 5
 // Task 6
 // Task 7
