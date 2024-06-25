@@ -2,7 +2,7 @@
 // Создана функция t01. Функция запускается при нажатии .b-1. Допишите внутрь функции код, который выводит в .out-1 строку 'hello'.
 
 function t01 () {
-
+document.querySelector('.out-1').textContent = 'hello';
 }
 
 document.querySelector('.b-1').onclick = t01;
@@ -104,3 +104,14 @@ function t10 () {
  
  document.querySelector('.b-10').onclick = t10;
 
+// ************************************
+
+// Task 2
+// Task 3
+// Task 4
+// Task 5
+// Task 6
+// Task 7
+// Task 8
+// Task 9
+// Task 10
