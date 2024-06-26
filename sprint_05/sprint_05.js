@@ -17,7 +17,7 @@ document.querySelector('.i-2').value = 'one piece';
 
 document.querySelector('.b-2').onclick = t02;
 
-// Task 3 -------
+// Task 3
 // Создана функция. Изучите ее работу. Посмотрите, на тип input, и на тип данных, которые выводятся в консоль. Почему происходит так? Если не понятно - задавайте вопрос в чате.
 
 function t03 () {
@@ -205,7 +205,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 3 -------
 // Task 4 -------
 // Task 5 -------
 // Task 6 -------
