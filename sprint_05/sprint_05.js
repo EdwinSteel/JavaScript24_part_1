@@ -39,14 +39,15 @@ function t04 () {
 document.querySelector('.b-4').onclick = t04;
 
 
-// Task 5 -------
+// Task 5
 // Создана функция t05. Функция запускается при нажатии .b-5. Напишите код внутри функции, который читает строку из input.i-51 и записывает в input.i-5.
 
 function t05 () {
-    
+    document.querySelector('.i-5').value = document.querySelector('.i-51').value;    
 }
 
 document.querySelector('.b-5').onclick = t05;
+
 
 // Task 6 -------
 // Создана функция t06. Функция запускается при нажатии .b-6. Напишите код внутри функции, который читает строку из input.i-6 и выводит в .out-6.
@@ -205,7 +206,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 5 -------
 // Task 6 -------
 // Task 7 -------
 // Task 8 -------
