@@ -12,7 +12,7 @@ document.querySelector('.b-1').onclick = t01;
 // Создана функция t02. Функция запускается при нажатии .b-2. Напишите код внутри функции, которая присваивает input.i-2 значение value равное 'one piece'.
 
 function t02 () {
-document.querySelector('.i-2').value = 'one piece';
+    document.querySelector('.i-2').value = 'one piece';
 }
 
 document.querySelector('.b-2').onclick = t02;
