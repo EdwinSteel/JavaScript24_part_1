@@ -29,11 +29,11 @@ function t03 () {
 document.querySelector('.b-3').onclick = t03;
 
 
-// Task 4 -------
+// Task 4
 // Создана функция t04. Функция запускается при нажатии .b-4. Напишите код внутри функции, который считывает числа из input.i-41 и input.i-42 и выводит в .out-4 их сумму.
 
 function t04 () {
-    
+    document.querySelector('.out-4').textContent = +document.querySelector('.i-41').value + +document.querySelector('.i-42').value;    
 }
 
 document.querySelector('.b-4').onclick = t04;
@@ -205,7 +205,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 4 -------
 // Task 5 -------
 // Task 6 -------
 // Task 7 -------
