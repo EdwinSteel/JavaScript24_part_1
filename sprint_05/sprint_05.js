@@ -4,7 +4,6 @@
 function t01 () {
 document.querySelector('.out-1').textContent = document.querySelector('.i-1').value;
 
-// console.log(document.querySelector('.i-1'));
 }
 
 document.querySelector('.b-1').onclick = t01;
