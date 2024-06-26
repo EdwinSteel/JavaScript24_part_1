@@ -2,18 +2,17 @@
 // Создана функция t01. Функция запускается при нажатии .b-1. Напишите код внутри функции, который читает строку из .i-1 и выводит в .out-1.
 
 function t01 () {
-document.querySelector('.out-1').textContent = document.querySelector('.i-1').value;
-
+    document.querySelector('.out-1').textContent = document.querySelector('.i-1').value;
 }
 
 document.querySelector('.b-1').onclick = t01;
 
 
-// Task 2 -------
+// Task 2
 // Создана функция t02. Функция запускается при нажатии .b-2. Напишите код внутри функции, которая присваивает input.i-2 значение value равное 'one piece'.
 
 function t02 () {
-
+document.querySelector('.i-2').value = 'one piece';
 }
 
 document.querySelector('.b-2').onclick = t02;
@@ -206,7 +205,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 2 -------
 // Task 3 -------
 // Task 4 -------
 // Task 5 -------
