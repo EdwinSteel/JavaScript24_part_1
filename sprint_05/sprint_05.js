@@ -69,14 +69,17 @@ function t07 () {
 document.querySelector('.i-7').oninput = t07;
 
 
-// Task 8 -------
+// Task 8
 // Создана функция t08. Функция запускается при нажатии .b-8. Напишите код внутри функции, который читает число из input.i-8 и записывает в progress.p-8. Также, число выводится в .out-8.
 
 function t08 () {
-    
+    let inp8 = +document.querySelector('.i-8').value;
+    document.querySelector('.p-8').value = inp8;
+    document.querySelector('.out-8').textContent = inp8;    
 }
 
 document.querySelector('.b-8').onclick = t08;
+
 
 // Task 9 -------
 // Создана функция t09. Функция запускается при нажатии .b-9. Напишите код внутри функции, который читает цвет из input.i-9 и выводит в .out-9.
@@ -206,7 +209,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 8 -------
 // Task 9 -------
 // Task 10 -------
 // Task 11 -------
