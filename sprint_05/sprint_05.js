@@ -81,11 +81,11 @@ function t08 () {
 document.querySelector('.b-8').onclick = t08;
 
 
-// Task 9 -------
+// Task 9
 // Создана функция t09. Функция запускается при нажатии .b-9. Напишите код внутри функции, который читает цвет из input.i-9 и выводит в .out-9.
 
 function t09 () {
-    
+    document.querySelector('.out-9').textContent = document.querySelector('.i-9').value;
 }
 
 document.querySelector('.b-9').onclick = t09;
@@ -209,7 +209,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 9 -------
 // Task 10 -------
 // Task 11 -------
 // Task 12 -------
