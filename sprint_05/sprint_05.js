@@ -59,11 +59,11 @@ function t06 () {
 document.querySelector('.b-6').onclick = t06;
 
 
-// Task 7 -------
+// Task 7
 // Давайте чуть разнообразим наши знания событий и изучим событие input. Событие срабатывает при вводе информации в input. Напишите в функцию t07 код, который получает value из input.i-7 и выводит в .out-7. Для проверки - начните вводить любой текст в input.i-7.
 
 function t07 () {
-    
+    document.querySelector('.out-7').textContent = document.querySelector('.i-7').value;
 }
 
 document.querySelector('.i-7').oninput = t07;
@@ -206,7 +206,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 7 -------
 // Task 8 -------
 // Task 9 -------
 // Task 10 -------
