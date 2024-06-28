@@ -103,11 +103,11 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 
-// Task 11 -------
+// Task 11
 // Создана функция t11. Функция запускается при нажатии .b-11. Напишите код внутри функции, который читает строку из input.i-11 и присваивает input.i-111.
 
 function t11 () {
-    
+    document.querySelector('.i-111').value = document.querySelector('.i-11').value;
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -211,7 +211,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 11 -------
 // Task 12 -------
 // Task 13 -------
 // Task 14 -------
