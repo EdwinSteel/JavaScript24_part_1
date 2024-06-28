@@ -91,11 +91,13 @@ function t09 () {
 document.querySelector('.b-9').onclick = t09;
 
 
-// Task 10 -------
+// Task 10
 // Создана функция t10. Функция запускается при нажатии .b-10. Напишите код внутри функции, который читает цвет из input.i-10 и выводит в .out-10 и окрашивает .out-10 с помощью свойства style.backgroundColor.
 
 function t10 () {
-       
+    let inp10 = document.querySelector('.i-10').value;
+    document.querySelector('.out-10').textContent = inp10;
+    document.querySelector('.out-10').style.backgroundColor = inp10;
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -209,7 +211,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 10 -------
 // Task 11 -------
 // Task 12 -------
 // Task 13 -------
