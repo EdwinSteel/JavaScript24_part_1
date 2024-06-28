@@ -127,7 +127,8 @@ document.querySelector('.b-12').onclick = t12;
 
 function t13 () {
    
-    
+   let s13 = document.querySelector('.s-13').textContent;
+   console.log(s13);
 }
 
 document.querySelector('.b-13').onclick = t13;
