@@ -112,12 +112,11 @@ function t11 () {
 
 document.querySelector('.b-11').onclick = t11;
 
-// Task 12 -------
+// Task 12
 // Создана функция t12. Функция запускается при нажатии .b-12. Напишите код внутри функции, который получает выбранный value из select.s-12 и выводит в .out-12. Напоминаю - не усложняйте! Задача решается одной строкой.
 
 function t12 () {
-   
-    
+    document.querySelector('.out-12').textContent = document.querySelector('.s-12').value;   
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -211,7 +210,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 12 -------
 // Task 13 -------
 // Task 14 -------
 // Тask 15 -------
