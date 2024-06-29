@@ -125,11 +125,22 @@ document.querySelector('.b-12').onclick = t12;
 // Task 13 -------
 // Создана функция t13. Функция запускается при нажатии .b-13. Напишите код внутри функции, который получает текст между тегами option выбранного option. Напоминаю - не усложняйте! 
 
+// NicPH
+// https://learn.javascript.ru/form-elements
+
 function t13 () {
    
-//    let s13 = document.querySelector('.s-13').
-
-//    console.log(s13);
+   let s13 = document.querySelector('.s-13').options[s13.selectedIndex];
+   
+   console.log(s13.text);
+   
+   //    .option.text
+   //    option:selected
+   // 1)
+//   let selectedOption = genres.options[genres.selectedIndex];
+//   alert( selectedOption.value );
+//   alert( selectedOption.text );
+    
 }
 
 document.querySelector('.b-13').onclick = t13;
