@@ -134,13 +134,16 @@ function t13 () {
 document.querySelector('.b-13').onclick = t13;
 
 
-// Task 14 -------
+// Task 14 ???????????
 // Создана функция t14. Функция запускается при нажатии .b-14. Напишите код внутри функции, который присваивает select.s-14 свойству value значение из переменной g14. Изучите как изменяется select при таком действии.
 
 let g14 = 333;
 
 function t14 () {
-   
+   let t141 = document.querySelector('.s-14');
+   t141.value = g14;
+
+    console.log(t141.value);
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -211,7 +214,7 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 14 -------
+// Task 14 ------- ?????????????
 // Тask 15 -------
 // Task 16 -------
 // Task 17 -------
