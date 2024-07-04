@@ -170,11 +170,11 @@ function t16 () {
 document.querySelector('.b-16').onclick = t16;
 
 
-// Task 17 -------
+// Task 17
 // Создана функция t17. Функция запускается при нажатии .b-17. Функция читает текст из textarea.ta-17 и выводит в .out-17.
 
 function t17 () {
-   
+   document.querySelector('.out-17').textContent = document.querySelector('.ta-17').value;
 }
 
 document.querySelector('.b-17').onclick = t17;
@@ -217,7 +217,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 17 -------
 // Task 18 -------
 // Task 19 -------
 // Task 20 -------
