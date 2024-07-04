@@ -159,14 +159,16 @@ function t15() {
 document.querySelector('.s-15').onchange = t15;
 
 
-// Task 16 -------
+// Task 16
 // Создана функция t16. Функция запускается при нажатии .b-16. Внутри функции получите value из select.s-161 и присвойте value в select.s-162.
 
 function t16 () {
-   
+   let t161 = document.querySelector('.s-161').value;
+   document.querySelector('.s-162').value = t161;   
 }
 
 document.querySelector('.b-16').onclick = t16;
+
 
 // Task 17 -------
 // Создана функция t17. Функция запускается при нажатии .b-17. Функция читает текст из textarea.ta-17 и выводит в .out-17.
@@ -215,7 +217,6 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 16 -------
 // Task 17 -------
 // Task 18 -------
 // Task 19 -------
