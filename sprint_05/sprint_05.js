@@ -148,11 +148,11 @@ function t14 () {
 
 document.querySelector('.b-14').onclick = t14;
 
-// Тask 15 -------
+// Тask 15 ------- ???????????
 // Мы получали значение из select по нажатию на кнопку. Давайте изучим еще одно событие, которое очень подходит для select - событие change. Событие срабатывает когда select изменяется. Написана функция t15, функция срабатывает при изменении select.s-15. Напишите код внутри функции, который получает значение value выбранного option и выводит в .out-15.
 
 function t15() {
-
+    document.querySelector('.out-15').textContent = document.querySelector('.s-15').value;
 }
 
 document.querySelector('.s-15').onchange = t15;
