@@ -180,14 +180,15 @@ function t17 () {
 document.querySelector('.b-17').onclick = t17;
 
 
-// Task 18 -------
+// Task 18
 // Создана функция t18. Функция запускается при событии input на input range. Напишите код внутри функции, который получает value из input.i-18 и выводит в .out-18.
 
 function t18 () {
-   
+   document.querySelector('.out-18').textContent = document.querySelector('.i-18').value;
 }
 
 document.querySelector('.i-18').oninput = t18;
+
 
 // Task 19 -------
 // Создана функция t19. Функция запускается при клике на кнопку .b-19. Изучите как работает функция. Снимите комментарий с переменной g19 и изучите как меняется checkbox.ch-19.
@@ -217,6 +218,5 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 18 -------
 // Task 19 -------
 // Task 20 -------
