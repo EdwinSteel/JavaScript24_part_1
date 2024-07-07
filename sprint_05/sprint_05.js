@@ -208,14 +208,17 @@ function t19() {
 document.querySelector('.b-19').onclick = t19;
 
 
-// Task 20 -------
+// Task 20
 // Создана функция t20. Функция запускается при клике на кнопку .b-20. Напишите код внутри функции, который проверяет является ли .ch-20 выбранным (checked) и если да, то выводит в .out-20 value элемента .ch-20.
 
 function t20() {
-
+    // Напишите код внутри функции, который проверяет является ли  выбранным (checked) и если да, то выводит в  value элемента .ch-20.
+    const ch20 = document.querySelector('.ch-20');
+    if (ch20.checked) {
+        document.querySelector('.out-20').textContent = ch20.value;
+    }
 }
 
 document.querySelector('.b-20').onclick = t20;
 
-// ***********************************************
-// Task 20 -------
+
