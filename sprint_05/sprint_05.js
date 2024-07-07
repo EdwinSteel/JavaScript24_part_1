@@ -17,6 +17,7 @@ function t02 () {
 
 document.querySelector('.b-2').onclick = t02;
 
+
 // Task 3
 // Создана функция. Изучите ее работу. Посмотрите, на тип input, и на тип данных, которые выводятся в консоль. Почему происходит так? Если не понятно - задавайте вопрос в чате.
 
@@ -112,6 +113,7 @@ function t11 () {
 
 document.querySelector('.b-11').onclick = t11;
 
+
 // Task 12
 // Создана функция t12. Функция запускается при нажатии .b-12. Напишите код внутри функции, который получает выбранный value из select.s-12 и выводит в .out-12. Напоминаю - не усложняйте! Задача решается одной строкой.
 
@@ -124,7 +126,6 @@ document.querySelector('.b-12').onclick = t12;
 
 // Task 13
 // Создана функция t13. Функция запускается при нажатии .b-13. Напишите код внутри функции, который получает текст между тегами option выбранного option. Напоминаю - не усложняйте! 
-
 
 function t13 () {
     let s13 = document.querySelector('.s-13 option:checked').textContent;
@@ -211,14 +212,12 @@ document.querySelector('.b-19').onclick = t19;
 // Task 20
 // Создана функция t20. Функция запускается при клике на кнопку .b-20. Напишите код внутри функции, который проверяет является ли .ch-20 выбранным (checked) и если да, то выводит в .out-20 value элемента .ch-20.
 
-function t20() {
-    // Напишите код внутри функции, который проверяет является ли  выбранным (checked) и если да, то выводит в  value элемента .ch-20.
-    const ch20 = document.querySelector('.ch-20');
+const ch20 = document.querySelector('.ch-20');
+
+function t20() {    
     if (ch20.checked) {
         document.querySelector('.out-20').textContent = ch20.value;
     }
 }
 
 document.querySelector('.b-20').onclick = t20;
-
-
