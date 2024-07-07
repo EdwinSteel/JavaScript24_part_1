@@ -190,11 +190,11 @@ function t18 () {
 document.querySelector('.i-18').oninput = t18;
 
 
-// Task 19 -------
+// Task 19
 // Создана функция t19. Функция запускается при клике на кнопку .b-19. Изучите как работает функция. Снимите комментарий с переменной g19 и изучите как меняется checkbox.ch-19.
 
 let g19 = true;
-// g19 = false;
+g19 = false;
 
 const ch19 = document.querySelector('.ch-19');
 
@@ -203,10 +203,10 @@ function t19() {
     if (ch19.checked) {
         document.querySelector('.out-19').textContent = ch19.value;
     }
-
 }
 
 document.querySelector('.b-19').onclick = t19;
+
 
 // Task 20 -------
 // Создана функция t20. Функция запускается при клике на кнопку .b-20. Напишите код внутри функции, который проверяет является ли .ch-20 выбранным (checked) и если да, то выводит в .out-20 value элемента .ch-20.
@@ -218,5 +218,4 @@ function t20() {
 document.querySelector('.b-20').onclick = t20;
 
 // ***********************************************
-// Task 19 -------
 // Task 20 -------
