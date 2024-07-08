@@ -3,6 +3,8 @@
 
 function t01 () {
 
+    // let qq01 = document.querySelector('.i-1').v
+
 }
 
 document.querySelector('.b-1').onclick = t01;
