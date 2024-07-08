@@ -1,10 +1,16 @@
-// Task 1 --------
+// Task 1
 // Создана функция t01. Функция запускается при нажатии .b-1. Напишите код внутри функции, получает ЧИСЛО из input.i-1 и если это число больше чем 1500 выводит в .out-1 единицу. 
 
 function t01 () {
 
-    // let qq01 = document.querySelector('.i-1').v
+    let inp1 = +document.querySelector('.i-1').value;
+    document.querySelector('.out-1').textContent = '';
 
+    if (inp1 > 1500) {
+        document.querySelector('.out-1').textContent = 1;
+    }    
+    // console.log(inp1);
+    // console.log(typeof inp1);
 }
 
 document.querySelector('.b-1').onclick = t01;
@@ -225,7 +231,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 1 --------
 // Task 2 --------
 // Task 3 --------
 // Task 4 --------
