@@ -35,7 +35,7 @@ function t02 () {
     }
     
     else {
-        document.querySelector('.out-2').textContent = 0;
+        out2.textContent = 0;
     }
         
     console.log(inp2);
