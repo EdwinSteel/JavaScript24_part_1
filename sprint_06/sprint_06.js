@@ -16,29 +16,34 @@ function t01 () {
 document.querySelector('.b-1').onclick = t01;
 
 
-// Task 2 --------
+// Task 2
 // В предыдущем задании условие выполняется когда изменялся вывод. Если вывод не изменялся, то if не работал и состояние вывода не изменялось. Это не удобно. Давайте изменим задачу и сделаем "вилку", т.е. программа ОБЯЗАТЕЛЬНО пойдет или по одной, или по другой ветке. Если у вас вилка - применяем if else.
 // Создана функция t02. Функция запускается при нажатии .b-2. Напишите код внутри функции, получает ЧИСЛО из input.i-2 и если это число больше чем 1500 выводит в .out-2 единицу, если меньше - нуль.
-
-else if () {}
 
 function t02 () {
 
     let inp2 = +document.querySelector('.i-2').value;
-    document.querySelector('.out-2').textContent = '';
+    let out2 = document.querySelector('.out-2');
+    out2.textContent = '';
 
     if (inp2 > 1500) {
-        document.querySelector('.out-2').textContent = 1;        
-    } else {
+        out2.textContent = 1;
+    } 
+    
+    else if (inp2 === 1500) {
+        out2.textContent = 'Введено число 1500, но для него не описано что делать';
+    }
+    
+    else {
         document.querySelector('.out-2').textContent = 0;
     }
         
     console.log(inp2);
     console.log(typeof inp2);
-
 }
 
 document.querySelector('.b-2').onclick = t02;
+
 
 // Task 3 --------
 // В некоторых случаях в задаче могут идти просто не связанных друг с другом условий.
@@ -245,7 +250,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 2 --------
 // Task 3 --------
 // Task 4 --------
 // Task 5 --------
