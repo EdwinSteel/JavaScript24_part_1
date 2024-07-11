@@ -50,6 +50,29 @@ document.querySelector('.b-2').onclick = t02;
 // Создана функция t03. Функция запускается при нажатии .b-3. Напишите код внутри функции, получает ЧИСЛО из input.i-3 и если это число больше нуля выводит в .out-31 единицу, если меньше - нуль. Если число четное, то в .out-32 выводится строка 'even', если нечетное - 'odd'.
 
 function t03 () {
+
+    let inp3 = +document.querySelector('.i-3').value;
+    let out31 = document.querySelector('.out-31');
+    let out32 = document.querySelector('.out-32');
+    // out2.textContent = '';
+
+    if (inp3 > 0) {
+        out31.textContent = 1;
+    } 
+    
+    else if (inp3 === 0) {
+        out31.textContent = 'Введено число 0, но для него не описано что делать';
+    }
+    
+    else {
+        out31.textContent = 0;
+    }
+        
+    
+
+    console.log(inp3);
+    console.log(typeof inp3);
+
  
 }
 
