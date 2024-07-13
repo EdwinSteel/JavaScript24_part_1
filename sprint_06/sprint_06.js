@@ -32,7 +32,7 @@ function t02 () {
     } 
     
     else if (inp2 === 1500) {
-        out2.textContent = 'Введено число 1500, но для него не описано что делать';
+        out2.textContent = 'Введено число 1500, но для него в условии не описано что делать';
     }
     
     else {
@@ -46,7 +46,7 @@ function t02 () {
 document.querySelector('.b-2').onclick = t02;
 
 
-// Task 3 --------
+// Task 3
 // В некоторых случаях в задаче могут идти просто не связанных друг с другом условий.
 // Создана функция t03. Функция запускается при нажатии .b-3. Напишите код внутри функции, получает ЧИСЛО из input.i-3 и если это число больше нуля выводит в .out-31 единицу, если меньше - нуль. Если число четное, то в .out-32 выводится строка 'even', если нечетное - 'odd'.
 
@@ -55,26 +55,30 @@ function t03 () {
     let inp3 = +document.querySelector('.i-3').value;
     let out31 = document.querySelector('.out-31');
     let out32 = document.querySelector('.out-32');
-    // out2.textContent = '';
+    out31.textContent = '';
+    out32.textContent = '';
 
     if (inp3 > 0) {
         out31.textContent = 1;
     } 
     
     else if (inp3 === 0) {
-        out31.textContent = 'Введено число 0, но для него не описано что делать';
+        out31.textContent = 'Введено число 0, но для него в условии не описано что делать';
     }
     
     else {
         out31.textContent = 0;
     }
-        
     
+    if (inp3 % 2) {
+        out32.textContent = 'odd';
+    }
+    else {
+        out32.textContent = 'even';
+        }
 
     console.log(inp3);
     console.log(typeof inp3);
-
- 
 }
 
 document.querySelector('.b-3').onclick = t03;
@@ -274,7 +278,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 3 --------
 // Task 4 --------
 // Task 5 --------
 // Task 6 --------
