@@ -278,7 +278,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 4 -------- Изучил
 // Task 5 --------
 // Task 6 --------
 // Task 7 --------
@@ -295,3 +294,4 @@ document.querySelector('.ch-20').oninput = t20;
 // Task 18 --------
 // Task 19 --------
 // Task 20 --------
+// Task 4 -------- Изучил
