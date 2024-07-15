@@ -121,7 +121,12 @@ document.querySelector('.b-5').onclick = t05;
 // Создана функция t06. Функция запускается при нажатии .b-6. Напишите код внутри функции, который читает строку из input.i-6 и если длина строки больше 10 символов то выводит в .out-6 true. Если меньше - false. Обратите внимание, данную задачу можно решить без операторов if...
 
 function t06 () {
-    
+
+    let inp6 = document.querySelector('.i-6').value;
+
+    console.log(inp6);
+    console.log(inp6.length);
+    console.log(typeof inp6);
 }
 
 document.querySelector('.b-6').onclick = t06;
