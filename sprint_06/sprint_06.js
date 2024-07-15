@@ -75,7 +75,7 @@ function t03 () {
     }
     else {
         out32.textContent = 'even';
-        }
+    }
 
     console.log(inp3);
     console.log(typeof inp3);
@@ -96,10 +96,23 @@ function t04 () {
 document.querySelector('.b-4').onclick = t04;
 
 
-// Task 5 --------
+// Task 5
 // Создана функция t05. Функция запускается при нажатии .b-5. Напишите код внутри функции, который читает ЧИСЛО из input.i-5 в переменную, например num. Дальше напишите условие вида if (num) то выводим в .out-5 число 1, в противном случае число 0. Попробуйте запустить ваш код подставляя в input разные числа. Попробуйте отрицательные числа и обязательно нуль.
 
 function t05 () {
+    
+    let num = +document.querySelector('.i-5').value;
+    let out5 = document.querySelector('.out-5');
+
+    if (num){
+        out5.textContent = 1;
+    } 
+    else {
+        out5.textContent = 0;
+    }
+
+    console.log(num);
+    console.log(typeof num);
 }
 
 document.querySelector('.b-5').onclick = t05;
@@ -278,7 +291,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 5 --------
 // Task 6 --------
 // Task 7 --------
 // Task 8 --------
