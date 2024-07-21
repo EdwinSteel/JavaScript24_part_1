@@ -117,13 +117,16 @@ function t05 () {
 
 document.querySelector('.b-5').onclick = t05;
 
-// Task 6 -------- НЕ ЗАКОНЧЕНА
+// Task 6 --- ЗАКОНЧЕН. НО ЧТО ДЕЛАЕМ ЕСЛИ === 10 ?
 // Создана функция t06. Функция запускается при нажатии .b-6. Напишите код внутри функции, который читает строку из input.i-6 и если длина строки больше 10 символов то выводит в .out-6 true. Если меньше - false. Обратите внимание, данную задачу можно решить без операторов if...
 
 function t06 () {
 
     let inp6 = document.querySelector('.i-6').value;
-
+    let out6 = document.querySelector('.out-6');
+    
+    out6.textContent = (inp6.length > 10) ? true : false;
+    
     console.log(inp6);
     console.log(inp6.length);
     console.log(typeof inp6);
@@ -132,10 +135,25 @@ function t06 () {
 document.querySelector('.b-6').onclick = t06;
 
 
-// Task 7 --------
+// Task 7 -------- НЕ ЗАКОНЧЕНА, В РАБОТЕ
 // Создана функция t07. Функция запускается при нажатии .b-7. Функция читает из input.i-71 и input.i-72 числа и выводит в .out-7 большее из двух этих чисел. Если числа равны, то выводится число из .i-71.
 
 function t07 () {
+
+    let i71 = document.querySelector('.i-71').value;
+    let i72 = document.querySelector('.i-72').value;
+    let out7 = document.querySelector('.out-7');
+
+    out7.textContent = '';
+
+    if (i71 > i72) {
+        out7.textContent = i71;
+    // } else {
+    //     out7.textContent = i72;
+    }
+
+
+    console.log(i71, i72);
     
 }
 
@@ -296,7 +314,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 6 --------
 // Task 7 --------
 // Task 8 --------
 // Task 9 --------
