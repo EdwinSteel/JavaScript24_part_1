@@ -107,6 +107,7 @@ function t05 () {
     if (num){
         out5.textContent = 1;
     } 
+
     else {
         out5.textContent = 0;
     }
@@ -135,26 +136,31 @@ function t06 () {
 document.querySelector('.b-6').onclick = t06;
 
 
-// Task 7 -------- НЕ ЗАКОНЧЕНА, В РАБОТЕ
+// Task 7
 // Создана функция t07. Функция запускается при нажатии .b-7. Функция читает из input.i-71 и input.i-72 числа и выводит в .out-7 большее из двух этих чисел. Если числа равны, то выводится число из .i-71.
 
 function t07 () {
 
-    let i71 = document.querySelector('.i-71').value;
-    let i72 = document.querySelector('.i-72').value;
+    let i71 = +document.querySelector('.i-71').value;
+    let i72 = +document.querySelector('.i-72').value;
     let out7 = document.querySelector('.out-7');
 
     out7.textContent = '';
 
     if (i71 > i72) {
         out7.textContent = i71;
-    // } else {
-    //     out7.textContent = i72;
     }
 
+    else if (i71 === i72) {
+        out7.textContent = i71;
+    }
+    
+    else {
+        out7.textContent = i72;
+    }
 
     console.log(i71, i72);
-    
+    console.log(typeof i71, typeof i72);    
 }
 
 document.querySelector('.b-7').onclick = t07;
@@ -314,7 +320,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 7 --------
 // Task 8 --------
 // Task 9 --------
 // Task 10 --------
