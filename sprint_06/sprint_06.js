@@ -193,7 +193,7 @@ function t08 () {
 
 document.querySelector('.b-8').onclick = t08;
 
-// Task 9 --------
+// Task 9
 // Создана функция t09. Функция запускается при нажатии .b-9. Напишите код внутри функции, код читает номер квартиры из input.i-9. В доме три подъезда:
 // первый квартиры от 1 до 36
 // второй квартиры от 37 до 87
@@ -201,7 +201,27 @@ document.querySelector('.b-8').onclick = t08;
 // все числа указаны включительно. Функция должна выводить в .out-9 номер подъезда в зависимости от введенной квартиры. Если число выходит из указанных диапазонов - то выводится 0.
 
 function t09 () {
+
+    let room = +document.querySelector('.i-9').value;
+    let out9 = document.querySelector('.out-9');
+        
+    if (room >= 1 && room <=36) {
+        out9.textContent = 1;
+    } 
+        
+    else if (room >= 37 && room <=87) {
+        out9.textContent = 2;
+    }
+
+    else if (room >= 88 && room <=110) {
+        out9.textContent = 3;
+    }
+
+    else {
+        out9.textContent = 0;
+    }
     
+    console.log(room, typeof room);
 }
 
 document.querySelector('.b-9').onclick = t09;
@@ -338,7 +358,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 9 --------
 // Task 10 --------
 // Task 11 --------
 // Task 12 --------
