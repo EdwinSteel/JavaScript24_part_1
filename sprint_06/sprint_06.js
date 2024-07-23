@@ -166,11 +166,29 @@ function t07 () {
 document.querySelector('.b-7').onclick = t07;
 
 
-// Task 8 --------
+// Task 8
 // Создана функция t08. Функция запускается при нажатии .b-8. Функция читает год рождения из input.i-8 и если пользователю больше 16 лет, то выводит единицу в .out-8. Если пользователю меньше 16 лет, то выводит в .out-8 число -1. Если пользователю 16 лет, то выводит 0.
 
 function t08 () {
     
+    let year = new Date().getFullYear(); // текущий год
+    let birthyear = +document.querySelector('.i-8').value; // год рождения
+    let out8 = document.querySelector('.out-8');
+
+    if (year - birthyear > 16) {
+        out8.textContent = 1;
+    }
+    
+    else if (year - birthyear === 16) {
+        out8.textContent = 0;
+    }
+        
+    else {
+        out8.textContent = -1;
+    }    
+    
+    console.log(year, typeof year);
+    console.log(birthyear, typeof birthyear);    
 }
 
 document.querySelector('.b-8').onclick = t08;
@@ -320,7 +338,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 8 --------
 // Task 9 --------
 // Task 10 --------
 // Task 11 --------
