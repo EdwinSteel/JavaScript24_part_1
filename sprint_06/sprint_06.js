@@ -265,15 +265,17 @@ function t11 () {
 
 document.querySelector('.b-11').onclick = t11;
 
-// Task 12 --------
+// Task 12
 // Создана функция t12. Функция запускается при нажатии .b-12. Напишите код внутри функции, который выводит в .out-12 большее из двух чисел num_1 и num_2. Примените тернарный оператор. Случай равенства не рассматриваем.
 
 let num_1 = 5;
 let num_2 = 9;
 
 function t12 () {
-   
-    
+
+    let out12 = document.querySelector('.out-12');
+
+    out12.textContent = (num_1 > num_2) ? num_1 : num_2;    
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -373,7 +375,6 @@ document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
 // Task 11 --------
-// Task 12 --------
 // Task 13 --------
 // Task 14 --------
 // Тask 15 --------
