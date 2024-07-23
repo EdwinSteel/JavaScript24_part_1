@@ -256,11 +256,28 @@ function t10 () {
 document.querySelector('.r-10').oninput = t10;
 
 
-// Task 11 --------
+// Task 11 -------- ГДЕ-ТО У МЕНЯ ОШИБКА ??????
 // Создана функция t11. Функция запускается при нажатии .b-11. Напишите код внутри функции, который читает имя пользователя из .i-111 и пароль из .i-112. Если имя пользователя пустая строка, то в .out-11 выводится строка 'username error' и проверка дальше не делается. Если длина пароля меньше 10 символов, то в .out-11 выводится 'password error'. Если ошибок нет, то в .out-11 выводится true.
 
 function t11 () {
+
+    let i111 = document.querySelector('.i-111').value; // user name
+    let i112 = document.querySelector('.i-112').value; // password
+    let out11 = document.querySelector('.out-11');
     
+    // out11.textContent = '';
+    
+    if (i111 === '') {
+        out11.textContent = 'username error';
+        // break;
+    } 
+    
+    // else {
+    //     out11.textContent = 'wwwwwwwwwww';
+    // }
+
+
+    console.log(i111, i112);
 }
 
 document.querySelector('.b-11').onclick = t11;
