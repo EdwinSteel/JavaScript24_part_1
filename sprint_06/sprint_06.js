@@ -227,16 +227,30 @@ function t09 () {
 document.querySelector('.b-9').onclick = t09;
 
 
-// Task 10 --------
+// Task 10
 // Создана функция t10. Функция запускается при изменении input.r-10. Если число от:
 // 20 до 30 то в .out-10 выводится строка 'cold'
 // 31 до 50 то в .out-10 выводится строка 'warm'
 // 51 до 70 то в .out-10 выводится строка 'hot'
 
-
 function t10 () {
+
+    let r10 = +document.querySelector('.r-10').value;
+    let out10 = document.querySelector('.out-10');
+
+    if (r10 >= 20 && r10 <= 30) {
+        out10.textContent = 'cold';
+    } 
     
+    if (r10 >= 31 && r10 <= 50) {
+        out10.textContent = 'warm';
+    }
+
+    if (r10 >= 51 && r10 <= 70) {
+        out10.textContent = 'hot';
+    }
     
+    console.log(r10, typeof r10);
 }
 
 document.querySelector('.r-10').oninput = t10;
@@ -358,7 +372,6 @@ function t20() {
 document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
-// Task 10 --------
 // Task 11 --------
 // Task 12 --------
 // Task 13 --------
