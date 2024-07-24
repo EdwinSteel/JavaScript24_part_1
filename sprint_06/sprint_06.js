@@ -328,11 +328,17 @@ function t14 () {
 document.querySelector('.b-14').onclick = t14;
 
 
-// Тask 15 --------
+// Тask 15
 // При изменении select запускается функция t15. Список select содержит названия товаров. Если value товара кодируется true, то товар продается по скидке. Напишите внутри функции код, который получает value текущего товара и если предусмотрена скидка - выводит в .out-15 строку 'sale'. Если скидка не предусмотрена - выводится пустая строка.
 
 function t15() {
 
+    let out15 = document.querySelector('.out-15');
+    let s15 = document.querySelector('.s-15 option:checked').value;
+
+    (s15 === "true") ? out15.textContent = 'sale' :  out15.textContent = '';    
+
+    console.log(s15);
 }
 
 document.querySelector('.s-15').onchange = t15;
@@ -398,7 +404,6 @@ document.querySelector('.ch-20').oninput = t20;
 // **************************************
 // Task 11 --------
 
-// Тask 15 --------
 // Task 16 --------
 // Task 17 --------
 // Task 18 --------
