@@ -313,13 +313,16 @@ function t13 () {
 document.querySelector('.b-13').onclick = t13;
 
 
-// Task 14 --------
+// Task 14
 // Создана функция t14. Функция запускается при нажатии .b-14. Напишите код внутри функции, который проверяет, что если g14 не равна 2000 то выводит в .out-14 число 0. Если равна - число 1. Примените тернарный оператор.
 
 let g14 = 2001;
 
 function t14 () {
-   
+
+    let out14 = document.querySelector('.out-14');
+
+    (g14 === 2000) ? out14.textContent = 1 : out14.textContent = 0;    
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -395,7 +398,6 @@ document.querySelector('.ch-20').oninput = t20;
 // **************************************
 // Task 11 --------
 
-// Task 14 --------
 // Тask 15 --------
 // Task 16 --------
 // Task 17 --------
