@@ -298,14 +298,16 @@ function t12 () {
 document.querySelector('.b-12').onclick = t12;
 
 
-// Task 13 --------
+// Task 13
 // Создана функция t13. Функция запускается при нажатии .b-13. Напишите код внутри функции, который выводит в .out-13 отрицание переменной bool.
 
 let bool = true;
 
 function t13 () {
+
+   document.querySelector('.out-13').textContent = !bool;
    
-    
+   console.log(!bool);
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -392,7 +394,7 @@ document.querySelector('.ch-20').oninput = t20;
 
 // **************************************
 // Task 11 --------
-// Task 13 --------
+
 // Task 14 --------
 // Тask 15 --------
 // Task 16 --------
