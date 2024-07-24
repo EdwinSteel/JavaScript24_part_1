@@ -344,11 +344,29 @@ function t15() {
 document.querySelector('.s-15').onchange = t15;
 
 
-// Task 16 --------
+// Task 16
 // Создана функция t16. Функция запускается при вводе в input.i-16 текста. Функция должна выводить вводимый в input текст в .out-16. Если длина текста меньше 5 символов, то .out-16 должен окрашиваться (backgroundColor) в цвет 'red'. Если длина текста от 5 (включительно) до 10 (включительно), то цвет фона - 'orange'. Если длина текста больше 10 символов, то цвет фона 'green'. 
 
 function t16 () {
-   
+
+    let out16 = document.querySelector('.out-16');
+    let i16 = document.querySelector('.i-16').value ;
+
+    out16.textContent = i16;
+
+    if (i16.length < 5) {
+        out16.style.backgroundColor = 'red';
+    }
+
+    if (i16.length >= 5 && i16.length <= 10) {
+        out16.style.backgroundColor = 'orange';
+    }
+
+    if (i16.length > 10) {
+        out16.style.backgroundColor = 'green';
+    }
+
+    console.log(i16, i16.length);
 }
 
 document.querySelector('.i-16').oninput = t16;
@@ -404,7 +422,6 @@ document.querySelector('.ch-20').oninput = t20;
 // **************************************
 // Task 11 --------
 
-// Task 16 --------
 // Task 17 --------
 // Task 18 --------
 // Task 19 --------
