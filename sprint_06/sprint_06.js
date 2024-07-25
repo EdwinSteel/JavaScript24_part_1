@@ -371,7 +371,7 @@ function t16 () {
 
 document.querySelector('.i-16').oninput = t16;
 
-// Task 17 --------
+// Task 17
 // Создана функция t17. Функция запускается при нажатии .b-17. Функция сравнивает значение из переменной url и если:
 // url равно '/' то в .out-17 выводится строка 'frontend'
 // url равно '/admin' то в .out-17 выводится строка 'backend'
@@ -381,7 +381,23 @@ document.querySelector('.i-16').oninput = t16;
 let url ='/admin';
 
 function t17 () {
-   
+
+    let out17 = document.querySelector('.out-17');
+
+    switch (url) {
+        
+        case '/':
+            out17.textContent = 'frontend';
+            break;
+
+        case '/admin':
+            out17.textContent = 'backend';
+            break;        
+    
+        default:
+            out17.textContent = 'site';
+            break;
+    }   
 }
 
 document.querySelector('.b-17').onclick = t17;
@@ -422,7 +438,6 @@ document.querySelector('.ch-20').oninput = t20;
 // **************************************
 // Task 11 --------
 
-// Task 17 --------
 // Task 18 --------
 // Task 19 --------
 // Task 20 --------
