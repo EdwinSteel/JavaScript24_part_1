@@ -403,7 +403,7 @@ function t17 () {
 document.querySelector('.b-17').onclick = t17;
 
 
-// Task 18 --------
+// Task 18
 // Создана функция t18. Функция запускается при нажатии кнопки .b-18. Функция считывает value из select.s-18 и если:
 // value = 1 выводит в .out-18 строку 'admin'
 // value = 2 выводит в .out-18 строку 'moderator'
@@ -411,7 +411,25 @@ document.querySelector('.b-17').onclick = t17;
 // применяйте switch case
 
 function t18 () {
-   
+    let s18 = document.querySelector('.s-18').value;
+    let out18 = document.querySelector('.out-18');
+
+    switch (s18) {
+        
+        case '1':
+            out18.textContent = 'admin';
+            break;
+
+        case '2':
+            out18.textContent = 'moderator';
+            break;
+
+        case '3':
+            out18.textContent = 'user';
+            break;
+    }
+
+   console.log(s18, typeof s18);
 }
 
 document.querySelector('.b-18').onclick = t18;
@@ -438,7 +456,6 @@ document.querySelector('.ch-20').oninput = t20;
 // **************************************
 // Task 11 --------
 
-// Task 18 --------
 // Task 19 --------
 // Task 20 --------
 // Task 4 -------- Изучил
