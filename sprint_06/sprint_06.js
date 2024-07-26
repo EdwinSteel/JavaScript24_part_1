@@ -9,8 +9,7 @@ function t01 () {
     if (inp1 > 1500) {
         document.querySelector('.out-1').textContent = 1;
     }    
-    // console.log(inp1);
-    // console.log(typeof inp1);
+    // console.log(inp1, typeof inp1);
 }
 
 document.querySelector('.b-1').onclick = t01;
@@ -19,7 +18,6 @@ document.querySelector('.b-1').onclick = t01;
 // Task 2
 // В предыдущем задании условие выполняется когда изменялся вывод. Если вывод не изменялся, то if не работал и состояние вывода не изменялось. Это не удобно. Давайте изменим задачу и сделаем "вилку", т.е. программа ОБЯЗАТЕЛЬНО пойдет или по одной, или по другой ветке. Если у вас вилка - применяем if else.
 // Создана функция t02. Функция запускается при нажатии .b-2. Напишите код внутри функции, получает ЧИСЛО из input.i-2 и если это число больше чем 1500 выводит в .out-2 единицу, если меньше - нуль.
-
 
 function t02 () {
 
@@ -32,7 +30,7 @@ function t02 () {
     } 
     
     else if (inp2 === 1500) {
-        out2.textContent = 'Введено число 1500, но для него в условии не описано что делать';
+        out2.textContent = 'Введено число 1500, НО для него в условии не описано что делать';
     }
     
     else {
@@ -60,12 +58,8 @@ function t03 () {
 
     if (inp3 > 0) {
         out31.textContent = 1;
-    } 
-    
-    else if (inp3 === 0) {
-        out31.textContent = 'Введено число 0, но для него в условии не описано что делать';
     }
-    
+
     else {
         out31.textContent = 0;
     }
@@ -112,11 +106,11 @@ function t05 () {
         out5.textContent = 0;
     }
 
-    console.log(num);
-    console.log(typeof num);
+    console.log(num, typeof num);
 }
 
 document.querySelector('.b-5').onclick = t05;
+
 
 // Task 6 --- ЗАКОНЧЕН. НО ЧТО ДЕЛАЕМ ЕСЛИ === 10 ?
 // Создана функция t06. Функция запускается при нажатии .b-6. Напишите код внутри функции, который читает строку из input.i-6 и если длина строки больше 10 символов то выводит в .out-6 true. Если меньше - false. Обратите внимание, данную задачу можно решить без операторов if...
@@ -193,6 +187,7 @@ function t08 () {
 
 document.querySelector('.b-8').onclick = t08;
 
+
 // Task 9
 // Создана функция t09. Функция запускается при нажатии .b-9. Напишите код внутри функции, код читает номер квартиры из input.i-9. В доме три подъезда:
 // первый квартиры от 1 до 36
@@ -256,7 +251,7 @@ function t10 () {
 document.querySelector('.r-10').oninput = t10;
 
 
-// Task 11 -------- ГДЕ-ТО У МЕНЯ ОШИБКА ??????
+// Task 11
 // Создана функция t11. Функция запускается при нажатии .b-11. Напишите код внутри функции, который читает имя пользователя из .i-111 и пароль из .i-112. Если имя пользователя пустая строка, то в .out-11 выводится строка 'username error' и проверка дальше не делается. Если длина пароля меньше 10 символов, то в .out-11 выводится 'password error'. Если ошибок нет, то в .out-11 выводится true.
 
 function t11 () {
@@ -265,22 +260,26 @@ function t11 () {
     let i112 = document.querySelector('.i-112').value; // password
     let out11 = document.querySelector('.out-11');
     
-    // out11.textContent = '';
+    out11.textContent = '';
     
-    if (i111 === '') {
+    if (i111 == '') {
         out11.textContent = 'username error';
-        // break;
     } 
     
-    // else {
-    //     out11.textContent = 'wwwwwwwwwww';
-    // }
+    else {
+        if (i112.length < 10) {
+            out11.textContent = 'password error';
+            
+        } else {
+            out11.textContent = true;
+        }
+    }
 
-
-    console.log(i111, i112);
+    console.log(i111, i112, i112.length);
 }
 
 document.querySelector('.b-11').onclick = t11;
+
 
 // Task 12
 // Создана функция t12. Функция запускается при нажатии .b-12. Напишите код внутри функции, который выводит в .out-12 большее из двух чисел num_1 и num_2. Примените тернарный оператор. Случай равенства не рассматриваем.
@@ -434,28 +433,34 @@ function t18 () {
 
 document.querySelector('.b-18').onclick = t18;
 
-// Task 19 --------
-// Создана функция t19. Функция запускается при клике на кнопку .b-19. Если .ch-19 является выбранным (checked), то выведите в .out-19 число 1. Если не выбран - число 0.
 
+// Task 19
+// Создана функция t19. Функция запускается при клике на кнопку .b-19. Если .ch-19 является выбранным (checked), то выведите в .out-19 число 1. Если не выбран - число 0.
 
 function t19() {
 
+    let ch19 = document.querySelector('.ch-19');
+    let out19 = document.querySelector('.out-19');    
+
+    (ch19.checked) ? out19.textContent = 1 : out19.textContent = 0;
+
+    console.log(ch19, typeof ch19, ch19.checked);
 }
 
 document.querySelector('.b-19').onclick = t19;
 
-// Task 20 --------
+
+// Task 20
 // Создана функция t20. Функция запускается при изменении состояния .ch-20. Если .ch-20 является выбранным, то в .out-20 выводите value данного input[type="checkbox"]. Если не выбран - выводите нуль.
 
 function t20() {
 
+    let ch20 = document.querySelector('.ch-20');
+    let out20 = document.querySelector('.out-20');
+
+    (ch20.checked) ? out20.textContent = ch20.value : out20.textContent = 0;
+
+    console.log(ch20.checked, ch20.value);
 }
 
 document.querySelector('.ch-20').oninput = t20;
-
-// **************************************
-// Task 11 --------
-
-// Task 19 --------
-// Task 20 --------
-// Task 4 -------- Изучил
