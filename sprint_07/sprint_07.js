@@ -6,7 +6,7 @@ const out1 = document.querySelector('.out-1'); // Количество мешк�
 const out1 = document.querySelector('.out-1'); // Цена
 const goodsImg = document.querySelector('.goods-img'); // 
 
-// Замена изображения при выборе товара в select
+// Замена изображения при выборе товара в select -- 15-59
 
 
 
