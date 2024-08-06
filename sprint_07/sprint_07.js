@@ -1,3 +1,14 @@
+const goods = document.querySelector('.goods'); // select
+const square = document.querySelector('.square'); // площадь
+const layer = document.querySelector('.layer'); // толщина слоя
+const out1 = document.querySelector('.out-1'); // Расход
+const out1 = document.querySelector('.out-1'); // Количество мешков
+const out1 = document.querySelector('.out-1'); // Цена
+const goodsImg = document.querySelector('.goods-img'); // 
+
+// Замена изображения при выборе товара в select
+
+
 
 
 
@@ -70,7 +81,6 @@
 // }
 // аналогично и для толщины слоя.
 // ============================================================
-// Task 01-2
 // Task 02
 // Task 03
 // Task 04
