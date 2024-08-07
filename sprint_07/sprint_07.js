@@ -4,7 +4,7 @@ const layer = document.querySelector('.layer'); // толщина слоя
 const out1 = document.querySelector('.out-1'); // Расход
 const out2 = document.querySelector('.out-2'); // Количество мешков
 const out3 = document.querySelector('.out-3'); // Цена
-const goodsImg = document.querySelector('.goods-img'); // 
+const goodsImg = document.querySelector('.goods-img'); // картинка (иображение) материала
 
 // функция - расход
 function t01() {
@@ -13,6 +13,8 @@ function t01() {
     let price = 0; // цена 1 мешка
 
     const value = goods.value;
+
+    if (square.value < 0) square.value = 1;
 
     switch (value) {
         case 'budmaster':
@@ -25,28 +27,34 @@ function t01() {
             k = 2;
             price = 136;
             break;
-        // case 'polimin':
-        //     console.log('polimin');
-        //     k = ;
-        //     price = ;
-        //     break;
-        // case 'siltek':
-        //     console.log('siltek');
-        //     k = ;
-        //     price = ;
-        //     break;
+        case 'polimin':
+            console.log('polimin');
+            k = 1;
+            price = 110;
+            break;
+        case 'siltek':
+            console.log('siltek');
+            k = 2;
+            price = 151;
+            break;
     }
 
-    expenditure = square.value * layer.value * k;
+    expenditure = square.value * layer.value * k; // вычисляем расход
     out1.textContent = expenditure + ' кг.'
-// STOP 25-00
+    out2.textContent = Math.ceil(expenditure / 25) + ' мешка / мешков' // Math.ceil - Метод Math.ceil производит округление числа до целых всегда в большую сторону
+    out3.textContent = price * Math.ceil(expenditure / 25) + ' uah' // вычисляем итоговую стоимость
+
 }
 
-// Замена изображения при выборе товара в select -- 15-59
+// Замена изображения при выборе товара в select
 function t02() {
     const value = goods.value;
     // console.log(value);
     goodsImg.src = './images/' + value + '.jpg';
+    out1.textContent = ''; // очищаем поля вывода от предыдущих значений
+    out2.textContent = '';
+    out3.textContent = '';
+
 }
 
 goods.onchange = t02;
