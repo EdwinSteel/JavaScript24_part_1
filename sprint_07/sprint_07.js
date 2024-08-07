@@ -2,13 +2,55 @@ const goods = document.querySelector('.goods'); // select
 const square = document.querySelector('.square'); // площадь
 const layer = document.querySelector('.layer'); // толщина слоя
 const out1 = document.querySelector('.out-1'); // Расход
-const out1 = document.querySelector('.out-1'); // Количество мешков
-const out1 = document.querySelector('.out-1'); // Цена
+const out2 = document.querySelector('.out-2'); // Количество мешков
+const out3 = document.querySelector('.out-3'); // Цена
 const goodsImg = document.querySelector('.goods-img'); // 
 
+// функция - расход
+function t01() {
+    let expenditure = 0; // расход
+    let k = 0; // коэффициент, зависит от материала
+    let price = 0; // цена 1 мешка
+
+    const value = goods.value;
+
+    switch (value) {
+        case 'budmaster':
+            console.log('budmaster');
+            k = 1.9;
+            price = 157;
+            break;
+        case 'ceresit':
+            console.log('ceresit');
+            k = 2;
+            price = 136;
+            break;
+        // case 'polimin':
+        //     console.log('polimin');
+        //     k = ;
+        //     price = ;
+        //     break;
+        // case 'siltek':
+        //     console.log('siltek');
+        //     k = ;
+        //     price = ;
+        //     break;
+    }
+
+    expenditure = square.value * layer.value * k;
+    out1.textContent = expenditure + ' кг.'
+// STOP 25-00
+}
+
 // Замена изображения при выборе товара в select -- 15-59
+function t02() {
+    const value = goods.value;
+    // console.log(value);
+    goodsImg.src = './images/' + value + '.jpg';
+}
 
-
+goods.onchange = t02;
+document.querySelector('.b-1').onclick = t01;
 
 
 
@@ -25,20 +67,6 @@ const goodsImg = document.querySelector('.goods-img'); //
 
 
 // *******************************
-// Task 01
-// Создайте верстку в HTML, указанную в видеоуроке.
-
-// Task 01
-// Создайте в JavaScript константы goods, square, layer, out1, out2, out3, goodsImg как показано в уроке.
-
-// Task 02
-// Напишите функцию t02, которая получает из select value текущего товара и заменяет изображение на изображение выбранного товара.
-
-// Task 03
-// Добавьте в код JS, запуск функции t02 по событию change элемента goods.
-
-// Task 04
-// Создайте функцию t01. Создайте в ней переменные expenditure, k, price. Все три переменные равны нулю.
 
 // Task 05
 // Напишите switch case для первых двух товаров, как указано в видео.
@@ -81,9 +109,6 @@ const goodsImg = document.querySelector('.goods-img'); //
 // }
 // аналогично и для толщины слоя.
 // ============================================================
-// Task 02
-// Task 03
-// Task 04
 // Task 05
 // Task 06
 // Task 07
