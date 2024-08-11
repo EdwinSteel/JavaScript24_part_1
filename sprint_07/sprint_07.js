@@ -14,6 +14,11 @@ function t01() {
 
     const value = goods.value;
 
+    // проверки на пустую строку вводимую в square и layer
+    if (square.value.trim() === '') square.value = 1;
+    if (layer.value.trim() === '') layer.value = 1;
+
+    // Касательно площади и толщины слоя, обсуждаем с заказчиком
     if (square.value < 1) square.value = 1;
     if (square.value > 10000) square.value = 1; // обсуждаем с заказчиком
     if (layer.value < 1) layer.value = 1;
@@ -60,17 +65,3 @@ function t02() {
 
 goods.onchange = t02;
 document.querySelector('.b-1').onclick = t01;
-
-
-// Task 15
-// Добавьте проверки на пустую строку вводимую в square и layer. Если значение - пустая строка, то ставьте значение переменных равное 1 и присвойте в input для площади и толщины слоя значение 1.
-
-// Проверка на пустую строку проводится так:
-
-// if (square.value.trim() === '') {
-//   square.value = 1;
-// }
-// аналогично и для толщины слоя.
-
-// ============================================================
-// Task 15
