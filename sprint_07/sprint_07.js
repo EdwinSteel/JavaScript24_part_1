@@ -1,9 +1,9 @@
 const goods = document.querySelector('.goods'); // select
 const square = document.querySelector('.square'); // площадь
 const layer = document.querySelector('.layer'); // толщина слоя
-const out1 = document.querySelector('.out-1'); // Расход
-const out2 = document.querySelector('.out-2'); // Количество мешков
-const out3 = document.querySelector('.out-3'); // Цена
+const out1 = document.querySelector('.out-1'); // расход
+const out2 = document.querySelector('.out-2'); // количество мешков
+const out3 = document.querySelector('.out-3'); // цена
 const goodsImg = document.querySelector('.goods-img'); // картинка (иображение) материала
 
 // функция - расход
@@ -43,10 +43,9 @@ function t01() {
     }
 
     expenditure = square.value * layer.value * k; // вычисляем расход
-    out1.textContent = expenditure + ' кг.'
-    out2.textContent = Math.ceil(expenditure / 25) + ' мешка / мешков' // Math.ceil - Метод Math.ceil производит округление числа до целых всегда в большую сторону
-    out3.textContent = price * Math.ceil(expenditure / 25) + ' uah' // вычисляем итоговую стоимость
-
+    out1.textContent = expenditure + ' кг.';
+    out2.textContent = Math.ceil(expenditure / 25) + ' мешка / мешков'; // Math.ceil - Метод Math.ceil производит округление числа до целых всегда в большую сторону
+    out3.textContent = price * Math.ceil(expenditure / 25) + ' uah'; // вычисляем итоговую стоимость
 }
 
 // Замена изображения при выборе товара в select
@@ -57,7 +56,6 @@ function t02() {
     out1.textContent = ''; // очищаем поля вывода от предыдущих значений
     out2.textContent = '';
     out3.textContent = '';
-
 }
 
 goods.onchange = t02;
