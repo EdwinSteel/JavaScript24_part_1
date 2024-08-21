@@ -9,9 +9,9 @@ function t01 () {
     for (let i = 1; i <= 10; i = i + 1) {
         out1box += '_*';
     }
-
-out1.textContent = out1box;
-
+    
+    out1.textContent = out1box;
+    out1box = '';
 }
 
 document.querySelector('.b-1').onclick = t01;
