@@ -10,10 +10,8 @@ function t01 () {
     for (let i = 1; i <= 10; i = i + 1) {
         out1box += '_*';
     }
-    // Где-то ошибка
-    // console.log(out1.textContent);
-    // out1.textContent = 'sss';
-    out1.textContent = out1box;
+
+out1.textContent = out1box;
 
 }
 
@@ -239,7 +237,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************************************************
-// Task 1
 // Task 2
 // Task 3
 // Task 4
