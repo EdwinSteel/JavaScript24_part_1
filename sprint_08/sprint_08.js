@@ -236,7 +236,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************************************************
-// Task 1
 // Task 2
 // Task 3
 // Task 4
