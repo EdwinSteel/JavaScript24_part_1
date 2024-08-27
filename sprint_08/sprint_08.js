@@ -6,6 +6,7 @@ let out1 = document.querySelector('.out-1');
 function t01 () {
     
     let out1box = '';
+<<<<<<< HEAD
     for (let i = 1; i <= 10; i = i + 1) {
         out1box += '_*';
     }
@@ -13,6 +14,15 @@ function t01 () {
     out1.textContent = out1box;
     console.log(123);
     // out1box = '';
+=======
+    
+    for (let i = 1; i <= 10; i = i + 1) {
+        out1box += '_*';
+    }
+
+out1.textContent = out1box;
+
+>>>>>>> 2902b2874259d1b7d07b59c34f621c9399cbb857
 }
 
 document.querySelector('.b-1').onclick = t01;
