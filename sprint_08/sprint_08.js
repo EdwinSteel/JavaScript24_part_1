@@ -86,6 +86,15 @@ document.querySelector('.b-4').onclick = t04;
 // Строка выводится в .out-5.
 
 function t05 () {
+    let inp5 = +document.querySelector('.i-5').value;
+    let out5 = document.querySelector('.out-5');
+    let out5box = '';
+
+    for (i = 0; i <= inp5; i = i + 2) {
+        out5box += i + '_';
+    }
+
+    out5.textContent = out5box;
 }
 
 document.querySelector('.b-5').onclick = t05;
@@ -267,7 +276,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
-// Task 5
 // Task 6
 // Task 7
 // Task 8
