@@ -45,13 +45,15 @@ document.querySelector('.b-2').onclick = t02;
 // Введено число 5, получаем строку 0_1_2_3_4_5_
 
 function t03 () {
-    let inp3 = document.querySelector('.i-3').value;
+    let inp3 = +document.querySelector('.i-3').value;    
     let out3 = document.querySelector('.out-3');
     let out3box = '';
 
+    for (i = 0; i <= inp3; i = i + 1) {
+        out3box += i + '_';
+    }
 
-
-
+    out3.textContent = out3box;
 }
 
 document.querySelector('.b-3').onclick = t03;
