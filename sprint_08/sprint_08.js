@@ -6,10 +6,13 @@ let out1 = document.querySelector('.out-1');
 function t01 () {
     
     let out1box = '';
+
     for (let i = 1; i <= 10; i = i + 1) {
         out1box += '_*';
     }
     
+    // console.log('test');
+
     out1.textContent = out1box;   
 }
 
@@ -18,8 +21,21 @@ document.querySelector('.b-1').onclick = t01;
 
 // Task 2
 // Создана функция t02. Функция запускается при нажатии .b-2. Напишите код внутри функции, который создает с помощью цикла строку, где шаблон _* повторяется число раз указанное в .i-2. Функция выводит в .out-2 созданную строку.
-function t02 () {
 
+function t02 () {
+    let inp2 = +document.querySelector('.i-2').value;
+    // console.log(inp2, typeof inp2);
+        
+    let out2 = document.querySelector('.out-2');
+    // console.log(out2, typeof out2);
+
+    let out2box = '';
+
+    for (i = 1; i <= inp2; i++) {
+        out2box += '_*';
+    }
+
+    out2.textContent = out2box;
 }
 
 document.querySelector('.b-2').onclick = t02;
@@ -234,8 +250,7 @@ function t20() {
 
 document.querySelector('.b-20').onclick= t20;
 
-// *****************************************************************
-// Task 2
+// ************************************************************
 // Task 3
 // Task 4
 // Task 5
