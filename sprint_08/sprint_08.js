@@ -10,9 +10,7 @@ function t01 () {
         out1box += '_*';
     }
     
-    out1.textContent = out1box;
-    console.log(123);
-    // out1box = '';
+    out1.textContent = out1box;   
 }
 
 document.querySelector('.b-1').onclick = t01;
