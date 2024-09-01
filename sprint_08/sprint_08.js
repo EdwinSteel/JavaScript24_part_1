@@ -64,7 +64,15 @@ document.querySelector('.b-3').onclick = t03;
 // Введено число 5, получаем строку 5_4_3_2_1_0_
 
 function t04 () {
-   
+    let inp4 = +document.querySelector('.i-4').value;
+    let out4 = document.querySelector('.out-4');
+    let out4box = '';
+
+    for (i = inp4; i >= 0; i = i - 1) {
+        out4box += i + '_';
+    }
+
+    out4.textContent = out4box;   
 }
 
 document.querySelector('.b-4').onclick = t04;
@@ -259,8 +267,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
-// Task 3
-// Task 4
 // Task 5
 // Task 6
 // Task 7
