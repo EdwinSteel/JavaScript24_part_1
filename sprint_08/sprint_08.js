@@ -100,7 +100,7 @@ function t05 () {
 document.querySelector('.b-5').onclick = t05;
 
 
-// Task 6
+// Task 6 -- ERROR
 // Создана функция t06. Функция запускается при нажатии .b-6. Напишите код внутри функции, который читает ЧИСЛО из input.i-6 и создает строку от 0 с шагом 3 пока не будет превышено введенное число.
 // Например введено число 7 получим строку 0_3_6_9_
 // Например введено число 12 получим 0_3_6_9_12_
@@ -109,15 +109,19 @@ document.querySelector('.b-5').onclick = t05;
 
 function t06 () {
     let inp6 = +document.querySelector('.i-6').value;
+    // console.log(inp6, typeof inp6);
     let out6 = document.querySelector('.out-6');
+    // console.log(out6, typeof out6);
     let out6box = '';
+    // console.log(out6box, typeof out6box);
     
-    for (i = 0; i >= inp6; i = i + 3) {
+    for (i = 0; i <= inp6; i = i + 3) {    
         out6box += i + '_';
         console.log(out6box);
     }
 
     out6.textContent = out6box;
+    // out6.textContent = inp6;
 }
 
 document.querySelector('.b-6').onclick = t06;
@@ -285,7 +289,7 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
-// Task 6
+// Task 6 -- ERROR
 // Task 7
 // Task 8
 // Task 9
