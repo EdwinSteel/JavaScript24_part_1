@@ -108,7 +108,16 @@ document.querySelector('.b-5').onclick = t05;
 // Функция выводит строку в .out-6.
 
 function t06 () {
+    let inp6 = +document.querySelector('.i-6').value;
+    let out6 = document.querySelector('.out-6');
+    let out6box = '';
     
+    for (i = 0; i >= inp6; i = i + 3) {
+        out6box += i + '_';
+        console.log(out6box);
+    }
+
+    out6.textContent = out6box;
 }
 
 document.querySelector('.b-6').onclick = t06;
