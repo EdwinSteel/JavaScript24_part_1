@@ -109,11 +109,11 @@ document.querySelector('.b-5').onclick = t05;
 
 function t06 () {
     let inp6 = +document.querySelector('.i-6').value;
-    // console.log(inp6, typeof inp6);
+    console.log(inp6, typeof inp6);
     let out6 = document.querySelector('.out-6');
-    // console.log(out6, typeof out6);
+    console.log(out6, typeof out6);
     let out6box = '';
-    // console.log(out6box, typeof out6box);
+    console.log(out6box, typeof out6box);
     
     for (i = 0; i <= inp6; i = i + 3) {    
         out6box += i + '_';
