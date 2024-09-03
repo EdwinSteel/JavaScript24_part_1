@@ -31,7 +31,7 @@ function t02 () {
 
     let out2box = '';
 
-    for (i = 1; i <= inp2; i++) {
+    for (let i = 1; i <= inp2; i++) {
         out2box += '_*';
     }
 
@@ -49,7 +49,7 @@ function t03 () {
     let out3 = document.querySelector('.out-3');
     let out3box = '';
 
-    for (i = 0; i <= inp3; i = i + 1) {
+    for (let i = 0; i <= inp3; i = i + 1) {
         out3box += i + '_';
     }
 
@@ -68,7 +68,7 @@ function t04 () {
     let out4 = document.querySelector('.out-4');
     let out4box = '';
 
-    for (i = inp4; i >= 0; i = i - 1) {
+    for (let i = inp4; i >= 0; i = i - 1) {
         out4box += i + '_';
     }
 
@@ -90,7 +90,7 @@ function t05 () {
     let out5 = document.querySelector('.out-5');
     let out5box = '';
 
-    for (i = 0; i <= inp5; i = i + 2) {
+    for (let i = 0; i <= inp5; i = i + 2) {
         out5box += i + '_';
     }
 
@@ -109,15 +109,15 @@ document.querySelector('.b-5').onclick = t05;
 
 function t06 () {
     let inp6 = +document.querySelector('.i-6').value;
-    console.log(inp6, typeof inp6);
+    // console.log(inp6, typeof inp6);
     let out6 = document.querySelector('.out-6');
-    console.log(out6, typeof out6);
+    // console.log(out6, typeof out6);
     let out6box = '';
-    console.log(out6box, typeof out6box);
+    // console.log(out6box, typeof out6box);
     
-    for (i = 0; i <= inp6; i = i + 3) {    
-        out6box += i + '_';
-        console.log(out6box);
+    for (let i6 = 0; i6 <= inp6; i6 = i6 + 3) {    
+        out6box += i6 + '_';
+        // console.log(out6box);
     }
 
     out6.textContent = out6box;
