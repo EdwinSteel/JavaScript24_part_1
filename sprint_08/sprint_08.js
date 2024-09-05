@@ -133,11 +133,17 @@ document.querySelector('.b-6').onclick = t06;
 
 function t07 () {
     let out7 = document.querySelector('.out-7');
-    let out7box = '';
+    let out7box = '';    
 
     for (i=1; i <= 30; i = i + 1) {
+        // if (i % 4) {
+        //     out7box += i + '_';
+        // } else {
+        //     continue;
+        // }
 
-        out7box += i + '_';
+        // Нужно проверить строку ниже. Пытался написать используя тернарный оператор
+        i % 4 ? continue : out7box += i + '_';
     }
 
     out7.textContent = out7box;
