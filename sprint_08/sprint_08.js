@@ -115,8 +115,8 @@ function t06 () {
     let out6box = '';
     // console.log(out6box, typeof out6box);
     
-    for (let i6 = 0; i6 <= inp6; i6 = i6 + 3) {    
-        out6box += i6 + '_';
+    for (let i = 0; i <= inp6; i = i + 3) {    
+        out6box += i + '_';
         // console.log(out6box);
     }
 
@@ -132,7 +132,15 @@ document.querySelector('.b-6').onclick = t06;
 // Ожидается строка вида 1_2_3_5_6_7_9_10_11_13_14_15_17_18_19_21_22_23_25_26_27_29_30_
 
 function t07 () {
-    
+    let out7 = document.querySelector('.out-7');
+    let out7box = '';
+
+    for (i=1; i <= 30; i = i + 1) {
+
+        out7box += i + '_';
+    }
+
+    out7.textContent = out7box;
 }
 
 document.querySelector('.b-7').onclick = t07;
