@@ -135,7 +135,7 @@ function t07 () {
     let out7 = document.querySelector('.out-7');
     let out7box = '';    
 
-    for (i=1; i <= 30; i = i + 1) {
+    for (let i=1; i <= 30; i = i + 1) {
         if (i % 4) {
             out7box += i + '_';
         } else {
@@ -155,14 +155,15 @@ document.querySelector('.b-7').onclick = t07;
 
 function t08 () {
     let out8 = document.querySelector('.out-8');
-    let out8box = '';
+    let out8box = 0;
     
-    for (i = 0; i <= 4; i = i + 1) {
-        out8box = i + i;
+    for (let i = 0; i <= 10; i = i + 1) {
+        out8box = out8box + i;
     }
+    
+    // console.log(out8box, typeof out8box);
 
     out8.textContent = out8box;
-    console.log(out8box);
 }
 
 document.querySelector('.b-8').onclick = t08;
@@ -309,7 +310,6 @@ document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
 // Task 6 -- ERROR
-// Task 8
 // Task 9
 // Task 10
 // Task 11
