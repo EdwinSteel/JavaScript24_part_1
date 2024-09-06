@@ -136,14 +136,11 @@ function t07 () {
     let out7box = '';    
 
     for (i=1; i <= 30; i = i + 1) {
-        // if (i % 4) {
-        //     out7box += i + '_';
-        // } else {
-        //     continue;
-        // }
-
-        // Нужно проверить строку ниже. Пытался написать используя тернарный оператор
-        i % 4 ? continue : out7box += i + '_';
+        if (i % 4) {
+            out7box += i + '_';
+        } else {
+            continue;
+        }        
     }
 
     out7.textContent = out7box;
@@ -157,7 +154,15 @@ document.querySelector('.b-7').onclick = t07;
 // Т.е. нужно найти сумму 0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
 
 function t08 () {
+    let out8 = document.querySelector('.out-8');
+    let out8box = '';
     
+    for (i = 0; i <= 4; i = i + 1) {
+        out8box = i + i;
+    }
+
+    out8.textContent = out8box;
+    console.log(out8box);
 }
 
 document.querySelector('.b-8').onclick = t08;
@@ -304,7 +309,6 @@ document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
 // Task 6 -- ERROR
-// Task 7
 // Task 8
 // Task 9
 // Task 10
