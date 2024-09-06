@@ -172,7 +172,16 @@ document.querySelector('.b-8').onclick = t08;
 // Создана функция t09. Функция запускается при нажатии .b-9. Напишите код внутри функции, который считает сумму чисел от 0 до введенного в input.i-9 числа включительно. Выводит сумму в .out-9.
 
 function t09 () {
-    
+    let i9 = +document.querySelector('.i-9').value;
+    // console.log(i9, typeof i9);
+    let out9 = document.querySelector('.out-9');
+    let out9box = 0;
+
+    for (let i = 0; i <= i9; i = i + 1) {
+        out9box = out9box + i;
+    }
+
+    out9.textContent = out9box;
 }
 
 document.querySelector('.b-9').onclick = t09;
