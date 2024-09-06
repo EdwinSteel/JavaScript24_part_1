@@ -319,7 +319,7 @@ document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
 // Task 6 -- ERROR
-// Task 9
+
 // Task 10
 // Task 11
 // Task 12
