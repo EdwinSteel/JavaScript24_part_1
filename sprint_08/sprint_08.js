@@ -114,9 +114,12 @@ function t06 () {
     // console.log(out6, typeof out6);
     let out6box = '';
     // console.log(out6box, typeof out6box);
-    
-    for (let i = 0; i <= inp6; i = i + 3) {    
+   
+    for (let i = 0; ; i = i + 3) {
         out6box += i + '_';
+        if (i >= inp6) {
+            break;
+        }
         // console.log(out6box);
     }
 
