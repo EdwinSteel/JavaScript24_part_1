@@ -164,7 +164,7 @@ function t08 () {
         out8box = out8box + i;
     }
     
-    // console.log(out8box, typeof out8box);
+    console.log(out8box, typeof out8box);
 
     out8.textContent = out8box;
 }
