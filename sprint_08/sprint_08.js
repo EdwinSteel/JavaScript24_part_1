@@ -200,10 +200,10 @@ function t10 () {
     let out10box = 0;
     
     for (let i = 0; i <= i10; i = i + 1) {
-        out10box = out10box + i;
         if (out10box > 50) {
             break;
         }
+        out10box = out10box + i;
     }
     
     out10.textContent = out10box;
