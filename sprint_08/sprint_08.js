@@ -107,7 +107,7 @@ document.querySelector('.b-5').onclick = t05;
 // Например введено число 13 получим 0_3_6_9_12_15
 // Функция выводит строку в .out-6.
 
-function t06 () {
+function  t06 () {
     let inp6 = +document.querySelector('.i-6').value;
     // console.log(inp6, typeof inp6);
     let out6 = document.querySelector('.out-6');
