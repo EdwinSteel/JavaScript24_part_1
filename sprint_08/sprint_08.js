@@ -291,7 +291,11 @@ document.querySelector('.b-14').onclick = t14;
 // Создана функция t15. Функция запускается при нажатии .b-15. Напишите код внутри функции, который получает все div.d-15 в NodeList и четным элементам NodeList присваивает свойство background равное 'paleturquoise'.
 
 function t15() {
-
+    let d15 = document.querySelectorAll('.d-15');
+    // console.log(d15, typeof d15);
+    for (let i = 0; i < d15.length; i = i + 1) {
+        if (i % 2 === 0) d15[i].style.background = 'paleturquoise';
+    }
 }
 
 document.querySelector('.b-15').onclick = t15;
