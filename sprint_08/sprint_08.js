@@ -276,9 +276,12 @@ document.querySelector('.b-13').onclick = t13;
 // Task 14
 // Создана функция t14. Функция запускается при нажатии .b-14. Напишите код внутри функции, который получает все параграфы .p-14 в NodeList и каждому прописывает фон backgroundColor равный 'lightsalmon'.
 
-
-function t14 () {
-   
+function t14() {
+    let p14 = document.querySelectorAll('.p-14');
+    // console.log(p14, typeof p14);
+    for (let i = 0; i < p14.length; i = i + 1) {
+        p14[i].style.backgroundColor = 'lightsalmon';
+    }   
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -356,9 +359,8 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
-// Task 12
 // Task 13
-// Task 14
+
 // Тask 15
 // Task 16
 // Task 17
