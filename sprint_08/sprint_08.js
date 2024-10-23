@@ -190,7 +190,7 @@ function t09 () {
 document.querySelector('.b-9').onclick = t09;
 
 
-// Task 10 -- ERROR !!!
+// Task 10
 // Создана функция t10. Функция запускается при нажатии .b-10. Напишите код внутри функции, который считает сумму чисел от 0 до введенного в input.i-10 числа включительно. Выводит сумму в .out-10. Если сумма становится больше 50, то цикл останавливается и выводится текущая сумма.
 
 function t10 () {
@@ -200,10 +200,11 @@ function t10 () {
     let out10box = 0;
     
     for (let i = 0; i <= i10; i = i + 1) {
+        out10box = out10box + i;
+
         if (out10box > 50) {
             break;
         }
-        out10box = out10box + i;
     }
     
     out10.textContent = out10box;
@@ -332,8 +333,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
-// Task 10 -- ERROR
-
 // Task 11
 // Task 12
 // Task 13
