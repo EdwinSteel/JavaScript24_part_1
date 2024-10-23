@@ -218,8 +218,20 @@ document.querySelector('.b-10').onclick = t10;
 // Например введено 4 и 7 получаем строку 4_5_6_7_
 // Например введено 12 и 9 и получаем строку 9_10_11_12_
 
-function t11 () {
-    
+function t11() {
+    let i111 = +document.querySelector('.i-111').value;
+    let i112 = +document.querySelector('.i-112').value;
+    // console.log(i111, typeof i111, i112, typeof i112);
+    let out11 = document.querySelector('.out-11');
+    let min = Math.min(i111, i112);
+    let max = Math.max(i111, i112);
+    let out11box = '';
+
+    for (let i = min; i <= max; i = i + 1) {
+        out11box += i + '_';
+    }
+
+    out11.textContent = out11box;
 }
 
 document.querySelector('.b-11').onclick = t11;
