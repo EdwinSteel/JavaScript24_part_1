@@ -308,7 +308,7 @@ document.querySelector('.b-15').onclick = t15;
 const spans16 = document.getElementsByClassName('sp-16');
 
 function t16 () {
-   
+       
 }
 
 document.querySelector('.b-16').onclick = t16;
