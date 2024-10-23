@@ -308,7 +308,14 @@ document.querySelector('.b-15').onclick = t15;
 const spans16 = document.getElementsByClassName('sp-16');
 
 function t16 () {
-       
+    console.log(spans16[2].textContent, typeof spans16[2]);
+    let out16 = document.querySelector('.out-16');
+    let out16box = 0;
+
+    for(let i = 0; i < spans16.length; i = i +1) {
+
+
+    }
 }
 
 document.querySelector('.b-16').onclick = t16;
