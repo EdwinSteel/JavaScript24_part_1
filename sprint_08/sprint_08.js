@@ -40,6 +40,7 @@ function t02 () {
 
 document.querySelector('.b-2').onclick = t02;
 
+
 // Task 3
 // Создана функция t03. Функция запускается при нажатии .b-3. Напишите код внутри функции, который получает число из input и с помощью цикла создает строку от 0 до указанного числа с разделителем - подчеркивание. Выводит созданную строку в .out-3.
 // Введено число 5, получаем строку 0_1_2_3_4_5_
@@ -171,6 +172,7 @@ function t08 () {
 
 document.querySelector('.b-8').onclick = t08;
 
+
 // Task 9
 // Создана функция t09. Функция запускается при нажатии .b-9. Напишите код внутри функции, который считает сумму чисел от 0 до введенного в input.i-9 числа включительно. Выводит сумму в .out-9.
 
@@ -236,12 +238,21 @@ function t11() {
 
 document.querySelector('.b-11').onclick = t11;
 
+
 // Task 12
 // Создана функция t12. Функция запускается при нажатии .b-12. Напишите код внутри функции, который считает произведение чисел от 1 до введенного в input.i-12. Результат выводится в .out-12. 
 
 function t12 () {
-   
-    
+    let i12 = +document.querySelector('.i-12').value;
+    // console.log(i12, typeof i12);
+    let out12 = document.querySelector('.out-12');
+    let out12box = 1;
+
+    for (let i = 1; i <= i12; i = i + 1) {
+        out12box = out12box * i;
+    }
+
+    out12.textContent = out12box;    
 }
 
 document.querySelector('.b-12').onclick = t12;
