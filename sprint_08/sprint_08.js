@@ -341,8 +341,11 @@ document.querySelector('.b-17').onclick = t17;
 // Task 18
 // Напишите в функции t18 код, который выводит в .out-18 значение value выбранного radiobutton r-18.
 
+const r18 = document.getElementsByName('r-18');
+
 function t18 () {
    
+    
 }
 
 document.querySelector('.b-18').onclick = t18;
