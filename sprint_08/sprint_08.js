@@ -344,11 +344,16 @@ document.querySelector('.b-17').onclick = t17;
 const r18 = document.getElementsByName('r-18');
 
 function t18 () {
-   
-    
+   for(let i = 0; i < r18.length; i = i + 1) {
+    if (r18[i].checked) {
+        document.querySelector('.out-18').textContent = r18[i].value;
+        break;
+    }
+   }
 }
 
 document.querySelector('.b-18').onclick = t18;
+
 
 // Task 19
 // CSS позволяет написать селектор, селектор выбираем checked radiobutton, т.е. нет нужды получать несколько элементов, и перебирать их циклом. Изучите как работает функция. Не забывайте, что html, css очень сильно влияют на JavaScript, и при правильной организации HTML, CSS можно очень сильно упростить код JS.
@@ -374,6 +379,6 @@ document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
 // Task 17 -- Изучил !!!
-// Task 18
+
 // Task 19
 // Task 20
