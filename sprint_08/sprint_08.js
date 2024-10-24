@@ -276,9 +276,12 @@ document.querySelector('.b-13').onclick = t13;
 // Task 14
 // Создана функция t14. Функция запускается при нажатии .b-14. Напишите код внутри функции, который получает все параграфы .p-14 в NodeList и каждому прописывает фон backgroundColor равный 'lightsalmon'.
 
-
-function t14 () {
-   
+function t14() {
+    let p14 = document.querySelectorAll('.p-14');
+    // console.log(p14, typeof p14);
+    for (let i = 0; i < p14.length; i = i + 1) {
+        p14[i].style.backgroundColor = 'lightsalmon';
+    }   
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -288,7 +291,11 @@ document.querySelector('.b-14').onclick = t14;
 // Создана функция t15. Функция запускается при нажатии .b-15. Напишите код внутри функции, который получает все div.d-15 в NodeList и четным элементам NodeList присваивает свойство background равное 'paleturquoise'.
 
 function t15() {
-
+    let d15 = document.querySelectorAll('.d-15');
+    // console.log(d15, typeof d15);
+    for (let i = 0; i < d15.length; i = i + 1) {
+        if (i % 2 === 0) d15[i].style.background = 'paleturquoise';
+    }
 }
 
 document.querySelector('.b-15').onclick = t15;
@@ -301,7 +308,14 @@ document.querySelector('.b-15').onclick = t15;
 const spans16 = document.getElementsByClassName('sp-16');
 
 function t16 () {
-   
+    console.log(spans16[2].textContent, typeof spans16[2]);
+    let out16 = document.querySelector('.out-16');
+    let out16box = 0;
+
+    for(let i = 0; i < spans16.length; i = i +1) {
+
+
+    }
 }
 
 document.querySelector('.b-16').onclick = t16;
@@ -356,9 +370,14 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
+<<<<<<< HEAD
 // Task 13 -- Изучить !!!
 // Task 14
 // Тask 15
+=======
+// Task 13
+
+>>>>>>> b9eb796e87c5d0edbcc7cad62ae0343a0675dc98
 // Task 16
 // Task 17
 // Task 18
