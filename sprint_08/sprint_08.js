@@ -320,6 +320,7 @@ function t16 () {
 
 document.querySelector('.b-16').onclick = t16;
 
+
 // Task 17
 // Теперь применим знания для получения значения из radiobutton. Изучите код ниже.
 
@@ -331,8 +332,7 @@ function t17 () {
             document.querySelector('.out-17').textContent = radio17[i].value;
             break;
         }
-    }
-   
+    }   
 }
 
 document.querySelector('.b-17').onclick = t17;
@@ -370,11 +370,7 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
-// Task 13 -- Изучить !!!
-// Task 14
-// Тask 15
-// Task 16
-// Task 17
+// Task 17 -- Изучил !!!
 // Task 18
 // Task 19
 // Task 20
