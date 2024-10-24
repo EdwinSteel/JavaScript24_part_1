@@ -356,8 +356,7 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // ************************************************************
-// Task 12
-// Task 13
+// Task 13 -- Изучить !!!
 // Task 14
 // Тask 15
 // Task 16
