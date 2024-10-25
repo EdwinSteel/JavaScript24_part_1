@@ -365,20 +365,30 @@ function t19() {
 
 document.querySelector('.b-19').onclick = t19;
 
+
 // Task 20
 // Создана функция t20. Напишите код, который получает value выбранного radiobutton r-20 и если:
 // value равен 100, то в .out-20 вывести строку 'admin'
 // value равен 200, то в .out-20 вывести строку 'moderator'
 // value равен 300, то в .out-20 вывести строку 'user'
 
-function t20() {
 
+function t20() {
+    const r20 = +document.querySelector('[name="r-20"]:checked').value;
+    console.log(r20, typeof r20);
+    let out20 = document.querySelector('.out-20');
+
+    switch (r20) {
+        case 100:
+            out20.textContent = 'admin';
+            break;
+        case 200:
+            out20.textContent = 'moderator';
+            break;
+        case 300:
+            out20.textContent = 'user';
+            break;
+    }
 }
 
 document.querySelector('.b-20').onclick= t20;
-
-// ************************************************************
-// Task 17 -- Изучил !!!
-// Task 19 -- Изучил !!!
-
-// Task 20
