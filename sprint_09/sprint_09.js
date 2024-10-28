@@ -6,10 +6,10 @@ let out1 = document.querySelector('.out-1');
 
 function t01 () {
     let outbox1 = '';
-    let i = 0;
-    while (i < 2) {
-        i = i + 1;
+    let i = 1;
+    while (i < 3) {
         outbox1 += '_*';
+        i = i + 1;
     }
     
     out1.textContent = outbox1;
@@ -221,7 +221,7 @@ function t20() {
 
 document.querySelector('.b-20').onclick= t20;
 
-*****************************
+// *****************************
 // Task 1
 // Task 2
 // Task 3
