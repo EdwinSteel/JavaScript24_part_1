@@ -17,10 +17,21 @@ function t01 () {
 document.querySelector('.b-1').onclick = t01;
 
 
-// Task 2
+// Task 2 -- ПРОВЕРИТЬ ДЛЯ СЕБЯ !!!
 // Создана функция t02. Функция запускается при нажатии .b-2. Напишите код внутри функции, который создает c помощью цикла while строку, где шаблон '_*' повторяется число раз указанное в .input-2. Функция выводит в .out-2 созданную строку.
 function t02 () {
+    let i2 = +document.querySelector('.i-2').value;
+    // console.log(i2, typeof i2);
+    let outbox2 = '';
+    let i = 0;
 
+    while (i < i2) {
+        i = i + 1;
+        console.log (i2, typeof i2);
+        outbox2 += '_*';
+    }
+
+    document.querySelector('.out-2').textContent = outbox2;
 }
 
 document.querySelector('.b-2').onclick = t02;
