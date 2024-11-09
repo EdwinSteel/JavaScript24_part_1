@@ -45,6 +45,7 @@ function t03 () {
     //  console.log(i3, typeof i3);
     let out3 = document.querySelector('.out-3');
     let outbox3 = ';ljkhkljhlkjh';
+    console.log('outbox3');
     let i = 0;
     
     while (i < i3) {
