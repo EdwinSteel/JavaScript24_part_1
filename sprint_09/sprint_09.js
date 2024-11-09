@@ -86,6 +86,17 @@ document.querySelector('.b-4').onclick = t04;
 // Строка выводится в .out-5. Для решения используйте цикл while.
 
 function t05 () {
+    let i5 = +document.querySelector('.i-5').value;
+    // console.log(i5, typeof i5);
+    outbox5 = '';
+    let i = 0;
+
+    while (i <= i5) {
+        outbox5 += i + '_';
+        i = i + 2;
+    }
+
+    document.querySelector('.out-5').textContent = outbox5;
 }
 
 document.querySelector('.b-5').onclick = t05;
