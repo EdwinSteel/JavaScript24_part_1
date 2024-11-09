@@ -278,6 +278,8 @@ document.querySelector('.b-20').onclick= t20;
 // Task 18
 // Task 19
 // Task 20
+// Task 1 - ok
+// Task 2 - ok
 // Task 3 - ok
 // Task 4 - ok
 // Task 5 - ok
