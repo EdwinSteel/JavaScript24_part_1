@@ -42,19 +42,16 @@ document.querySelector('.b-2').onclick = t02;
 
 function t03 () {
     let i3 = +document.querySelector('.i-3').value;
-    console.log(i3, typeof i3);
-    let out3 = document.querySelector('.out-3');
-    let outbox3 = '';
-    console.log(outbox3);
+    // console.log(i3, typeof i3);    
+    let outbox3 = '';    
     let i = 0;
     
     while (i <= i3) {
         outbox3 += i + '_';
         i = i + 1;
-        console.log(i);
     }
 
-    out3.textContent = outbox3;
+    document.querySelector('.out-3').textContent = outbox3;
 }
 
 document.querySelector('.b-3').onclick = t03;
@@ -65,7 +62,17 @@ document.querySelector('.b-3').onclick = t03;
 // Введено число 5, получаем строку 5_4_3_2_1_0_
 
 function t04 () {
-   
+    let i4 = +document.querySelector('.i-4').value;
+    // console.log(i4, typeof i4);
+    let outbox4 = '';
+    let i = 0;
+     
+    while (i4 >= i) {
+        outbox4 += i4 + '_';
+        i4 = i4 - 1;
+    }
+
+    document.querySelector('.out-4').textContent = outbox4;
 }
 
 document.querySelector('.b-4').onclick = t04;
@@ -246,7 +253,7 @@ document.querySelector('.b-20').onclick= t20;
 
 // *****************************
 // Task 3 - ok
-// Task 4
+// Task 4 - ok
 // Task 5
 // Task 6
 // Task 7
