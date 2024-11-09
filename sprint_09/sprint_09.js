@@ -42,20 +42,19 @@ document.querySelector('.b-2').onclick = t02;
 
 function t03 () {
     let i3 = +document.querySelector('.i-3').value;
-    //  console.log(i3, typeof i3);
+    console.log(i3, typeof i3);
     let out3 = document.querySelector('.out-3');
-    let outbox3 = ';ljkhkljhlkjh';
+    let outbox3 = 0;
     console.log('outbox3');
-    let i = 0;
+    let i = 8;
     
     while (i < i3) {
-
+        outbox3 += i + '_'
+        i = i + 1;
+        console.log(i);
     }
 
     out3.textContent = outbox3;
-
-
-
 }
 
 document.querySelector('.b-3').onclick = t03;
