@@ -107,6 +107,7 @@ document.querySelector('.b-5').onclick = t05;
 
 function t06 () {
     let outbox6 = 0;
+    let i = 0;
 
 
     document.querySelector('.out-6').textContent = outbox6;
