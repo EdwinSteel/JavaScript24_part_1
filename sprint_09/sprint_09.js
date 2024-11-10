@@ -106,7 +106,10 @@ document.querySelector('.b-5').onclick = t05;
 // Создана функция t06. Функция запускается при нажатии .b-6. Напишите код внутри функции. Код должен выводить в .out-6 количество чисел, которые делятся на 7 с остатком нуль, в диапазоне от 0 (включительно) до 100 (включительно). Решите задачу циклом while.
 
 function t06 () {
-    
+    let outbox6 = 0;
+
+
+    document.querySelector('.out-6').textContent = outbox6;
 }
 
 document.querySelector('.b-6').onclick = t06;
