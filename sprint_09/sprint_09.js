@@ -131,9 +131,16 @@ function t07 () {
     let i = 10;
     // while (i <= 99) {
     // }
-    // i ??
+    // i = i + 1;
+    // i % 10 
     
-
+    
+    // let a = 48;
+    // let b = 48 % 10;
+    // c = (a - b)/10
+    // console.log(b, 'bbbbbb');
+    // console.log(c, 'cccc');
+    // console.log(b + c, 'result');
 
     document.querySelector('.out-7').textContent = outbox7;
 }
