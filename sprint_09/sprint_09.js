@@ -153,7 +153,17 @@ document.querySelector('.b-7').onclick = t07;
 // Например ввели 3, получаем строку 0_**_1_**_2_**_3_**_
 
 function t08 () {
-    
+    let i8 = +document.querySelector('.i-8').value;
+    // console.log(i8, typeof i8);
+    let outbox8 = '';
+    let i = 0;
+
+    while (i <= i8) {
+        outbox8 += i + '_**_';
+        i = i + 1;
+    }
+
+    document.querySelector('.out-8').textContent = outbox8;
 }
 
 document.querySelector('.b-8').onclick = t08;
@@ -288,7 +298,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 8
 // Task 9
 // Task 10
 // Task 11
@@ -308,3 +317,4 @@ document.querySelector('.b-20').onclick= t20;
 // Task 5 - ok
 // Task 6 - ok
 // Task 7 - ok
+// Task 8 - ok
