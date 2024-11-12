@@ -109,13 +109,13 @@ function t06 () {
     let outbox6 = 0;
     let i = 0;
     
-    while (i <= 100) {
-        if (i % 10 === 0) {
-            outbox6 = i + 1;
-            console.log('if' + i, typeof i);
+    while (i <= 21) {
+        if (i % 7 === 0) {
+            outbox6 = outbox6 + 1;
+            console.log('if' + outbox6, typeof outbox6);
         }
         i = i + 1;
-        console.log('posle' + i, typeof i);
+        // console.log('posle' + i, typeof i); 
     }
     
     document.querySelector('.out-6').textContent = outbox6;
