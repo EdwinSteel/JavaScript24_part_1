@@ -288,7 +288,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 7
 // Task 8
 // Task 9
 // Task 10
@@ -308,3 +307,4 @@ document.querySelector('.b-20').onclick= t20;
 // Task 4 - ok
 // Task 5 - ok
 // Task 6 - ok
+// Task 7 - ok
