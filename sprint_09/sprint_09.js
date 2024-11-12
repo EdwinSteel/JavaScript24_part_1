@@ -175,7 +175,18 @@ document.querySelector('.b-8').onclick = t08;
 // Например ввели число 3. Необходимо сформировать строку '******<br>******<br>******<br>'
 
 function t09 () {
-    
+    let i9 = +document.querySelector('.i-9').value;
+    // console.log(i9, typeof i9);
+    let w = '******<br>'; // width (ширина)
+    outbox9 = '';
+    let i = 0;
+
+    while (i < i9) {
+        outbox9 += w;
+        i = i + 1;
+    }
+
+    document.querySelector('.out-9').innerHTML = outbox9;
 }
 
 document.querySelector('.b-9').onclick = t09;
@@ -299,7 +310,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 9
 // Task 10
 // Task 11
 // Task 12
@@ -319,3 +329,4 @@ document.querySelector('.b-20').onclick= t20;
 // Task 6 - ok
 // Task 7 - ok
 // Task 8 - ok
+// Task 9 - ok
