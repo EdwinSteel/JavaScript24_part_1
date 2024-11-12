@@ -127,7 +127,15 @@ document.querySelector('.b-6').onclick = t06;
 // т.е. выводятся 17_26_ и далее
 
 function t07 () {
+    let outbox7 = '';
+    let i = 10;
+    // while (i <= 99) {
+    // }
+    // i ??
     
+
+
+    document.querySelector('.out-7').textContent = outbox7;
 }
 
 document.querySelector('.b-7').onclick = t07;
@@ -273,7 +281,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 6
 // Task 7
 // Task 8
 // Task 9
@@ -293,3 +300,4 @@ document.querySelector('.b-20').onclick= t20;
 // Task 3 - ok
 // Task 4 - ok
 // Task 5 - ok
+// Task 6 - ok
