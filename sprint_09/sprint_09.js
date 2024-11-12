@@ -129,18 +129,18 @@ document.querySelector('.b-6').onclick = t06;
 function t07 () {
     let outbox7 = '';
     let i = 10;
-    // while (i <= 99) {
-    // }
-    // i = i + 1;
-    // i % 10 
     
+    while (i <= 99) {
+        let u = i % 10; //units (единицы)
+        let t = (i - u)/10; // tens (десятки)
+        
+        if (t + u === 8) {
+            outbox7 += i + '_';
+        }
+        i = i + 1;
+    }
     
-    // let a = 48;
-    // let b = 48 % 10;
-    // c = (a - b)/10
-    // console.log(b, 'bbbbbb');
-    // console.log(c, 'cccc');
-    // console.log(b + c, 'result');
+    console.log(outbox7);    
 
     document.querySelector('.out-7').textContent = outbox7;
 }
