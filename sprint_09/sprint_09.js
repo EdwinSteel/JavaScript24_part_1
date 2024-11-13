@@ -223,7 +223,15 @@ document.querySelector('.b-10').onclick = t10;
 // Создана функция t11. Функция запускается при нажатии .b-11. Напишите код, который формирует строку вида 11_21_ до 91_ включительно, с помощью цикла do while. Выведите строку в .out-11.
 
 function t11 () {
-    
+    let i = 11;
+    outbox11 = '';
+
+    while (i <= 91) {
+        outbox11 += i + '_';
+        i = i + 10;
+    }
+
+    document.querySelector('.out-11').textContent = outbox11;
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -233,8 +241,17 @@ document.querySelector('.b-11').onclick = t11;
 // Создана функция t12. Функция запускается при нажатии .b-12. Напишите код внутри функции, который формирует строку с 77_74_71_ до 35_. Т.е. от 77 до 35 с шагом 3. Разделитель - подчеркивание. Решите задачу с помощью do while. Строку выведите в .out-12.
 
 function t12 () {
-   
+   let outbox12 = '';
+   let i = 77;
+
+   do {
+    outbox12 += i + '_';
+    i = i - 3;
     
+   } while (i >= 35);
+   
+
+    document.querySelector('.out-12').textContent = outbox12;
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -325,7 +342,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 11
 // Task 12
 // Task 13
 // Task 14
@@ -345,3 +361,4 @@ document.querySelector('.b-20').onclick= t20;
 // Task 8 - ok
 // Task 9 - ok
 // Task 10 - ok
+// Task 11 - ok
