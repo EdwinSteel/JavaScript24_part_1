@@ -197,8 +197,23 @@ document.querySelector('.b-9').onclick = t09;
 // Например введено число 5, необходимо сформировать строку '0=1-2=3-4=5-'
 
 function t10 () {
-    
-    
+    let i10 = +document.querySelector('.i-10').value;
+    // console.log(i10, typeof i10);
+    outbox10 = '';
+    let i = 0;
+
+    while (i <= i10) {
+        
+        if (i % 2 === 0) {
+            outbox10 += i + '=';
+        } else {
+            outbox10 += i + '-';
+        }        
+
+        i = i + 1;
+    }
+
+    document.querySelector('.out-10').textContent = outbox10;
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -310,7 +325,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 10
 // Task 11
 // Task 12
 // Task 13
@@ -330,3 +344,4 @@ document.querySelector('.b-20').onclick= t20;
 // Task 7 - ok
 // Task 8 - ok
 // Task 9 - ok
+// Task 10 - ok
