@@ -248,7 +248,7 @@ function t12 () {
     outbox12 += i + '_';
     i = i - 3;    
    } while (i >= 35);
-   
+
     document.querySelector('.out-12').textContent = outbox12;
 }
 
@@ -297,10 +297,22 @@ document.querySelector('.range-14').oninput = t14;
 
 
 // Тask 15
+// ************ Выяснить почему в консоли получаю сообщение
+// sprint_09.js:309 Uncaught TypeError: Cannot set properties of undefined (setting 'textContent')
+//     at HTMLButtonElement.t15 (sprint_09.js:309:28)
+// **********************
+
 // Создана функция t15. Функция запускается при нажатии .b-15. Напишите код внутри функции, который записывает в каждый div.d-15 число 0 (очищая предыдущее содержимое). Применяйте цикл do while.
 
 function t15() {
+    const d15 = document.querySelectorAll('.d-15');
+    console.log(d15, typeof d15);
+    let i = 0;
 
+    do {
+        d15[i].textContent = 0;
+        i = i + 1;
+    } while (i <= d15.length);
 }
 
 document.querySelector('.b-15').onclick = t15;
@@ -359,7 +371,7 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Тask 15
+// Тask 15 -- Задать вопрос
 // Task 16
 // Task 17
 // Task 18
