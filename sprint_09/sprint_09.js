@@ -246,8 +246,7 @@ function t12 () {
 
    do {
     outbox12 += i + '_';
-    i = i - 3;
-    
+    i = i - 3;    
    } while (i >= 35);
    
 
