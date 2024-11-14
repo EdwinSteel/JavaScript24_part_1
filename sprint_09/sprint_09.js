@@ -249,7 +249,6 @@ function t12 () {
     i = i - 3;    
    } while (i >= 35);
    
-
     document.querySelector('.out-12').textContent = outbox12;
 }
 
