@@ -321,12 +321,23 @@ document.querySelector('.b-15').onclick = t15;
 // Task 16
 // Создана функция t16. Функция запускается при нажатии .b-16. Напишите код внутри функции, который записывает в каждый div.d-16 число (очищая предыдущее содержимое). Применяйте цикл do while. Т.е. в первом div.d-16 выведите  число 1, во второй - число 2 и т.д.
 
-
 function t16 () {
+    let d16 = document.querySelectorAll('.d-16');
+    console.log(d16, typeof d16);
+    let i = 0;
+
+    do {
+        d16[i].textContent = i + 1;
+        
+        i = i + 1;
+        console.log(i);
+    } while (i <= d16.length);
+
    
 }
 
 document.querySelector('.b-16').onclick = t16;
+
 
 // Task 17
 // Создана функция t17. Функция запускается при нажатии .b-17. Напишите код внутри функции, который записывает в каждый div.d-17 число в начало текста. Применяйте do while.
