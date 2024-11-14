@@ -282,7 +282,17 @@ document.querySelector('.b-13').onclick = t13;
 // Создана функция t14. Функция запускается при изменении input.range-14, код в функции должен получать value из input и создавать строку от 0 до полученного числа, шаг 1 и разделитель пробел. Строка должна выводиться в .out-14. Применяйте цикл do while.
 
 function t14 () {
-   
+   let i14 = +document.querySelector('.range-14').value;
+    // console.log(i14, typeof i14);
+    let outbox14 = '';
+    let i = 0;
+
+    do {
+        outbox14 += i + ' '
+        i = i + 1;
+    } while (i <= i14);
+
+    document.querySelector('.out-14').textContent = outbox14;
 }
 
 document.querySelector('.range-14').oninput = t14;
@@ -351,7 +361,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 14
 // Тask 15
 // Task 16
 // Task 17
@@ -371,3 +380,5 @@ document.querySelector('.b-20').onclick= t20;
 // Task 11 - ok
 // Task 12 - ok
 // Task 13 - ok
+// Task 14 - ok
+
