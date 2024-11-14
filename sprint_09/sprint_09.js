@@ -297,22 +297,17 @@ document.querySelector('.range-14').oninput = t14;
 
 
 // Тask 15
-// ************ Выяснить почему в консоли получаю сообщение
-// sprint_09.js:309 Uncaught TypeError: Cannot set properties of undefined (setting 'textContent')
-//     at HTMLButtonElement.t15 (sprint_09.js:309:28)
-// **********************
-
 // Создана функция t15. Функция запускается при нажатии .b-15. Напишите код внутри функции, который записывает в каждый div.d-15 число 0 (очищая предыдущее содержимое). Применяйте цикл do while.
 
 function t15() {
     const d15 = document.querySelectorAll('.d-15');
-    console.log(d15, typeof d15);
+    // console.log(d15, typeof d15);
     let i = 0;
 
     do {
         d15[i].textContent = 0;
         i = i + 1;
-    } while (i <= d15.length);
+    } while (i < d15.length);
 }
 
 document.querySelector('.b-15').onclick = t15;
@@ -323,38 +318,76 @@ document.querySelector('.b-15').onclick = t15;
 
 function t16 () {
     let d16 = document.querySelectorAll('.d-16');
-    console.log(d16, typeof d16);
-    let i = 0;
+    // console.log(d16, typeof d16);
+    let i = 0;   
 
     do {
         d16[i].textContent = i + 1;
-        
         i = i + 1;
-        console.log(i);
-    } while (i <= d16.length);
-
-   
+        // console.log(i);
+    } while (i < d16.length);
 }
 
 document.querySelector('.b-16').onclick = t16;
 
 
-// Task 17
+// Task 17 -- !!!!!!! Исправить ошибку
 // Создана функция t17. Функция запускается при нажатии .b-17. Напишите код внутри функции, который записывает в каждый div.d-17 число в начало текста. Применяйте do while.
 // т.е. был <div>one</div> после выполнения цикла должно быть <div>1. one</div>
 // т.е. был <div>two</div> после выполнения цикла должно быть <div>2. two</div>
 // т.е. был <div>three</div> после выполнения цикла должно быть <div>3. three</div>
 
-
-
 function t17 () {
+    let d17 = document.querySelectorAll('.d-17');
+    // console.log(d17, d17[0].textContent);
+    let i = 0;
+
+    do {
+        d17[i].textContent = (i + 1) + '.' + ' ' + d17[i].textContent;
+        i = i + 1;
+    } while (i < d17.length);
 }
 
 document.querySelector('.b-17').onclick = t17;
+// *************
+//     do {
+//         // Проверяем, начинается ли текст с порядкового номера, чтобы избежать дублирования
+//         if (!d17[i].textContent.startsWith((i + 1) + '.')) {
+//             d17[i].textContent = (i + 1) + '.' + ' ' + d17[i].textContent;
+//         }
+//         i = i + 1;
+//     } while (i < d17.length);
 
+// document.querySelector('.b-17').onclick = t17;
+
+// *************
 
 // Task 18
 // Напишите в функции t18 код, который с помощью цикла do while формирует строку 1 10 2 20 3 30 и так далее до 10 100 . Выведите строку в .out-18.
+// *******
+// Для формирования строки "1 10 2 20 3 30 ... 10 100" с использованием цикла do...while, мы будем генерировать числа от 1 до 10, и для каждого из них добавлять его значение, а затем это же значение, умноженное на 10. В конце цикла выведем строку в элемент с идентификатором div.out.
+// Вот код:
+// function generateString() {
+//     let i = 1;
+//     let result = "";
+
+//     do {
+//         result += i + " " + (i * 10) + " ";
+//         i++;
+//     } while (i <= 10);
+
+//     document.querySelector('.out').textContent = result.trim();
+// }
+
+// generateString();
+
+// Объяснение кода:
+// Мы инициализируем переменную i значением 1 и пустую строку result для хранения результата.
+// Внутри цикла do...while к result добавляется i и i * 10, разделенные пробелом.
+// Значение i увеличивается на единицу, и цикл повторяется, пока i не станет больше 10.
+// После цикла результат выводится в элемент с классом .out.
+// Этот код выведет строку "1 10 2 20 3 30 ... 10 100" в div с классом out.
+// *******
 
 function t18 () {
    
@@ -383,7 +416,7 @@ document.querySelector('.b-20').onclick= t20;
 
 // *****************************
 // Тask 15 -- Задать вопрос
-// Task 16
+// Task 16 -- !!!!!!!!!!
 // Task 17
 // Task 18
 // Task 19
