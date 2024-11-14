@@ -261,8 +261,18 @@ document.querySelector('.b-12').onclick = t12;
 //  Создана функция t13. Функция запускается при нажатии .b-13. Напишите код внутри функции, который получает разделитель из select.s-13 и создает строку от 0 до 10 с выбранным разделителем. Выведите строку в .out-13. Применяйте цикл do while.
 // Например выбран разделитель =, получим строку 0=1=2=3=4=5=6=7=8=9=10=
 
-
 function t13 () {
+    let s13 = document.querySelector('.s-13 option:checked').textContent;
+    // console.log(s13, typeof s13);
+    let outbox13 = '';
+    let i = 0;
+
+    do {
+        outbox13 += i + s13;
+        i = i + 1;
+    } while (i <= 10);
+
+    document.querySelector('.out-13').textContent = outbox13;
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -270,7 +280,6 @@ document.querySelector('.b-13').onclick = t13;
 
 // Task 14
 // Создана функция t14. Функция запускается при изменении input.range-14, код в функции должен получать value из input и создавать строку от 0 до полученного числа, шаг 1 и разделитель пробел. Строка должна выводиться в .out-14. Применяйте цикл do while.
-
 
 function t14 () {
    
