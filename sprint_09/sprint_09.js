@@ -415,8 +415,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Тask 15 -- Задать вопрос
-// Task 16 -- !!!!!!!!!!
 // Task 17
 // Task 18
 // Task 19
@@ -435,4 +433,6 @@ document.querySelector('.b-20').onclick= t20;
 // Task 12 - ok
 // Task 13 - ok
 // Task 14 - ok
+// Тask 15 - ok
+// Task 16 - ok
 
