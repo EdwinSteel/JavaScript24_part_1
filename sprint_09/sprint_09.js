@@ -392,10 +392,28 @@ function t19() {
 document.querySelector('.b-19').onclick = t19;
 
 
-// Task 20
+// Task 20 
 // Получите все td с классом .price, c помощью querySelectorAll(). В функции посчитайте сумму товаров в данных ячейках и выведите в ячейку .total. Примените цикл do while.
 
 function t20() {
+    let p20 = document.querySelectorAll('td.price');
+    console.log(p20, typeof p20, +p20[0].textContent, typeof +p20[0].textContent);
+
+    let t20 = +document.querySelector('td.total').textContent;
+    console.log(t20, typeof t20);
+
+    let i = 0;
+
+    let result = 0;
+    do {
+        result = sumTo(p20.length);
+        console.log(result);
+
+        console.log(+p20[i].textContent);
+        i = i + 1;
+    } while (i < p20.length);
+
+
 
 }
 
