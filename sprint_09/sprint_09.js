@@ -375,12 +375,22 @@ document.querySelector('.b-18').onclick = t18;
 // Task 19
 // Напишите в функции t19 код, который с помощью цикла do while формирует строку 0 10 1 9 2 8 3 7 4 6 5 5 6 4 7 3 8 2 9 1 10 0 . Выведите строку в .out-19.
 
-
 function t19() {
-    
+    let outbox19 = '';
+    let i = 0;
+    let t = 10;
+
+    do {
+        outbox19 += i + ' ' + t + ' ';
+        i = i + 1;
+        t = t - 1;
+    } while (i <= 10 && t >= 0);
+
+    document.querySelector('.out-19').textContent = outbox19;
 }
 
 document.querySelector('.b-19').onclick = t19;
+
 
 // Task 20
 // Получите все td с классом .price, c помощью querySelectorAll(). В функции посчитайте сумму товаров в данных ячейках и выведите в ячейку .total. Примените цикл do while.
@@ -392,7 +402,6 @@ function t20() {
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 19
 // Task 20
 // Task 1 - ok
 // Task 2 - ok
@@ -412,4 +421,5 @@ document.querySelector('.b-20').onclick= t20;
 // Task 16 - ok
 // Task 17 - ok
 // Task 18 - ok
+// Task 19 - ok
 
