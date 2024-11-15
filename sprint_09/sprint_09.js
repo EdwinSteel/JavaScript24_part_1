@@ -406,15 +406,14 @@ function t20() {
 
     let result = 0;
     do {
-        result = sumTo(p20.length);
+        result += +p20[i].textContent;
         console.log(result);
 
-        console.log(+p20[i].textContent);
+        // console.log(+p20[i].textContent);
         i = i + 1;
     } while (i < p20.length);
 
-
-
+    
 }
 
 document.querySelector('.b-20').onclick= t20;
