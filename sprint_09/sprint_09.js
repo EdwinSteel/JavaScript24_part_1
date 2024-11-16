@@ -397,29 +397,24 @@ document.querySelector('.b-19').onclick = t19;
 
 function t20() {
     let p20 = document.querySelectorAll('td.price');
-    console.log(p20, typeof p20, +p20[0].textContent, typeof +p20[0].textContent);
-
-    let t20 = +document.querySelector('td.total').textContent;
-    console.log(t20, typeof t20);
-
+    // console.log(p20, typeof p20);
+    let t20 = document.querySelector('td.total');    
     let i = 0;
-
     let result = 0;
+
     do {
         result += +p20[i].textContent;
-        console.log(result);
+        // console.log(result);
 
-        // console.log(+p20[i].textContent);
         i = i + 1;
     } while (i < p20.length);
 
-    
+    t20.textContent = result;    
 }
 
 document.querySelector('.b-20').onclick= t20;
 
 // *****************************
-// Task 20
 // Task 1 - ok
 // Task 2 - ok
 // Task 3 - ok
@@ -439,4 +434,5 @@ document.querySelector('.b-20').onclick= t20;
 // Task 17 - ok
 // Task 18 - ok
 // Task 19 - ok
+// Task 20 - ok
 
