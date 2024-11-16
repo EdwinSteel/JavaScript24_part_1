@@ -1,7 +1,10 @@
-// Task 1
+// Task 1 -- ERROR
 // Напишите код в функции t01. Код получает атрибут lang из тега html и выводит в .out-1.
 
 function t01 () {
+    let out1 = document.querySelector('.out-1');
+    let language = document.querySelector('html').getAttribute('lang');
+    console.log(language);
 
 }
 
