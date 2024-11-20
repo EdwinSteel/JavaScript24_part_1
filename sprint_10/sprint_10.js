@@ -11,7 +11,7 @@ function t01 () {
 document.querySelector('.b-1').onclick = t01;
 
 
-// Task 2 -- ERROR
+// Task 2
 // Напишите код в функции t02. Код задает атрибут lang для тега html, значение атрибута - 'ru'.
 
 function t02 () {
@@ -152,7 +152,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 2
 // Task 3
 // Task 4
 // Task 5
@@ -168,3 +167,4 @@ document.querySelector('.b-15').onclick = t15;
 // Task 15
 // --------------
 // Task 1 -- ok
+// Task 2 -- ok
