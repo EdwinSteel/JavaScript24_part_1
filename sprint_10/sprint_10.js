@@ -3,9 +3,9 @@
 
 function t01 () {
     let out1 = document.querySelector('.out-1');
-    let language = document.querySelector('html').getAttribute('lang');
-    // console.log(language);
-    out1.textContent = language;  
+    let lang01 = document.querySelector('html').getAttribute('lang');
+    // console.log(lang01);
+    out1.textContent = lang01;  
 }
 
 document.querySelector('.b-1').onclick = t01;
@@ -15,9 +15,9 @@ document.querySelector('.b-1').onclick = t01;
 // Напишите код в функции t02. Код задает атрибут lang для тега html, значение атрибута - 'ru'.
 
 function t02 () {
-    let language = document.querySelector('html');
-    language.setAttribute('lang', 'ru');
-    console.log(language);
+    let lang02 = document.querySelector('html');
+    lang02.setAttribute('lang', 'ru');
+    console.log(lang02);
 }
 
 document.querySelector('.b-2').onclick = t02;
