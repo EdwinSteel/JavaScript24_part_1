@@ -1,4 +1,4 @@
-// Task 1
+// Task 1 -- СОМНЕВАЮСЬ
 // Напишите код в функции t01. Код получает атрибут lang из тега html и выводит в .out-1.
 
 function t01 () {
@@ -11,11 +11,13 @@ function t01 () {
 document.querySelector('.b-1').onclick = t01;
 
 
-// Task 2
+// Task 2 -- ERROR
 // Напишите код в функции t02. Код задает атрибут lang для тега html, значение атрибута - 'ru'.
 
 function t02 () {
-
+    let language = document.querySelector('html');
+    language.setAttribute('lang', 'ru');
+    console.log(language);
 }
 
 document.querySelector('.b-2').onclick = t02;
@@ -150,6 +152,7 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
+// Task 1 -- ok ???
 // Task 2
 // Task 3
 // Task 4
@@ -165,4 +168,3 @@ document.querySelector('.b-15').onclick = t15;
 // Task 14
 // Task 15
 // --------------
-// Task 1 -- ok
