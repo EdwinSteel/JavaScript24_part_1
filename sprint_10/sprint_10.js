@@ -1,4 +1,4 @@
-// Task 1 -- СОМНЕВАЮСЬ
+// Task 1
 // Напишите код в функции t01. Код получает атрибут lang из тега html и выводит в .out-1.
 
 function t01 () {
@@ -152,7 +152,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 1 -- ok ???
 // Task 2
 // Task 3
 // Task 4
@@ -168,3 +167,4 @@ document.querySelector('.b-15').onclick = t15;
 // Task 14
 // Task 15
 // --------------
+// Task 1 -- ok
