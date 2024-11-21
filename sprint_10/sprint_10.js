@@ -27,7 +27,7 @@ document.querySelector('.b-2').onclick = t02;
 // Напишите код в функции t03. Функция должна вывести текст из элемента #d-3 в .out-3.
 
 function t03 () {
-
+    document.querySelector('.out-3').textContent = document.querySelector('#d-3').textContent;
 }
 
 document.querySelector('.b-3').onclick = t03;
@@ -152,7 +152,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 3
 // Task 4
 // Task 5
 // Task 6
@@ -168,3 +167,4 @@ document.querySelector('.b-15').onclick = t15;
 // --------------
 // Task 1 -- ok
 // Task 2 -- ok
+// Task 3 -- ok
