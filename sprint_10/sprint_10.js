@@ -108,7 +108,9 @@ document.querySelector('.b-9').onclick = t09;
 // Напишите код в функции t10. Функция должна задавать атрибут title для гиперссылки .link-10, равный 'Pendergast'.
 
 function t10 () {
+    document.querySelector('.link-10').setAttribute('title', 'Pendergast');
 
+    // console.log('title:' + document.querySelector('.link-10').getAttribute('title'));
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -118,7 +120,7 @@ document.querySelector('.b-10').onclick = t10;
 // Напишите код в функции t11. Функция должна задавать атрибут disabled для input.i-11.
 
 function t11 () {
-
+    document.querySelector('.i-11').setAttribute('disabled', true);
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -164,8 +166,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 10
-// Task 11
 // Task 12
 // Task 13
 // Task 14
@@ -180,3 +180,5 @@ document.querySelector('.b-15').onclick = t15;
 // Task 7 -- ok
 // Task 8 -- ok
 // Task 9 -- ok
+// Task 10 -- ok
+// Task 11 -- ok
