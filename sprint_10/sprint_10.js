@@ -131,7 +131,7 @@ document.querySelector('.b-11').onclick = t11;
 // Напишите код в функции t12. Функция должна задавать атрибут hidden для img.img-12.
 
 function t12 () {
-
+    document.querySelector('.img-12').setAttribute('hidden', true);
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -166,7 +166,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 12
 // Task 13
 // Task 14
 // Task 15
@@ -182,3 +181,4 @@ document.querySelector('.b-15').onclick = t15;
 // Task 9 -- ok
 // Task 10 -- ok
 // Task 11 -- ok
+// Task 12 -- ok
