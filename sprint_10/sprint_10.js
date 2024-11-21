@@ -65,7 +65,7 @@ document.querySelector('.b-5').onclick = t05;
 // Напишите код в функции t06. Функция должна получить input.i-6 и добавить ему атрибут placeholder равный 'Arch Druidess'.
 
 function t06 () {
-
+    document.querySelector('.i-6').setAttribute('placeholder', 'Arch Druidess');
 }
 
 document.querySelector('.b-6').onclick = t06;
