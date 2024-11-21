@@ -140,7 +140,7 @@ document.querySelector('.b-12').onclick = t12;
 // Напишите код в функции t13. Функция должна задавать атрибут start равный 5 для ol.list-13.
 
 function t13 () {
-
+    document.querySelector('.list-13').setAttribute('start', 5);
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -150,7 +150,7 @@ document.querySelector('.b-13').onclick = t13;
 // Напишите код в функции t14. Функция должна задавать атрибут reversed для ol.list-13.
 
 function t14 () {
-
+    document.querySelector('.list-13').setAttribute('reversed', true);
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -166,8 +166,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 13
-// Task 14
 // Task 15
 // --------------
 // Task 1 -- ok
@@ -182,3 +180,5 @@ document.querySelector('.b-15').onclick = t15;
 // Task 10 -- ok
 // Task 11 -- ok
 // Task 12 -- ok
+// Task 13 -- ok
+// Task 14 -- ok
