@@ -37,7 +37,14 @@ document.querySelector('.b-3').onclick = t03;
 // Напишите код в функции t04. Функция должна получить элемент #d-3 и изменить его id на значение 'd-4'. Затем вывести текст из элемента #d-4 в .out-4.
 
 function t04 () {
-
+    let out4 = document.querySelector('.out-4');
+    let d4 = document.querySelector('#d-3');
+    
+    d4.setAttribute('id', 'd-4');
+    console.log('d4');
+    console.log(d4.getAttribute('id'));
+    
+    out4.textContent = d4.textContent;
 }
 
 document.querySelector('.b-4').onclick = t04;
@@ -152,7 +159,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 4
 // Task 5
 // Task 6
 // Task 7
@@ -168,3 +174,4 @@ document.querySelector('.b-15').onclick = t15;
 // Task 1 -- ok
 // Task 2 -- ok
 // Task 3 -- ok
+// Task 4 -- ok
