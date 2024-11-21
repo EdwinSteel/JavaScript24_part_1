@@ -98,7 +98,7 @@ document.querySelector('.b-8').onclick = t08;
 // Напишите код в функции t09. Функция должна задавать атрибут checked для input.ch-9.
 
 function t09 () {
-
+    document.querySelector('.ch-9').setAttribute('checked', true);
 }
 
 document.querySelector('.b-9').onclick = t09;
@@ -164,7 +164,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 9
 // Task 10
 // Task 11
 // Task 12
@@ -180,3 +179,4 @@ document.querySelector('.b-15').onclick = t15;
 // Task 6 -- ok
 // Task 7 -- ok
 // Task 8 -- ok
+// Task 9 -- ok
