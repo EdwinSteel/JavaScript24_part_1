@@ -88,7 +88,7 @@ document.querySelector('.b-7').onclick = t07;
 // Напишите код в функции t08. Функция должна заменить атрибут src изображения .img-8 на строку './images/witch.png'.
 
 function t08 () {
-
+    document.querySelector('.img-8').setAttribute('src', './images/witch.png');
 }
 
 document.querySelector('.b-8').onclick = t08;
@@ -164,7 +164,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 8
 // Task 9
 // Task 10
 // Task 11
@@ -180,3 +179,4 @@ document.querySelector('.b-15').onclick = t15;
 // Task 5 -- ok
 // Task 6 -- ok
 // Task 7 -- ok
+// Task 8 -- ok
