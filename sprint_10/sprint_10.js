@@ -66,6 +66,8 @@ document.querySelector('.b-5').onclick = t05;
 
 function t06 () {
     document.querySelector('.i-6').setAttribute('placeholder', 'Arch Druidess');
+
+    // console.log('placeholder:' + document.querySelector('.i-6').getAttribute('placeholder'));
 }
 
 document.querySelector('.b-6').onclick = t06;
