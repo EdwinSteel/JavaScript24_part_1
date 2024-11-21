@@ -77,7 +77,9 @@ document.querySelector('.b-6').onclick = t06;
 // Напишите код в функции t07. Функция должна вывести атрибут alt изображения .img-7 в .out-7.
 
 function t07 () {
-
+    let out7 = document.querySelector('.out-7');
+    
+    out7.textContent = document.querySelector('.img-7').getAttribute('alt');    
 }
 
 document.querySelector('.b-7').onclick = t07;
@@ -162,9 +164,6 @@ function t15 () {
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 5
-// Task 6
-// Task 7
 // Task 8
 // Task 9
 // Task 10
@@ -178,3 +177,6 @@ document.querySelector('.b-15').onclick = t15;
 // Task 2 -- ok
 // Task 3 -- ok
 // Task 4 -- ok
+// Task 5 -- ok
+// Task 6 -- ok
+// Task 7 -- ok
