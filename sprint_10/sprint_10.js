@@ -42,7 +42,7 @@ function t04 () {
     
     d4.setAttribute('id', 'd-4');
     console.log('d4');
-    console.log(d4.getAttribute('id'));
+    console.log('id:' + d4.getAttribute('id'));
     
     out4.textContent = d4.textContent;
 }
@@ -54,7 +54,8 @@ document.querySelector('.b-4').onclick = t04;
 // Напишите код в функции t05. Функция должна получить input.i-5 и заменить атрибут type="text" на type="password".
 
 function t05 () {
-
+    let i5 = document.querySelector('.i-5');
+    i5.setAttribute('type', 'password');
 }
 
 document.querySelector('.b-5').onclick = t05;
