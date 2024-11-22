@@ -171,21 +171,3 @@ function t15 () {
 }
 
 document.querySelector('.b-15').onclick = t15;
-
-// ********************************************
-// --------------
-// Task 1 -- ok
-// Task 2 -- ok
-// Task 3 -- ok
-// Task 4 -- ok
-// Task 5 -- ok
-// Task 6 -- ok
-// Task 7 -- ok
-// Task 8 -- ok
-// Task 9 -- ok
-// Task 10 -- ok
-// Task 11 -- ok
-// Task 12 -- ok
-// Task 13 -- ok
-// Task 14 -- ok
-// Task 15 -- ok
