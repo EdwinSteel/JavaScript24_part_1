@@ -84,6 +84,7 @@ function t07 () {
 
 document.querySelector('.b-7').onclick = t07;
 
+
 // Task 8
 // Напишите код в функции t08. Функция должна заменить атрибут src изображения .img-8 на строку './images/witch.png'.
 
@@ -110,7 +111,7 @@ document.querySelector('.b-9').onclick = t09;
 function t10 () {
     document.querySelector('.link-10').setAttribute('title', 'Pendergast');
 
-    // console.log('title:' + document.querySelector('.link-10').getAttribute('title'));
+    console.log('title:' + document.querySelector('.link-10').getAttribute('title'));
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -126,7 +127,6 @@ function t11 () {
 document.querySelector('.b-11').onclick = t11;
 
 
-
 // Task 12
 // Напишите код в функции t12. Функция должна задавать атрибут hidden для img.img-12.
 
@@ -135,6 +135,7 @@ function t12 () {
 }
 
 document.querySelector('.b-12').onclick = t12;
+
 
 // Task 13
 // Напишите код в функции t13. Функция должна задавать атрибут start равный 5 для ol.list-13.
