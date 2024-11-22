@@ -156,24 +156,22 @@ function t14 () {
 document.querySelector('.b-14').onclick = t14;
 
 
-// Task 15 -- НУЖНО ПОДУМАТЬ !!!
+// Task 15
 // Напишите код в функции t15. Функция должна проверять наличие атрибута hidden у div.out-15. Если атрибут есть - удалять его. Если нет - добавлять.
 
 function t15 () {
     let out15 = document.querySelector('.out-15');
-    let hid15 = out15.getAttribute('hidden');
-
-    if (hid15 == true) {
-        hid15.removeAttribute('hidden');        
+    
+    if (out15.hidden) {
+        out15.removeAttribute('hidden');        
     } else {
-        hid15.setAttribute('hidden', true);
+        out15.setAttribute('hidden', false);
     }
 }
 
 document.querySelector('.b-15').onclick = t15;
 
 // ********************************************
-// Task 15
 // --------------
 // Task 1 -- ok
 // Task 2 -- ok
@@ -189,3 +187,4 @@ document.querySelector('.b-15').onclick = t15;
 // Task 12 -- ok
 // Task 13 -- ok
 // Task 14 -- ok
+// Task 15 -- ok
