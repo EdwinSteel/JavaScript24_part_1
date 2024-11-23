@@ -166,7 +166,7 @@ function t15 () {
     if (out15.hidden) {
         out15.removeAttribute('hidden');        
     } else {
-        out15.setAttribute('hidden', false);
+        out15.setAttribute('hidden', true);
     }
 }
 
