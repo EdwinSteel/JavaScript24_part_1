@@ -168,6 +168,8 @@ function t15 () {
     } else {
         out15.setAttribute('hidden', true);
     }
+
+    // console.log(out15.hidden);
 }
 
 document.querySelector('.b-15').onclick = t15;
