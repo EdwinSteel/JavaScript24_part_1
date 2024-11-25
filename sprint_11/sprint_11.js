@@ -12,7 +12,8 @@ document.querySelector('.b-1').onclick = t01;
 // Напишите функцию t02, которая удаляет у .out-2 класс CSS (далее просто класс) 'bg-orange'.
 
 function t02 () {
-
+    let out2 = document.querySelector('.out-2');
+    out2.classList.remove('bg-orange');
 }
 
 document.querySelector('.b-2').onclick = t02;
@@ -97,8 +98,6 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
-// Task 1
-// Task 2
 // Task 3
 // Task 4
 // Task 5
@@ -107,3 +106,7 @@ document.querySelector('.b-10').onclick = t10;
 // Task 8
 // Task 9
 // Task 10
+// --------------
+// Task 1 -- ok
+// Task 2 -- ok
+
