@@ -22,7 +22,9 @@ document.querySelector('.b-2').onclick = t02;
 // Напишите функцию t03, которая проверяет наличие класса 'bg-orange' у .block-3. Результат проверки - выводит в .out-3.
 
 function t03 () {
+    let block3 = document.querySelector('.block-3');
 
+    document.querySelector('.out-3').textContent = block3.classList.contains('bg-orange');
 }
 
 document.querySelector('.b-3').onclick = t03;
@@ -98,7 +100,6 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
-// Task 3
 // Task 4
 // Task 5
 // Task 6
@@ -109,4 +110,6 @@ document.querySelector('.b-10').onclick = t10;
 // --------------
 // Task 1 -- ok
 // Task 2 -- ok
+// Task 3 -- ok
+
 
