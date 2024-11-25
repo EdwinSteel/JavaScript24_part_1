@@ -45,7 +45,8 @@ document.querySelector('.b-4').onclick = t04;
 // Напишите функцию t05, которая заменяет класс 'bg-orange' на класс 'bg-bisque'.
 
 function t05 () {
-
+    let out5 = document.querySelector('.out-5');
+    out5.classList.replace('bg-orange', 'bg-bisque');
 }
 
 document.querySelector('.b-5').onclick = t05;
@@ -101,7 +102,6 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
-// Task 5
 // Task 6
 // Task 7
 // Task 8
@@ -112,6 +112,8 @@ document.querySelector('.b-10').onclick = t10;
 // Task 2 -- ok
 // Task 3 -- ok
 // Task 4 -- ok
+// Task 5 -- ok
+
 
 
 
