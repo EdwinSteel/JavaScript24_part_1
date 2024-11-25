@@ -2,7 +2,8 @@
 // Напишите функцию t01, которая добавляет .out-1 класс CSS (далее просто класс) 'bg-orange'.
 
 function t01 () {
-
+    let out1 = document.querySelector('.out-1');
+    out1.classList.add('bg-orange');
 }
 
 document.querySelector('.b-1').onclick = t01;
