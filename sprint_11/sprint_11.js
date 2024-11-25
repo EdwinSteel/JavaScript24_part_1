@@ -56,7 +56,8 @@ document.querySelector('.b-5').onclick = t05;
 // Напишите функцию t06, которая делает toggle класса 'round-img' для изображения .img-6.
 
 function t06 () {
-
+    let img6 = document.querySelector('.img-6');
+    img6.classList.toggle('round-img');
 }
 
 document.querySelector('.b-6').onclick = t06;
@@ -102,7 +103,6 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
-// Task 6
 // Task 7
 // Task 8
 // Task 9
@@ -113,6 +113,8 @@ document.querySelector('.b-10').onclick = t10;
 // Task 3 -- ok
 // Task 4 -- ok
 // Task 5 -- ok
+// Task 6 -- ok
+
 
 
 
