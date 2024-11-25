@@ -166,8 +166,10 @@ function t15 () {
     if (out15.hidden) {
         out15.removeAttribute('hidden');        
     } else {
-        out15.setAttribute('hidden', false);
+        out15.setAttribute('hidden', true);
     }
+
+    console.log(out15.hidden);
 }
 
 document.querySelector('.b-15').onclick = t15;
