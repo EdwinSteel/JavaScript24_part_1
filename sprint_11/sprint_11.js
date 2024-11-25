@@ -34,7 +34,8 @@ document.querySelector('.b-3').onclick = t03;
 // Напишите функцию t04, которая переключает (toggle) класс 'bg-orange' у элемента .out-4.
 
 function t04 () {
-
+    let out4 = document.querySelector('.out-4');
+    out4.classList.toggle('bg-orange');
 }
 
 document.querySelector('.b-4').onclick = t04;
@@ -100,7 +101,6 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
-// Task 4
 // Task 5
 // Task 6
 // Task 7
@@ -111,5 +111,7 @@ document.querySelector('.b-10').onclick = t10;
 // Task 1 -- ok
 // Task 2 -- ok
 // Task 3 -- ok
+// Task 4 -- ok
+
 
 
