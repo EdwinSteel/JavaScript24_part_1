@@ -98,14 +98,13 @@ document.querySelector('.b-9').onclick = t09;
 // Напишите функцию t10, которая при нажатии кнопки делает toggle класса 'clip' для .out-10.
 
 function t10 () {
-
+    document.querySelector('.out-10').classList.toggle('clip');
 }
 
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
 // Task 9
-// Task 10
 // --------------
 // Task 1 -- ok
 // Task 2 -- ok
@@ -115,6 +114,7 @@ document.querySelector('.b-10').onclick = t10;
 // Task 6 -- ok
 // Task 7 -- ok
 // Task 8 -- ok
+// Task 10 -- ok
 
 
 
