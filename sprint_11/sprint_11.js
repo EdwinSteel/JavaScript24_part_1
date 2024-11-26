@@ -88,7 +88,27 @@ document.querySelector('.b-8').onclick = t08;
 // Напишите функцию t09, которая при нажатии кнопки проверяет input.ch-91 и если он выбран, то добавляет класс 'bold' для .out-9. Если input.ch-92 выбран - то добавляет класс 'uppercase' для .out-9. Если checkbox не выбраны, то удаляет данные классы у .out-9.
 
 function t09 () {
+    let inp91 = document.querySelector('.ch-91');
+    let inp92 = document.querySelector('.ch-92');
+    let out9 = document.querySelector('.out-9');
 
+    console.log(inp91, inp92);
+
+    if(inp91.checked) {
+        out9.classList.add('bold');
+        console.log('+++++++');
+    } else {
+        out9.classList.remove('bold');
+        console.log('-------');
+    }
+
+    if(inp92.checked) {
+        out9.classList.add('uppercase');
+        console.log('+++++++');
+    } else {
+        out9.classList.remove('uppercase');
+        console.log('-------');
+    }
 }
 
 document.querySelector('.b-9').onclick = t09;
