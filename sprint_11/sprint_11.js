@@ -67,7 +67,8 @@ document.querySelector('.b-6').onclick = t06;
 // Напишите функцию t07, которая добавляет класс 'bold' в .out-7.
 
 function t07 () {
-
+    let out7 = document.querySelector('.out-7');
+    out7.classList.add('bold');
 }
 
 document.querySelector('.b-7').onclick = t07;
@@ -103,7 +104,6 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
-// Task 7
 // Task 8
 // Task 9
 // Task 10
@@ -114,6 +114,8 @@ document.querySelector('.b-10').onclick = t10;
 // Task 4 -- ok
 // Task 5 -- ok
 // Task 6 -- ok
+// Task 7 -- ok
+
 
 
 
