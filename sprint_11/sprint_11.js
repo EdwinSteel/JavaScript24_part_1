@@ -78,7 +78,7 @@ document.querySelector('.b-7').onclick = t07;
 // Напишите функцию t08, которая переключает (toggle) класс 'hide' для блока .out-8.
 
 function t08 () {
-
+    document.querySelector('.out-8').classList.toggle('hide');
 }
 
 document.querySelector('.b-8').onclick = t08;
@@ -104,7 +104,6 @@ function t10 () {
 document.querySelector('.b-10').onclick = t10;
 
 // ************************************
-// Task 8
 // Task 9
 // Task 10
 // --------------
@@ -115,6 +114,8 @@ document.querySelector('.b-10').onclick = t10;
 // Task 5 -- ok
 // Task 6 -- ok
 // Task 7 -- ok
+// Task 8 -- ok
+
 
 
 
