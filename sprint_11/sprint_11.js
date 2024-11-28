@@ -8,6 +8,7 @@ function t01 () {
 
 document.querySelector('.b-1').onclick = t01;
 
+
 // Task 2
 // Напишите функцию t02, которая удаляет у .out-2 класс CSS (далее просто класс) 'bg-orange'.
 
@@ -17,6 +18,7 @@ function t02 () {
 }
 
 document.querySelector('.b-2').onclick = t02;
+
 
 // Task 3
 // Напишите функцию t03, которая проверяет наличие класса 'bg-orange' у .block-3. Результат проверки - выводит в .out-3.
@@ -88,29 +90,21 @@ document.querySelector('.b-8').onclick = t08;
 // Напишите функцию t09, которая при нажатии кнопки проверяет input.ch-91 и если он выбран, то добавляет класс 'bold' для .out-9. Если input.ch-92 выбран - то добавляет класс 'uppercase' для .out-9. Если checkbox не выбраны, то удаляет данные классы у .out-9.
 
 function t09 () {
-// ----- Вариант 1
-//     let inp91 = document.querySelector('.ch-91');
-//     let inp92 = document.querySelector('.ch-92');
-//     let out9 = document.querySelector('.out-9');
+    let inp91 = document.querySelector('.ch-91');
+    let inp92 = document.querySelector('.ch-92');
+    let out9 = document.querySelector('.out-9');    
 
-//     console.log(inp91, inp92);
+    if(inp91.checked) {
+        out9.classList.add('bold');
+    } else {
+        out9.classList.remove('bold');
+    }
 
-//     if(inp91.checked) {
-//         out9.classList.add('bold');
-//         console.log('+++++++');
-//     } else {
-//         out9.classList.remove('bold');
-//         console.log('-------');
-//     }
-
-//     if(inp92.checked) {
-//         out9.classList.add('uppercase');
-//         console.log('+++++++');
-//     } else {
-//         out9.classList.remove('uppercase');
-//         console.log('-------');
-//     }
-// ------------------------------
+    if(inp92.checked) {
+        out9.classList.add('uppercase');
+    } else {
+        out9.classList.remove('uppercase');
+    }
 }
 
 document.querySelector('.b-9').onclick = t09;
@@ -124,23 +118,3 @@ function t10 () {
 }
 
 document.querySelector('.b-10').onclick = t10;
-
-// ************************************
-// Task 9
-// --------------
-// Task 1 -- ok
-// Task 2 -- ok
-// Task 3 -- ok
-// Task 4 -- ok
-// Task 5 -- ok
-// Task 6 -- ok
-// Task 7 -- ok
-// Task 8 -- ok
-// Task 10 -- ok
-
-
-
-
-
-
-
