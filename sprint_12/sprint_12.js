@@ -11,6 +11,7 @@ document.querySelector('.b-1').onclick = t01;
 // Task 2
 // Создание через innerHTML не гибкое, давайте научимся более гибким способам создания элементов в JavaScript. Напишите функцию t02, которая создает через createElement элемент h2, затем через textContent добавьте в созданный элемент текст 'Sprint 12', после чего добавьте через append элемент в .out-2.
 
+
 function t02 () {
     const elem = document.createElement('h2');
     
