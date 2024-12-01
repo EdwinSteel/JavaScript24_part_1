@@ -2,6 +2,7 @@
 // В начальных спринтах мы создавали элементы с помощью innerHTML. Давайте вспомним как это было. Создайте заголовок второго уровня с текстом 'Sprint 12'. Поместите элемент в .out-1 с помощью innerHTML.
 
 function t01 () {
+    document.querySelector('.out-1').innerHTML = '<h2>Sprint-12</h2>';
 }
 
 document.querySelector('.b-1').onclick = t01;
@@ -196,7 +197,6 @@ function t20 () {
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Task 1
 // Task 2
 // Task 3
 // Task 4
@@ -217,3 +217,4 @@ document.querySelector('.b-20').onclick = t20;
 // Тask 19
 // Тask 20
 // --------------
+// Task 1 -- ok
