@@ -28,9 +28,12 @@ document.querySelector('.b-2').onclick = t02;
 // Функция должна создавать через createElement элемент img, в качестве атрибута src укажите './images/harconen.png'. Добавьте через append созданное изображение в .out-3.
 
 function t03 () {
-  
-}
+    const img3 = document.createElement('img');
+    img3.src = './images/harconen.png';
 
+    document.querySelector('.out-3').innerHTML = '';
+    document.querySelector('.out-3').append(img3);
+}
 
 document.querySelector('.b-3').onclick = t03;
 
@@ -202,8 +205,6 @@ function t20 () {
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Task 2
-// Task 3
 // Task 4
 // Task 5
 // Task 6
@@ -223,3 +224,5 @@ document.querySelector('.b-20').onclick = t20;
 // Тask 20
 // --------------
 // Task 1 -- ok
+// Task 2 -- ok
+// Task 3 -- ok
