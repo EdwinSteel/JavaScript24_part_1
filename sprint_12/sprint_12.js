@@ -38,13 +38,17 @@ function t03 () {
 document.querySelector('.b-3').onclick = t03;
 
 
-// Task 4
+// Task 4 -- ПРОВЕРИТЬ !!!
 // Функция должна создавать через createElement элемент img, в качестве атрибута src укажите './images/harconen2.png'. Добавьте через classList класс 'round-img'.  Добавьте через append созданное изображение в .out-4.
 
 function t04 () {
+    const img4 = document.createElement('img');
+    img4.src = './images/harconen2.png';
+    img4.classList.add('round-img');
 
+    document.querySelector('.out-4').innerHTML = '';
+    document.querySelector('.out-4').append(img4);
 }
-
 
 document.querySelector('.b-4').onclick = t04;
 
