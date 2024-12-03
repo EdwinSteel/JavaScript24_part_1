@@ -80,13 +80,19 @@ function t06 () {
 }
 
 
-// Task 7
+// Task 7 -- В работе, есть ОШИБКИ !!!
 // Функция должна создавать через createElement элемент select  c классом 's-7'. Добавьте в созданный select элементы option с value = 22 и тектом 'Лето II Атрейдес' и option с value 33 и текстом 'Дункан Айдахо'. Создавайте option через createElement. Добавьте созданный select через append в .out-7.
 
 function t07 () {
-   
-}
+    const s7 = document.createElement('select');
+    s7.classList.add('s-7');
+    s7.createElement('option');
 
+
+   
+    console.log(s7, typeof s7);
+    document.querySelector('.out-7').append('s7');
+}
 
 document.querySelector('.b-7').onclick = t07;
 
@@ -217,7 +223,6 @@ function t20 () {
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Task 6
 // Task 7
 // Task 8
 // Task 9
@@ -238,3 +243,4 @@ document.querySelector('.b-20').onclick = t20;
 // Task 3 -- ok
 // Task 4 -- ok
 // Task 5 -- ok
+// Task 6 -- ok
