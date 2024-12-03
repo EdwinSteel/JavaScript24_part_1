@@ -86,12 +86,14 @@ function t06 () {
 function t07 () {
     const s7 = document.createElement('select');
     s7.classList.add('s-7');
-    s7.setAttribute('option', ''); // ??????????
+
+    let opt_val22 = document.createElement('option');
+    
 
 
    
     console.log(s7, typeof s7);
-    document.querySelector('.out-7').append('s7');
+    document.querySelector('.out-7').append(s7);
 }
 
 document.querySelector('.b-7').onclick = t07;
