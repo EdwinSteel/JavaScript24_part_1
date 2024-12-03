@@ -57,9 +57,17 @@ document.querySelector('.b-4').onclick = t04;
 // Функция должна создавать через createElement элемент input. Задайте атрибут type="number", задайте значение value="0", и добавьте через classList класс .i-5. Добавьте для элемента cвойство oninput равное t06. Через append добавьте элемент в .out-5. 
 
 function t05 () {
+    const inp5 = document.createElement('input');
+    inp5.type = 'number';
+    inp5.value = '0';
+    inp5.classList.add('i-5');
+    inp5.oninput = t06;
 
+    // console.log(inp5, inp5.value);
+
+    document.querySelector('.out-5').innerHTML = '';
+    document.querySelector('.out-5').append(inp5);
 }
-
 
 document.querySelector('.b-5').onclick = t05;
 
@@ -209,7 +217,6 @@ function t20 () {
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Task 5
 // Task 6
 // Task 7
 // Task 8
@@ -230,3 +237,4 @@ document.querySelector('.b-20').onclick = t20;
 // Task 2 -- ok
 // Task 3 -- ok
 // Task 4 -- ok
+// Task 5 -- ok
