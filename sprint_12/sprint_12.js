@@ -86,7 +86,7 @@ function t06 () {
 function t07 () {
     const s7 = document.createElement('select');
     s7.classList.add('s-7');
-    s7.createElement('option');
+    s7.setAttribute('option', ''); // ??????????
 
 
    
