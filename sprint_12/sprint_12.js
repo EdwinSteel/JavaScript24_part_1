@@ -80,7 +80,7 @@ function t06 () {
 }
 
 
-// Task 7 -- В работе, есть ОШИБКИ !!!
+// Task 7 -- В работе, есть ОШИБКИ !!! -- Проверить, кажется все ОК !
 // Функция должна создавать через createElement элемент select  c классом 's-7'. Добавьте в созданный select элементы option с value = 22 и тектом 'Лето II Атрейдес' и option с value 33 и текстом 'Дункан Айдахо'. Создавайте option через createElement. Добавьте созданный select через append в .out-7.
 
 function t07 () {
@@ -88,11 +88,17 @@ function t07 () {
     s7.classList.add('s-7');
 
     let opt_val22 = document.createElement('option');
-    
+    opt_val22.textContent = 'Лето II Атрейдес';
+    s7.add(opt_val22);    
+    // console.log(opt_val22, typeof opt_val22 );
 
+    let opt_val33 = document.createElement('option');
+    opt_val33.textContent = 'Дункан Айдахо';
+    s7.add(opt_val33);    
+    // console.log(opt_val33, typeof opt_val33 );
 
-   
     console.log(s7, typeof s7);
+    document.querySelector('.out-7').innerHTML = '';
     document.querySelector('.out-7').append(s7);
 }
 
