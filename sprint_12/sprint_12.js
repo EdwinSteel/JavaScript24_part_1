@@ -114,7 +114,7 @@ function t08 () {
     const li8 = document.createElement('li');
 
     li8.textContent = i8.value;
-    ul8.innerHTML = ''; // из условия не понятно (см. sprint 8, task 1 )
+    ul8.innerHTML = ''; // из условия не понятно (см. sprint 8, task 1)
 
     ul8.append(li8);
 
