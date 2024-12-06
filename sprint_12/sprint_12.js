@@ -105,13 +105,21 @@ function t07 () {
 document.querySelector('.b-7').onclick = t07;
 
 
-// Task 8
+// Task 8 -- ПРОВЕРИТЬ !!!
 // Функция должна получать текст из input.i-8, создавать элемент li c помощью createElement и записывать в него полученный текст, после чего добавлять в .list-8 через append.
 
 function t08 () {
+    const i8 = document.querySelector('.i-8');
+    const ul8 = document.querySelector('.list-8');
+    const li8 = document.createElement('li');
 
+    li8.textContent = i8.value;
+    ul8.innerHTML = ''; // из условия не понятно (см. sprint 8, task 1 )
+
+    ul8.append(li8);
+
+    console.log(ul8, typeof ul8);
 }
-
 
 document.querySelector('.b-8').onclick = t08;
 
