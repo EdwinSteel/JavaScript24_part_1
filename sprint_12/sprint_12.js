@@ -127,11 +127,20 @@ document.querySelector('.b-8').onclick = t08;
 // Функция должна создавать элемент 'details' через createElement, создайте через createElement элемент 'summary' с текстом 'close/open'. Добавьте через append созданный summary в details. Создайте текстовую ноду через createTextNode(), с текстом 'Dune is a 1965 epic science fiction novel by American author Frank Herbert, originally published as two separate serials in Analog magazine.' Добавьте созданную ноду в details через append. Созданный details в .out-9 через append.
 
 function t09 () {
-
+    const elm_det_09 = document.createElement('details');
+    const elm_sum_09 = document.createElement('summary');
+    const text_node_09 = document.createTextNode('Dune is a 1965 epic science fiction novel by American author Frank Herbert, originally published as two separate serials in Analog magazine.');
+    
+    elm_sum_09.textContent = 'close/open';
+    elm_det_09.append(elm_sum_09);
+    elm_det_09.append(text_node_09);
+    
+    document.querySelector('.out-9').innerHTML = '';
+    document.querySelector('.out-9').append(elm_det_09);
 }
 
-
 document.querySelector('.b-9').onclick = t09;
+
 
 // Task 10
 // Функция должна создавать элемент 'tr' и два элемента 'td'. В первый добавьте текст 'Гхола', а во второй 'Гхола — клон, искусственное существо, которое выращивается в аксолотль-чане', добавьте оба td в tr через append. Созданный tr добавьте в таблицу .table-10 > tbody через append(). 
