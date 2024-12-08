@@ -168,6 +168,7 @@ div.textContent = 'Test div';
 div.classList.add('bg-orange');
 
 function t11 () {
+    document.querySelector('.out-11').append(div);
 }
 
 document.querySelector('.b-11').onclick = t11;
