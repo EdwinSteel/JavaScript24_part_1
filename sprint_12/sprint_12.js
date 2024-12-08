@@ -146,7 +146,16 @@ document.querySelector('.b-9').onclick = t09;
 // Функция должна создавать элемент 'tr' и два элемента 'td'. В первый добавьте текст 'Гхола', а во второй 'Гхола — клон, искусственное существо, которое выращивается в аксолотль-чане', добавьте оба td в tr через append. Созданный tr добавьте в таблицу .table-10 > tbody через append(). 
 
 function t10 () {
- 
+    const tr10 = document.createElement('tr');
+    const td10_1 = document.createElement('td');
+    const td10_2 = document.createElement('td');
+    const tableBody = document.querySelector('.table-10 > tbody');
+    
+    td10_1.textContent = 'Гхола';
+    td10_2.textContent = 'Гхола — клон, искусственное существо, которое выращивается в аксолотль-чане';
+
+    tr10.append(td10_1, td10_2);
+    tableBody.append(tr10);
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -247,7 +256,6 @@ function t20 () {
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Task 10
 // Task 11
 // Task 12
 // Task 13
@@ -268,3 +276,4 @@ document.querySelector('.b-20').onclick = t20;
 // Task 7 -- ok
 // Task 8 -- ok
 // Task 9 -- ok
+// Task 10 -- ok
