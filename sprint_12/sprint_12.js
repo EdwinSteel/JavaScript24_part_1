@@ -160,6 +160,7 @@ function t10 () {
 
 document.querySelector('.b-10').onclick = t10;
 
+
 // Task 11
 // Создан элемент div, функция должна добавить через append div в блок .out-11. Обратите внимание куда добавляется элемент.
 
@@ -178,6 +179,7 @@ document.querySelector('.b-11').onclick = t11;
 // Функция должна добавлять элемент div (созданный в таске 11) с помощью prepend в .out-11. Обратите внимание, куда добавляется элемент. 
 
 function t12 () {
+    document.querySelector('.out-11').prepend(div);
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -257,7 +259,6 @@ function t20 () {
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Task 11
 // Task 12
 // Task 13
 // Task 14
@@ -278,3 +279,4 @@ document.querySelector('.b-20').onclick = t20;
 // Task 8 -- ok
 // Task 9 -- ok
 // Task 10 -- ok
+// Task 11 -- ok
