@@ -219,7 +219,7 @@ document.querySelector('.b-15').onclick = t15;
 // Функция должна делать remove() для элемента .out-16.
 
 function t16 () {
-
+    document.querySelector('.out-16').remove();
 }
 
 document.querySelector('.b-16').onclick = t16;
