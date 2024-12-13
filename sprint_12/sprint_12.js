@@ -225,24 +225,29 @@ function t16 () {
 document.querySelector('.b-16').onclick = t16;
 
 
-// Тask 17 -- 
-// Рассмотреть вариант если класс м-17 есть, то запретить повторное нажатие кнопки.
+// Тask 17
 // Как видно createElement очень гибок, а вместе с after, before, append, prepend позволяет очень гибко работать с DOM, однако не стоит списывать innerHTML со счетов. Давайте заменим блок .out-17 строкой '<mark class="m-17">Thufir Hawat</mark>' с помощью outerHTML.
 
 function t17 () {
-    document.querySelector('.out-17').outerHTML = '<mark class="m-17">Thufir Hawat</mark>';
+    if (document.querySelector('.out-17')) {
+        document.querySelector('.out-17').outerHTML = '<mark class="m-17">Thufir Hawat</mark>';
+    }
 }
 
 document.querySelector('.b-17').onclick = t17;
 
-// Тask 18 -- Рассмотреть вариант
+
+// Тask 18
 // Функция t18 должна заменять блок .out-18 строкой '<mark class="m-18">Thufir Hawat</mark>' с помощью outerText.
 
 function t18 () {
+    if (document.querySelector('.out-18')) {
     document.querySelector('.out-18').outerHTML = '<mark class="m-18">Thufir Hawat</mark>';
+    }
 }
 
 document.querySelector('.b-18').onclick = t18;
+
 
 // Тask 19
 // Изучите работу метода insertAdjacentHTML на примере функции t19. Запустите, изучите ее работу с опцией 'beforebegin'. Замените опцию 'beforebegin' на 'afterbegin', 'beforeend', 'afterend'.
@@ -266,8 +271,6 @@ function t20 () {
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Тask 17 -- Рассмотреть вариант
-// Тask 18 -- Рассмотреть вариант
 // Тask 19
 // Тask 20
 // --------------
@@ -287,3 +290,5 @@ document.querySelector('.b-20').onclick = t20;
 // Task 14 -- ok
 // Task 15 -- ok
 // Task 16 -- ok
+// Тask 17 -- ok
+// Тask 18 -- ok
