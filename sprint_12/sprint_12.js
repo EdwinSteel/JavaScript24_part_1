@@ -255,8 +255,8 @@ document.querySelector('.b-18').onclick = t18;
 function t19 () {
     // document.querySelector('.out-19').insertAdjacentHTML('beforebegin', '<mark>TEST</mark>');
     // document.querySelector('.out-19').insertAdjacentHTML('afterbegin', '<mark>TEST</mark>');
-    // document.querySelector('.out-19').insertAdjacentHTML('beforeend', '<mark>TEST</mark>');
-    document.querySelector('.out-19').insertAdjacentHTML('afterend', '<mark>TEST</mark>');
+    document.querySelector('.out-19').insertAdjacentHTML('beforeend', '<mark>TEST</mark>');
+    // document.querySelector('.out-19').insertAdjacentHTML('afterend', '<mark>TEST</mark>');
 }
 
 document.querySelector('.b-19').onclick = t19;
@@ -265,7 +265,10 @@ document.querySelector('.b-19').onclick = t19;
 // Изучите работу метода insertAdjacentText на примере функции t20. Запустите, изучите ее работу с опцией 'beforebegin'. Замените опцию 'beforebegin' на 'afterbegin', 'beforeend', 'afterend'.
 
 function t20 () {
-    document.querySelector('.out-20').insertAdjacentText('beforebegin', '<mark>TEST</mark>');
+    // document.querySelector('.out-20').insertAdjacentText('beforebegin', '<mark>TEST</mark>');
+    // document.querySelector('.out-20').insertAdjacentText('afterbegin', '<mark>TEST</mark>');
+    document.querySelector('.out-20').insertAdjacentText('beforeend', '<mark>TEST</mark>');
+    // document.querySelector('.out-20').insertAdjacentText('afterend', '<mark>TEST</mark>');
 }
 
 document.querySelector('.b-20').onclick = t20;
