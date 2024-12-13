@@ -255,8 +255,8 @@ document.querySelector('.b-18').onclick = t18;
 function t19 () {
     // document.querySelector('.out-19').insertAdjacentHTML('beforebegin', '<mark>TEST</mark>');
     // document.querySelector('.out-19').insertAdjacentHTML('afterbegin', '<mark>TEST</mark>');
-    document.querySelector('.out-19').insertAdjacentHTML('beforeend', '<mark>TEST</mark>');
-    // document.querySelector('.out-19').insertAdjacentHTML('afterend', '<mark>TEST</mark>');
+    // document.querySelector('.out-19').insertAdjacentHTML('beforeend', '<mark>TEST</mark>');
+    document.querySelector('.out-19').insertAdjacentHTML('afterend', '<mark>TEST</mark>');
 }
 
 document.querySelector('.b-19').onclick = t19;
@@ -267,15 +267,13 @@ document.querySelector('.b-19').onclick = t19;
 function t20 () {
     // document.querySelector('.out-20').insertAdjacentText('beforebegin', '<mark>TEST</mark>');
     // document.querySelector('.out-20').insertAdjacentText('afterbegin', '<mark>TEST</mark>');
-    document.querySelector('.out-20').insertAdjacentText('beforeend', '<mark>TEST</mark>');
-    // document.querySelector('.out-20').insertAdjacentText('afterend', '<mark>TEST</mark>');
+    // document.querySelector('.out-20').insertAdjacentText('beforeend', '<mark>TEST</mark>');
+    document.querySelector('.out-20').insertAdjacentText('afterend', '<mark>TEST</mark>');
 }
 
 document.querySelector('.b-20').onclick = t20;
 
 // ************************
-// Тask 19
-// Тask 20
 // --------------
 // Task 1 -- ok
 // Task 2 -- ok
@@ -295,3 +293,5 @@ document.querySelector('.b-20').onclick = t20;
 // Task 16 -- ok
 // Тask 17 -- ok
 // Тask 18 -- ok
+// Тask 19 -- ok
+// Тask 20 -- ok
