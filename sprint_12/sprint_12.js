@@ -189,6 +189,7 @@ document.querySelector('.b-12').onclick = t12;
 // Функция должна добавлять элемент div (созданный в таске 11) с помощью before в .out-11. Обратите внимание, куда добавляется элемент. 
 
 function t13 () {
+    document.querySelector('.out-11').before(div);
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -198,6 +199,7 @@ document.querySelector('.b-13').onclick = t13;
 // Функция должна добавлять элемент div (созданный в таске 11) с помощью after в .out-11. Обратите внимание, куда добавляется элемент. 
 
 function t14 () {
+    document.querySelector('.out-11').after(div);
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -207,6 +209,7 @@ document.querySelector('.b-14').onclick = t14;
 // Функция должна делать replaceWith для .out-15 заменяя его на div (созданный в таск 11). Обратите внимание, куда добавляется элемент. 
 
 function t15 () {
+    document.querySelector('.out-15').replaceWith(div);
 }
 
 document.querySelector('.b-15').onclick = t15;
