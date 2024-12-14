@@ -11,7 +11,6 @@ document.querySelector('.b-1').onclick = t01;
 // Task 2
 // Создание через innerHTML не гибкое, давайте научимся более гибким способам создания элементов в JavaScript. Напишите функцию t02, которая создает через createElement элемент h2, затем через textContent добавьте в созданный элемент текст 'Sprint 12', после чего добавьте через append элемент в .out-2.
 
-
 function t02 () {
     const elem = document.createElement('h2');
     
@@ -242,7 +241,7 @@ document.querySelector('.b-17').onclick = t17;
 
 function t18 () {
     if (document.querySelector('.out-18')) {
-    document.querySelector('.out-18').outerHTML = '<mark class="m-18">Thufir Hawat</mark>';
+    document.querySelector('.out-18').outerText = '<mark class="m-18">Thufir Hawat</mark>';
     }
 }
 
@@ -261,6 +260,7 @@ function t19 () {
 
 document.querySelector('.b-19').onclick = t19;
 
+
 // Тask 20
 // Изучите работу метода insertAdjacentText на примере функции t20. Запустите, изучите ее работу с опцией 'beforebegin'. Замените опцию 'beforebegin' на 'afterbegin', 'beforeend', 'afterend'.
 
@@ -272,26 +272,3 @@ function t20 () {
 }
 
 document.querySelector('.b-20').onclick = t20;
-
-// ************************
-// --------------
-// Task 1 -- ok
-// Task 2 -- ok
-// Task 3 -- ok
-// Task 4 -- ok
-// Task 5 -- ok
-// Task 6 -- ok
-// Task 7 -- ok
-// Task 8 -- ok
-// Task 9 -- ok
-// Task 10 -- ok
-// Task 11 -- ok
-// Task 12 -- ok
-// Task 13 -- ok
-// Task 14 -- ok
-// Task 15 -- ok
-// Task 16 -- ok
-// Тask 17 -- ok
-// Тask 18 -- ok
-// Тask 19 -- ok
-// Тask 20 -- ok
