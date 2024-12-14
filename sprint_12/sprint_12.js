@@ -154,10 +154,16 @@ function t10 () {
     td10_2.textContent = 'Гхола — клон, искусственное существо, которое выращивается в аксолотль-чане';
 
     // добавить проверку чтобы запреить повторное срабатывание кнопки !!!
+    // if (!tr10.querySelectorAll('td')) {
+    //     console.log('++++++++++++');        
+    // } else {
+    //     console.log('-----------');
+    //     tr10.append(td10_1, td10_2);
+    //     tableBody.append(tr10);
+    // }
+    // ЕСТЬ ОШИБКИ
+    
 
-
-    tr10.append(td10_1, td10_2);
-    tableBody.append(tr10);
 }
 
 document.querySelector('.b-10').onclick = t10;
