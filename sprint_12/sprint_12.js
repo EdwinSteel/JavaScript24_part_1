@@ -156,15 +156,25 @@ function t10 () {
     // добавить проверку чтобы запреить повторное срабатывание кнопки !!!
     console.log(tr10.childElementCount + 'do');
     
-    if (tr10.childElementCount === 2) {
-        console.log('++++++++++++');        
+    if (td10_1.textContent = 'Гхола') {
+
+        console.log(td10_1.textContent)
+
         tr10.append(td10_1, td10_2);
-        tableBody.append(tr10);
-    }        
+        tableBody.append(tr10);        
+        console.log(tr10.childElementCount + ' ' + '11');
+
+        // return;
+            console.log(tr10.childElementCount + ' ' + '10');
+        } else {
             
+    }
+        
+        
         // tr10.append(td10_1, td10_2);
         // tableBody.append(tr10);
-        console.log(tr10.childElementCount + 'posle');
+        
+        console.log(tr10.childElementCount + ' ' + 'posle');
 
 }
 
