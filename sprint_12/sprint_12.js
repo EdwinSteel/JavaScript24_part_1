@@ -154,28 +154,22 @@ function t10 () {
     td10_2.textContent = 'Гхола — клон, искусственное существо, которое выращивается в аксолотль-чане';
 
     // добавить проверку чтобы запреить повторное срабатывание кнопки !!!
-    console.log(tr10.childElementCount + 'do');
-    
-    if (td10_1.textContent = 'Гхола') {
-
-        console.log(td10_1.textContent)
-
+    // НЕВЕРНО !!!
+    let count_click = 0; 
+    while (count_click < 2) {
+        
         tr10.append(td10_1, td10_2);
-        tableBody.append(tr10);        
-        console.log(tr10.childElementCount + ' ' + '11');
+        tableBody.append(tr10);
+        
+        count_click++;
+    }        
+     
+    console.log(count_click);
+    
 
-        // return;
-            console.log(tr10.childElementCount + ' ' + '10');
-        } else {
-            
-    }
-        
-        
-        // tr10.append(td10_1, td10_2);
-        // tableBody.append(tr10);
-        
-        console.log(tr10.childElementCount + ' ' + 'posle');
-
+    // tr10.append(td10_1, td10_2);
+    // tableBody.append(tr10);
+    
 }
 
 document.querySelector('.b-10').onclick = t10;
