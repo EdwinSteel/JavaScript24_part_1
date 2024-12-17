@@ -268,18 +268,21 @@ document.querySelector('.b-18').onclick = t18;
 
 function t19 () {
 
-    if (!document.querySelector('mark')) {
+    if (t19.isRun) {
+        return false;
+    }
         // document.querySelector('.out-19').insertAdjacentHTML('beforebegin', '<mark>TEST</mark>');
         // document.querySelector('.out-19').insertAdjacentHTML('afterbegin', '<mark>TEST</mark>');
         // document.querySelector('.out-19').insertAdjacentHTML('beforeend', '<mark>TEST</mark>');
         document.querySelector('.out-19').insertAdjacentHTML('afterend', '<mark>TEST</mark>');
-    }
+    
+    t19.isRun = true;
 }
 
 document.querySelector('.b-19').onclick = t19;
 
 
-// Тask 20 ---
+// Тask 20
 // Изучите работу метода insertAdjacentText на примере функции t20. Запустите, изучите ее работу с опцией 'beforebegin'. Замените опцию 'beforebegin' на 'afterbegin', 'beforeend', 'afterend'.
 
 function t20 () {
