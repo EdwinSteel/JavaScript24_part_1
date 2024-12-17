@@ -317,5 +317,5 @@ document.querySelector('.b-20').onclick = t20;
 // Тask 17
 // Тask 18
 // Тask 19
-// Тask 20 ------------
+// Тask 20
 
