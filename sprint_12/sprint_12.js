@@ -284,12 +284,15 @@ document.querySelector('.b-19').onclick = t19;
 
 function t20 () {
 
-    if (!document.querySelector('mark')) {        
+    if (t20.isRun) {
+        return false;
+    }
         // document.querySelector('.out-20').insertAdjacentText('beforebegin', '<mark>TEST</mark>');
         // document.querySelector('.out-20').insertAdjacentText('afterbegin', '<mark>TEST</mark>');
         // document.querySelector('.out-20').insertAdjacentText('beforeend', '<mark>TEST</mark>');
         document.querySelector('.out-20').insertAdjacentText('afterend', '<mark>TEST</mark>');
-    }
+    
+    t20.isRun = true; 
 }
 
 document.querySelector('.b-20').onclick = t20;
