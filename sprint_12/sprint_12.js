@@ -153,28 +153,23 @@ function t10 () {
     td10_1.textContent = 'Гхола';
     td10_2.textContent = 'Гхола — клон, искусственное существо, которое выращивается в аксолотль-чане';
 
-    // добавить проверку чтобы запреить повторное срабатывание кнопки !!!
-    // НЕВЕРНО !!!
-    let count_click = 0; 
-    while (count_click < 2) {
-        
-        tr10.append(td10_1, td10_2);
-        tableBody.append(tr10);
-        
-        count_click++;
-    }        
-     
-    console.log(count_click);
-    
+    // Запрещаем повторное срабатывание кнопки !!!
+    // Александр, ОГРОМНАЯ благодарность за урок !
+    // "Выполняем функцию один раз JavaScript. 5 способов"
+    // https://www.youtube.com/watch?v=MYsghKeahY0
 
-    // tr10.append(td10_1, td10_2);
-    // tableBody.append(tr10);
-    
+    if (t10.isRun) {
+        return false;
+    }
+
+    tr10.append(td10_1, td10_2);
+    tableBody.append(tr10);
+
+    t10.isRun = true;    
 }
 
 document.querySelector('.b-10').onclick = t10;
-// document.querySelector('.b-10').onclick = null;
-// document.querySelector('.b-10').disablet = true;
+
 
 // Task 11
 // Создан элемент div, функция должна добавить через append div в блок .out-11. Обратите внимание куда добавляется элемент.
@@ -309,7 +304,7 @@ document.querySelector('.b-20').onclick = t20;
 // Task 7
 // Task 8
 // Task 9
-// Task 10 ----------
+// Task 10
 // Task 11
 // Task 12
 // Task 13
