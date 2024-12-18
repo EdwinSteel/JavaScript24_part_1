@@ -62,8 +62,6 @@ function t05 () {
     inp5.classList.add('i-5');
     inp5.oninput = t06;
 
-    // console.log(inp5, inp5.value);
-
     document.querySelector('.out-5').innerHTML = '';
     document.querySelector('.out-5').append(inp5);
 }
@@ -96,7 +94,7 @@ function t07 () {
     opt_val33.value = 33;
     s7.add(opt_val33);    
     
-    console.log(s7, typeof s7);
+    // console.log(s7, typeof s7);
     document.querySelector('.out-7').innerHTML = '';
     document.querySelector('.out-7').append(s7);
 }
@@ -115,8 +113,6 @@ function t08 () {
     li8.textContent = i8.value;
     ul8.innerHTML = '';
     ul8.append(li8);
-
-    // console.log(ul8, typeof ul8);
 }
 
 document.querySelector('.b-8').onclick = t08;
@@ -268,18 +264,21 @@ document.querySelector('.b-18').onclick = t18;
 
 function t19 () {
 
-    if (!document.querySelector('mark')) {
+    if (t19.isRun) {
+        return false;
+    }
         // document.querySelector('.out-19').insertAdjacentHTML('beforebegin', '<mark>TEST</mark>');
         // document.querySelector('.out-19').insertAdjacentHTML('afterbegin', '<mark>TEST</mark>');
         // document.querySelector('.out-19').insertAdjacentHTML('beforeend', '<mark>TEST</mark>');
         document.querySelector('.out-19').insertAdjacentHTML('afterend', '<mark>TEST</mark>');
-    }
+    
+    t19.isRun = true;
 }
 
 document.querySelector('.b-19').onclick = t19;
 
 
-// Тask 20 ---
+// Тask 20
 // Изучите работу метода insertAdjacentText на примере функции t20. Запустите, изучите ее работу с опцией 'beforebegin'. Замените опцию 'beforebegin' на 'afterbegin', 'beforeend', 'afterend'.
 
 function t20 () {
@@ -296,26 +295,3 @@ function t20 () {
 }
 
 document.querySelector('.b-20').onclick = t20;
-
-// *****************
-// Task 1
-// Task 2
-// Task 3
-// Task 4
-// Task 5
-// Task 6
-// Task 7
-// Task 8
-// Task 9
-// Task 10
-// Task 11
-// Task 12
-// Task 13
-// Task 14
-// Task 15
-// Task 16
-// Тask 17
-// Тask 18
-// Тask 19
-// Тask 20
-
