@@ -32,7 +32,7 @@ t02(); t02();
 // Task 4
 // Напишите анонимную функцию, которая срабатывает при клике на кнопке .b-4 и выводит в .out-4 строку 'work'.
 
-// document.querySelector('.b-4').onclick = тут напишите анонимную функцию
+ document.querySelector('.b-4').onclick = function () {document.querySelector('.out-4').textContent = 'work'}
 
 
 // Тask 5
@@ -194,7 +194,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 4
 // Тask 5
 // Task 6
 // Task 7
@@ -215,5 +214,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 1 -- ok
 // Task 2 -- ok
 // Task 3 -- ok
+// Task 4 -- ok
 
 
