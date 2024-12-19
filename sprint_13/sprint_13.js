@@ -37,9 +37,9 @@ t02(); t02();
 
 // Тask 5
 // Напишите анонимную функцию, которая запускается после объявления. Функция выводит в .out-5 строку 'work'.
-function () {
-    document.querySelector('.out-5').textContent = 'work'
-}
+// function () {
+//     document.querySelector('.out-5').textContent = 'work'
+// }
     
 
 // Task 6
