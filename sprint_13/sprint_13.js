@@ -2,9 +2,12 @@
 // Все это время мы работали с именованными функциями, т.е. функция имеет имя, по которому можно обращаться к данной функции. Вызывать функцию. Давайте закрепим знания. Напишите функцию t01, которая выводит в .out-1 текст 'work'.
 
 // тут напишите функцию t01
+function t01() {
+    document.querySelector('.out-1').textContent = 'work';
+}
 
 // после написания снимите комментарий со строки ниже и проверьте работу функции
-// document.querySelector('.b-1').onclick = t01;
+document.querySelector('.b-1').onclick = t01;
 
 
 // Task 2
@@ -15,7 +18,7 @@ function t02() {
 }
 
 // снимите комментарий
-// t02(); t02();
+t02(); t02();
 
 
 // Task 3
@@ -191,8 +194,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 1
-// Task 2
 // Task 3
 // Task 4
 // Тask 5
@@ -212,3 +213,7 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 19
 // Task 20
 //  ----------------
+// Task 1 -- ok
+// Task 2 -- ok
+
+
