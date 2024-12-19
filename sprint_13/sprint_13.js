@@ -24,9 +24,9 @@ t02(); t02();
 // Task 3
 // Мы запускали функцию в таске 2 указывая ее название и ставя скобки после ее имени. Однако есть и другой, более короткий способ - если вам нужно вызвать написанную функцию то можно применить следующий синтаксис (снимите комментарий с кода ниже). Кстати, потом можно вызывать функцию еще и стандартным способом - t3();
 
-// (function t03 () {
-//     document.querySelector('.out-3').textContent += 'work ';
-// })();
+(function t03 () {
+    document.querySelector('.out-3').textContent += 'work ';
+})();
 
 
 // Task 4
@@ -194,7 +194,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 3
 // Task 4
 // Тask 5
 // Task 6
@@ -215,5 +214,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 //  ----------------
 // Task 1 -- ok
 // Task 2 -- ok
+// Task 3 -- ok
 
 
