@@ -32,15 +32,16 @@ t02(); t02();
 // Task 4
 // Напишите анонимную функцию, которая срабатывает при клике на кнопке .b-4 и выводит в .out-4 строку 'work'.
 
- document.querySelector('.b-4').onclick = function () {document.querySelector('.out-4').textContent = 'work'}
+document.querySelector('.b-4').onclick = function () {document.querySelector('.out-4').textContent = 'work'}
 
 
 // Тask 5
 // Напишите анонимную функцию, которая запускается после объявления. Функция выводит в .out-5 строку 'work'.
-// function () {
-//     document.querySelector('.out-5').textContent = 'work'
-// }
-    
+
+(function() {
+    document.querySelector('.out-5').textContent = 'work';
+})();
++
 
 // Task 6
 // Изучите код ниже. Можно создавать функцию и так. Т.е. мы создаем константу или переменную и присваиваем в нее анонимную функцию.
