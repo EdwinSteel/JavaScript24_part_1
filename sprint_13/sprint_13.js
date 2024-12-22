@@ -38,10 +38,11 @@ document.querySelector('.b-4').onclick = function () {document.querySelector('.o
 // Тask 5
 // Напишите анонимную функцию, которая запускается после объявления. Функция выводит в .out-5 строку 'work'.
 
-(function() {
+(function () {
     document.querySelector('.out-5').textContent = 'work';
-})();
-+
+}
+) ();
+
 
 // Task 6
 // Изучите код ниже. Можно создавать функцию и так. Т.е. мы создаем константу или переменную и присваиваем в нее анонимную функцию.
