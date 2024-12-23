@@ -38,10 +38,12 @@ document.querySelector('.b-4').onclick = function () {document.querySelector('.o
 // Тask 5
 // Напишите анонимную функцию, которая запускается после объявления. Функция выводит в .out-5 строку 'work'.
 
-(function () {
-    document.querySelector('.out-5').textContent = 'work';
-}
-) ();
+// ********* ???????????
+// (function tt55() {
+//     document.querySelector('.out-5').textContent = 'work';
+// });
+
+// tt55();
 
 
 // Task 6
