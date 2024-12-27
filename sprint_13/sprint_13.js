@@ -34,7 +34,6 @@ t02(); t02();
 
 document.querySelector('.b-4').onclick = function () {document.querySelector('.out-4').textContent = 'work'};
 
-
 // Тask 5
 // Напишите анонимную функцию, которая запускается после объявления. Функция выводит в .out-5 строку 'work'.
 
