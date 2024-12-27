@@ -82,9 +82,18 @@ document.querySelector('.b-82').onclick = function () {
 // Напишите функцию t09, которая принимает два числа (как аргументы) и выводит большее число в .out-9.
 
 // тут напишите функцию t09
+function t09 (a, b) {
+    let out9 = document.querySelector('.out-9');
+
+    if (a > b) {
+        out9.textContent = a;
+    } else {
+        out9.textContent = b;
+    }
+}
 
 document.querySelector('.b-9').onclick = function () {
-    // t09(70,90);  // снимите комментарий для проверки
+    t09(70,90);  // снимите комментарий для проверки
 }
 
 
@@ -197,10 +206,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 6
-// Task 7
-// Task 8
-// Task 9
 // Task 10
 // Task 11
 // Task 12
@@ -218,5 +223,10 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 3 -- ok
 // Task 4 -- ok
 // Тask 5 -- ok
+// Task 6 -- ok
+// Task 7 -- ok
+// Task 8 -- ok
+// Task 9 -- ok
+
 
 
