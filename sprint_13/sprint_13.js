@@ -34,6 +34,7 @@ t02(); t02();
 
 document.querySelector('.b-4').onclick = function () {document.querySelector('.out-4').textContent = 'work'};
 
+
 // Тask 5
 // Напишите анонимную функцию, которая запускается после объявления. Функция выводит в .out-5 строку 'work'.
 
@@ -63,6 +64,7 @@ function t07() {
 
 document.querySelector('.b-7').onclick = t07;
 
+
 // Task 8
 // Давайте сделаем шаг к более универсальной функции. Изучите как работает функция t08.
 
@@ -77,6 +79,7 @@ document.querySelector('.b-81').onclick = function () {
 document.querySelector('.b-82').onclick = function () {
     t08(300, 400);
 }
+
 
 // Task 9
 // Напишите функцию t09, которая принимает два числа (как аргументы) и выводит большее число в .out-9.
@@ -105,6 +108,7 @@ document.querySelector('.b-9').onclick = function () {
 document.querySelector('.b-10').onclick = function () {
     // t10(0,10);  // снимите комментарий для проверки
 }
+
 
 // Task 11
 // Напишите функцию t11, которая принимает три числа как аргументы и выводит в .out-11 меньшее из трех чисел.
