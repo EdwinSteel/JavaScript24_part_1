@@ -64,6 +64,7 @@ function t07() {
 
 document.querySelector('.b-7').onclick = t07;
 
+
 // Task 8
 // Давайте сделаем шаг к более универсальной функции. Изучите как работает функция t08.
 
@@ -107,6 +108,7 @@ document.querySelector('.b-9').onclick = function () {
 document.querySelector('.b-10').onclick = function () {
     // t10(0,10);  // снимите комментарий для проверки
 }
+
 
 // Task 11
 // Напишите функцию t11, которая принимает три числа как аргументы и выводит в .out-11 меньшее из трех чисел.
