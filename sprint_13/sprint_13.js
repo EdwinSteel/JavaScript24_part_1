@@ -104,9 +104,6 @@ document.querySelector('.b-9').onclick = function () {
 // Напишите функцию t10, которая принимает два числа как аргументы и выводит в .out-10 случайное целое число в указанном диапазоне.
 
 // тут напишите функцию t10
-function t10 (a, b) {
-
-}
 
 
 document.querySelector('.b-10').onclick = function () {
