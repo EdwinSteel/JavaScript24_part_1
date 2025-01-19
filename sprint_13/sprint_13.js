@@ -104,19 +104,9 @@ document.querySelector('.b-9').onclick = function () {
 // Напишите функцию t10, которая принимает два числа как аргументы и выводит в .out-10 случайное целое число в указанном диапазоне.
 
 // тут напишите функцию t10
-<<<<<<< HEAD
-// function t10 (min, max) {
-//     // Преобразуем границы диапазона к целым числам
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     // Генерируем случайное число
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-=======
 function t10 (a, b) {
     
 }
->>>>>>> b12d8c615510ccb072227135f7f3aae7b8baf237
 
 // document.querySelector('.b-10').onclick = function () {
     // t10(0,10);  // снимите комментарий для проверки
