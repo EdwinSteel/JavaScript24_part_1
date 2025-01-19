@@ -105,14 +105,13 @@ document.querySelector('.b-9').onclick = function () {
 
 // тут напишите функцию t10
 function t10 (a, b) {
-    
+
 }
 
-// document.querySelector('.b-10').onclick = function () {
-    // t10(0,10);  // снимите комментарий для проверки
-    //  t10(15,20);  // снимите комментарий для проверки
 
-// }
+document.querySelector('.b-10').onclick = function () {
+    // t10(0,10);  // снимите комментарий для проверки
+}
 
 
 // Task 11
