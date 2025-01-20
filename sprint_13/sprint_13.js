@@ -104,13 +104,20 @@ document.querySelector('.b-9').onclick = function () {
 // Напишите функцию t10, которая принимает два числа как аргументы и выводит в .out-10 случайное целое число в указанном диапазоне.
 
 // тут напишите функцию t10
-function t10 () {
+function t10 (min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
     console.log('ok');
 }
-
+//--------
+// function randomInteger(min, max) {
+//     let rand = min + Math.random() * (max + 1 - min);
+//     return Math.floor(rand);
+//   }
+// --------
 document.querySelector('.b-10').onclick = function () {
     // t10(0,10);  // снимите комментарий для проверки
-    t10 (); // Это мое
+    t10 (10, 20); // Это мое
 }
 
 
