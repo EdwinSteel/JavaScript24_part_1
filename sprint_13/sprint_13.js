@@ -124,12 +124,13 @@ document.querySelector('.b-10').onclick = function () {
 // тут напишите функцию t11
 function t11 (a, b, c) {
     let out11 = document.querySelector('.out-11');
-    
+
 }
 
 document.querySelector('.b-11').onclick = function () {
     // t11(0,-8,10);  // снимите комментарий для проверки
 }
+
 
 // Task 12
 // Напишите функцию t12, которая принимает в качестве аргумента ccылку на изображение, создает через createElement изображение, присваивает полученный как аргумент src, и выводит через append в .out-12.
