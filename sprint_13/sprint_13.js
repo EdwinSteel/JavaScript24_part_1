@@ -105,19 +105,16 @@ document.querySelector('.b-9').onclick = function () {
 
 // тут напишите функцию t10
 function t10 (min, max) {
+    let out10 = document.querySelector('.out-10');
+
     let rand = min + Math.random() * (max + 1 - min);
-    return Math.floor(rand);
-    console.log('ok');
+        
+    out10.textContent = Math.floor(rand);
+    // console.log(out10.textContent);
 }
-//--------
-// function randomInteger(min, max) {
-//     let rand = min + Math.random() * (max + 1 - min);
-//     return Math.floor(rand);
-//   }
-// --------
+
 document.querySelector('.b-10').onclick = function () {
-    // t10(0,10);  // снимите комментарий для проверки
-    t10 (10, 20); // Это мое
+    t10(0,10);  // снимите комментарий для проверки
 }
 
 
