@@ -122,6 +122,10 @@ document.querySelector('.b-10').onclick = function () {
 // Напишите функцию t11, которая принимает три числа как аргументы и выводит в .out-11 меньшее из трех чисел.
 
 // тут напишите функцию t11
+function t11 (a, b, c) {
+    let out11 = document.querySelector('.out-11');
+    
+}
 
 document.querySelector('.b-11').onclick = function () {
     // t11(0,-8,10);  // снимите комментарий для проверки
