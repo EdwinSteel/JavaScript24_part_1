@@ -136,6 +136,11 @@ document.querySelector('.b-11').onclick = function () {
 // Напишите функцию t12, которая принимает в качестве аргумента ccылку на изображение, создает через createElement изображение, присваивает полученный как аргумент src, и выводит через append в .out-12.
 
 // тут напишите функцию t12
+function t12 (a) {
+    const out12 = document.querySelector('.out-12');
+    // Нужно написать продолжение функции согласно условия
+
+}
 
 document.querySelector('.b-121').onclick = function () {
     // t12('./images/28986.jpg');  // снимите комментарий для проверки
