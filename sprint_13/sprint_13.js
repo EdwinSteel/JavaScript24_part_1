@@ -124,11 +124,11 @@ document.querySelector('.b-10').onclick = function () {
 // тут напишите функцию t11
 function t11 (a, b, c) {
     let out11 = document.querySelector('.out-11');
-
+    out11.textContent = Math.min(a, b, c);
 }
 
 document.querySelector('.b-11').onclick = function () {
-    // t11(0,-8,10);  // снимите комментарий для проверки
+    t11(0,-8,10);  // снимите комментарий для проверки    
 }
 
 
@@ -223,7 +223,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 11
 // Task 12
 // Task 13
 // Task 14
@@ -244,3 +243,4 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 8 -- ok
 // Task 9 -- ok
 // Task 10 -- ok
+// Task 11 -- ok
