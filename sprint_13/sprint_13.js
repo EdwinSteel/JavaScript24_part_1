@@ -191,11 +191,25 @@ document.querySelector('.b-14').onclick = function () {
 // Напишите функцию t15, которая получает аргумент - имя пользователя и создает гиперссылку, где атрибут href равен '/logout', а текст гиперссылки - текст переданный как аргумент. Добавьте гиперссылке класс 'button', 'button-primary'. С помощь append добавьте созданную ссылку в .out-15.
 
 // тут напишите функцию t15
+const out15 = document.querySelector('.out-15');
 
+function t15 (userName) {
+    let link15 = document.createElement('a');
+
+    link15.setAttribute('href', '/logout');
+    link15.textContent = userName;
+    link15.classList.add('button', 'button-primary');
+
+    out15.innerHTML = '';
+    out15.append(link15);
+    
+    console.log(out15);
+}
 
 document.querySelector('.b-15').onclick = function () {
     t15('felson@crusader.eu');
 }
+
 
 // Task 16
 // Напишите функцию t16, которая получает аргумент - имя пользователя и создает гиперссылку, где атрибут href равен '/logout', а текст гиперссылки - текст переданный как аргумент. Добавьте гиперссылке класс 'button', 'button-primary'. Функция должна ВОЗВРАЩАТЬ созданную гиперссылку.
