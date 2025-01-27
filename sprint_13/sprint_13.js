@@ -138,16 +138,20 @@ document.querySelector('.b-11').onclick = function () {
 // тут напишите функцию t12
 function t12 (a) {
     const out12 = document.querySelector('.out-12');
-    // Нужно написать продолжение функции согласно условия
+    let img12 = document.createElement('img');
 
+    img12.src = a;
+    console.log(img12.src);
+    out12.innerHTML = '';
+    out12.append(img12);
 }
 
 document.querySelector('.b-121').onclick = function () {
-    // t12('./images/28986.jpg');  // снимите комментарий для проверки
+    t12('./images/28986.jpg');  // снимите комментарий для проверки
 }
 
 document.querySelector('.b-122').onclick = function () {
-    // t12('./images/28983.jpg');  // снимите комментарий для проверки
+    t12('./images/28983.jpg');  // снимите комментарий для проверки
 }
 
 // Task 13
@@ -228,7 +232,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 12
 // Task 13
 // Task 14
 // Task 15
@@ -249,3 +252,4 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 9 -- ok
 // Task 10 -- ok
 // Task 11 -- ok
+// Task 12 -- ok
