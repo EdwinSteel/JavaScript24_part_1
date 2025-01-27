@@ -245,7 +245,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 14
 // Task 15
 // Task 16
 // Task 17
@@ -266,3 +265,4 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 11 -- ok
 // Task 12 -- ok
 // Task 13 -- ok
+// Task 14 -- ok
