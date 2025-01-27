@@ -141,7 +141,6 @@ function t12 (a) {
     let img12 = document.createElement('img');
 
     img12.src = a;
-    console.log(img12.src);
     out12.innerHTML = '';
     out12.append(img12);
 }
@@ -154,10 +153,19 @@ document.querySelector('.b-122').onclick = function () {
     t12('./images/28983.jpg');  // снимите комментарий для проверки
 }
 
+
 // Task 13
 // Напишите функцию t13, которая получает текст, как аргумент, создает параграф с данным текстом и выводит в .out-13 созданный параграф.
 
 // тут напишите функцию t13
+function t13 (t) {
+    const out13 = document.querySelector('.out-13');
+    const para13 = document.createElement('p');
+    
+    para13.textContent = t;
+
+    out13.textContent = para13.textContent;    
+}
 
 document.querySelector('.b-13').onclick = function () {
     const text = document.querySelector('.i-13').value;
@@ -232,7 +240,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 13
 // Task 14
 // Task 15
 // Task 16
@@ -253,3 +260,4 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 10 -- ok
 // Task 11 -- ok
 // Task 12 -- ok
+// Task 13 -- ok
