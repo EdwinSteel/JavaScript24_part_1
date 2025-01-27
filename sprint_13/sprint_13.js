@@ -177,6 +177,17 @@ document.querySelector('.b-13').onclick = function () {
 // Напишите функцию t14, которая получает два аргумента, первый - класс элемента, который нужно окрасить, второй аргумент - цвет. Функция должна задавать указанному элементу указанный цвет фона через backgroundColor.
 
 // тут напишите функцию t14
+function t14 (el, col) {
+    // el.backgroundColor = col;
+    // document.el.style.backgroundColor = col;
+    // el.style.backgroundColor = "#ffffff";
+    el.style.backgroundColor = 'lightsalmon';
+    
+    
+    console.log(el, col);
+
+}
+
 
 document.querySelector('.b-14').onclick = function () {
     t14('.out-14', 'orange');
