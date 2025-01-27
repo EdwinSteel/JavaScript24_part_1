@@ -178,20 +178,14 @@ document.querySelector('.b-13').onclick = function () {
 
 // тут напишите функцию t14
 function t14 (el, col) {
-    // el.backgroundColor = col;
-    // document.el.style.backgroundColor = col;
-    // el.style.backgroundColor = "#ffffff";
-    el.style.backgroundColor = 'lightsalmon';
-    
-    
-    console.log(el, col);
-
+    let outElem = document.querySelector(el);
+    outElem.style.backgroundColor = col;
 }
-
 
 document.querySelector('.b-14').onclick = function () {
-    t14('.out-14', 'orange');
+    t14('.out-14', 'orange');    
 }
+
 
 // Task 15
 // Напишите функцию t15, которая получает аргумент - имя пользователя и создает гиперссылку, где атрибут href равен '/logout', а текст гиперссылки - текст переданный как аргумент. Добавьте гиперссылке класс 'button', 'button-primary'. С помощь append добавьте созданную ссылку в .out-15.
