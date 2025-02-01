@@ -215,6 +215,27 @@ document.querySelector('.b-15').onclick = function () {
 // Напишите функцию t16, которая получает аргумент - имя пользователя и создает гиперссылку, где атрибут href равен '/logout', а текст гиперссылки - текст переданный как аргумент. Добавьте гиперссылке класс 'button', 'button-primary'. Функция должна ВОЗВРАЩАТЬ созданную гиперссылку.
 
 // тут напишите функцию t16
+function t16 (userName) {
+    // Запрещаем повторное срабатывание кнопки !!!
+    // Александр, ОГРОМНАЯ благодарность за урок !
+    // "Выполняем функцию один раз JavaScript. 5 способов"
+    // https://www.youtube.com/watch?v=MYsghKeahY0
+    
+    if (t16.isRun) {
+        return false;
+    }
+
+    let link16 = document.createElement('a');
+
+    link16.setAttribute('href', '/logout');
+    link16.textContent = userName;
+    link16.classList.add('button', 'button-primary');
+    
+    return link16;    
+        
+    t16.isRun = true;
+    
+}
 
 document.querySelector('.b-16').onclick = function () {
     const link = t16('kay@tritagonist.eu');
