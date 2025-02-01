@@ -201,9 +201,7 @@ function t15 (userName) {
     link15.classList.add('button', 'button-primary');
 
     out15.innerHTML = '';
-    out15.append(link15);
-    
-    console.log(out15);
+    out15.append(link15);    
 }
 
 document.querySelector('.b-15').onclick = function () {
@@ -216,30 +214,30 @@ document.querySelector('.b-15').onclick = function () {
 
 // тут напишите функцию t16
 function t16 (userName) {
-    // Запрещаем повторное срабатывание кнопки !!!
-    // Александр, ОГРОМНАЯ благодарность за урок !
-    // "Выполняем функцию один раз JavaScript. 5 способов"
-    // https://www.youtube.com/watch?v=MYsghKeahY0
     
-    if (t16.isRun) {
-        return false;
-    }
-
     let link16 = document.createElement('a');
-
+    
     link16.setAttribute('href', '/logout');
     link16.textContent = userName;
     link16.classList.add('button', 'button-primary');
     
-    return link16;    
-        
-    t16.isRun = true;
-    
+    return link16;
 }
 
 document.querySelector('.b-16').onclick = function () {
+    // Запрещаем повторное срабатывание кнопки !!!
+    // Из материалов Вашего канала
+    // "Выполняем функцию один раз JavaScript. 5 способов"
+    // https://www.youtube.com/watch?v=MYsghKeahY0
+
+    if (t16.isRun) {
+        return false;
+    }
+
     const link = t16('kay@tritagonist.eu');
     document.querySelector('.out-16').append(link);
+    
+    t16.isRun = true;
 }
 
 // Task 17
@@ -281,7 +279,7 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 16
+// Task 16 -- Пока в работе, Если выполняем повторное нажатие кнопки есть баг
 // Task 17
 // Task 18
 // Task 19
