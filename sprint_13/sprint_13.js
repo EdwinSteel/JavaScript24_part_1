@@ -244,7 +244,13 @@ document.querySelector('.b-16').onclick = function () {
 // Напишите функцию t17, которая получает два числа как аргументы и ВОЗВРАЩАЕТ случайное целое число в переданном диапазоне.
 
 // тут напишите функцию t17
+function t17 (a, b) {
 
+    let rand = a + Math.random() * (b + 1 - a);
+        
+    return Math.floor(rand);
+    
+}
 
 document.querySelector('.b-17').onclick = function () {
     document.querySelector('.out-17').textContent = t17(100,110);
@@ -280,8 +286,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 16 -- Пока в работе, Если выполняем повторное нажатие кнопки есть баг
-// Task 17
 // Task 18
 // Task 19
 // Task 20
@@ -301,3 +305,5 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 13 -- ok
 // Task 14 -- ok
 // Task 15 -- ok
+// Task 16 -- ok
+// Task 17 -- ok
