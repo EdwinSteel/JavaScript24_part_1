@@ -279,10 +279,28 @@ document.querySelector('.b-18').onclick = function () {
 // Напишите функцию t19, которая принимает три аргумента: num1, num2 - числа и sign - строку знак операции. sign может быть равен '+', '-', '/', '*'. В зависимости от знака функция должна возвращать результат выбранной операции над числами. Например, передали числа 10 и 5 и знак '/'. Функция должна возвратить 2.
 
 // напишите функцию t19
+function t19 (num1, num2, sign) {
+    
+    switch (sign) {
+        case '+':
+            return num1 + num2;
+    
+        case '-':
+            return num1 - num2;
+        
+        case '*':
+            return num1 * num2;
+
+        case '/':
+            return num1 / num2;            
+    }
+}
 
 document.querySelector('.b-19').addEventListener('click', function () {
-    document.querySelector('.out-19').textContent = t19(100, 2, '*');
+    // document.querySelector('.out-19').textContent = t19(100, 2, '*');
+    document.querySelector('.out-19').textContent = t19(100, 0, '/');
 });
+
 
 // Task 20
 // Напишите функцию t20, которая принимает аргумент и если аргумент число, то возвращает строку 'int', если аргумент строка, то возвращает 'string', если аргумент boolean, то функция возвращает 'bool'.
@@ -294,7 +312,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 18
 // Task 19
 // Task 20
 //  ----------------
@@ -315,3 +332,4 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 15 -- ok
 // Task 16 -- ok
 // Task 17 -- ok
+// Task 18 -- ok
