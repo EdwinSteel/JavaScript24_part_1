@@ -240,6 +240,7 @@ document.querySelector('.b-16').onclick = function () {
     t16.isRun = true;
 }
 
+
 // Task 17
 // Напишите функцию t17, которая получает два числа как аргументы и ВОЗВРАЩАЕТ случайное целое число в переданном диапазоне.
 
@@ -255,6 +256,7 @@ function t17 (a, b) {
 document.querySelector('.b-17').onclick = function () {
     document.querySelector('.out-17').textContent = t17(100,110);
 }
+
 
 // Task 18
 // Напишите функцию t18, которая возвращает значение value (число) элемента input, класс которого передан как аргумент в функцию t18.
