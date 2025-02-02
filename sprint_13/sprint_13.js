@@ -262,6 +262,11 @@ document.querySelector('.b-17').onclick = function () {
 // Напишите функцию t18, которая возвращает значение value (число) элемента input, класс которого передан как аргумент в функцию t18.
 
 // напишите функцию t18
+function t18 (inp18) {
+    let outElem = +document.querySelector(inp18).value;
+
+    return outElem;
+}
 
 document.querySelector('.b-18').onclick = function () {
     const a = t18('.i-181');
