@@ -292,13 +292,12 @@ function t19 (num1, num2, sign) {
             return num1 * num2;
 
         case '/':
-            return num1 / num2;            
+            return num1 / num2;
     }
 }
 
 document.querySelector('.b-19').addEventListener('click', function () {
-    // document.querySelector('.out-19').textContent = t19(100, 2, '*');
-    document.querySelector('.out-19').textContent = t19(100, 0, '/');
+    document.querySelector('.out-19').textContent = t19(100, 2, '*');    
 });
 
 
@@ -312,7 +311,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 });
 
 // *******************************************
-// Task 19
 // Task 20
 //  ----------------
 // Task 1 -- ok
@@ -333,3 +331,4 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 16 -- ok
 // Task 17 -- ok
 // Task 18 -- ok
+// Task 19 -- ok
