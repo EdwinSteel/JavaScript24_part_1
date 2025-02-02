@@ -245,6 +245,7 @@ document.querySelector('.b-16').onclick = function () {
 
 // тут напишите функцию t17
 
+
 document.querySelector('.b-17').onclick = function () {
     document.querySelector('.out-17').textContent = t17(100,110);
 }
