@@ -305,13 +305,25 @@ document.querySelector('.b-19').addEventListener('click', function () {
 // Напишите функцию t20, которая принимает аргумент и если аргумент число, то возвращает строку 'int', если аргумент строка, то возвращает 'string', если аргумент boolean, то функция возвращает 'bool'.
 
 // напишите функцию t20
+function t20 (arg20) {
+
+    switch (typeof arg20) {
+        case 'number':
+        return 'int';
+
+        case 'string':
+        return 'string';
+
+        case 'boolean':
+        return 'bool';
+    }
+}
 
 document.querySelector('.b-20').addEventListener('click', function () {
     document.querySelector('.out-20').textContent = t20(100);
 });
 
 // *******************************************
-// Task 20
 //  ----------------
 // Task 1 -- ok
 // Task 2 -- ok
@@ -332,3 +344,4 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Task 17 -- ok
 // Task 18 -- ok
 // Task 19 -- ok
+// Task 20 -- ok
