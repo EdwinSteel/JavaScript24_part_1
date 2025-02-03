@@ -164,12 +164,20 @@ function t13 (t) {
     
     para13.textContent = t;
 
-    out13.textContent = para13.textContent;    
+    // out13.textContent = para13.textContent;    // Моя ошибка
+    
+    out13.appendChild(para13); // ИСПРАВЛЕНО
 }
 
 document.querySelector('.b-13').onclick = function () {
+    if (t13.isRun) {
+        return false;
+    }
+
     const text = document.querySelector('.i-13').value;
     t13(text);
+
+    t13.isRun = true;
 }
 
 
