@@ -164,7 +164,7 @@ function t13 (t) {
     
     para13.textContent = t;
 
-    // out13.textContent = para13.textContent;    // Моя ошибка
+    // out13.textContent = para13.textContent; // Моя ошибка
     
     out13.appendChild(para13); // ИСПРАВЛЕНО    
 }
