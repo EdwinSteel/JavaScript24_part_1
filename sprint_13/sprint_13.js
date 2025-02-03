@@ -166,7 +166,7 @@ function t13 (t) {
 
     // out13.textContent = para13.textContent;    // Моя ошибка
     
-    out13.appendChild(para13); // ИСПРАВЛЕНО
+    out13.appendChild(para13); // ИСПРАВЛЕНО    
 }
 
 document.querySelector('.b-13').onclick = function () {
