@@ -23,6 +23,9 @@ function t02(a, b) {
     document.querySelector('.out-2').textContent = a * b;
 }
 
+
+lkjlkjlk
+
 document.querySelector('.b-2').onclick = () => t02(10, 22);
 
 // Task 3
