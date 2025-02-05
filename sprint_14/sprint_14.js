@@ -7,8 +7,6 @@ function t01() {
     document.querySelector('.out-1').textContent = a * b;
 }
 
-
-
 document.querySelector('.b-1').onclick = t01;
 
 // Task 2
