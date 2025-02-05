@@ -1,7 +1,14 @@
 // Task 1
 // Перепишите функцию t01 как стрелочную.
 
-function t01() {
+// function t01() {
+//     const a = 88;
+//     const b = 99;
+//     document.querySelector('.out-1').textContent = a * b;
+// }
+
+// 
+t01 () => {
     const a = 88;
     const b = 99;
     document.querySelector('.out-1').textContent = a * b;
