@@ -8,9 +8,9 @@ function t01() {
 }
 
 // -----
-t333() => {
-    console.log('1111111');
-}
+// t333() => {
+//     console.log('1111111');
+// }
 
 // document.querySelector('.b-1').onclick = t01;
 document.querySelector('.b-1').onclick = t333;
