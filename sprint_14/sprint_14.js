@@ -7,7 +7,14 @@ function t01() {
     document.querySelector('.out-1').textContent = a * b;
 }
 
-document.querySelector('.b-1').onclick = t01;
+// -----
+t333 () => {
+    console.log('1111111');
+}
+
+// document.querySelector('.b-1').onclick = t01;
+document.querySelector('.b-1').onclick = t333;
+
 
 // Task 2
 // Перепишите функцию t02 как стрелочную.
