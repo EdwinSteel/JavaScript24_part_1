@@ -19,9 +19,11 @@ document.querySelector('.b-1').onclick = t01;
 // Task 2
 // Перепишите функцию t02 как стрелочную.
 
-function t02(a, b) {
-    document.querySelector('.out-2').textContent = a * b;
-}
+// function t02(a, b) {
+//     document.querySelector('.out-2').textContent = a * b;
+// }
+
+const t02 = (a, b) => document.querySelector('.out-2').textContent = a * b;
 
 document.querySelector('.b-2').onclick = () => t02(10, 22);
 
@@ -234,7 +236,6 @@ document.querySelector('.b-20').onclick = () => {
 }
 
 // *************************************************************************
-// Task 2
 // Task 3
 // Task 4
 // Task 5
@@ -255,3 +256,4 @@ document.querySelector('.b-20').onclick = () => {
 // Task 20
 // ***************************
 // Task 1 -- ok
+// Task 2 -- ok
