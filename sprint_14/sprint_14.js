@@ -234,7 +234,6 @@ document.querySelector('.b-20').onclick = () => {
 }
 
 // *************************************************************************
-// Task 1
 // Task 2
 // Task 3
 // Task 4
@@ -255,5 +254,4 @@ document.querySelector('.b-20').onclick = () => {
 // Task 19
 // Task 20
 // ***************************
-
-// -- ok
+// Task 1 -- ok
