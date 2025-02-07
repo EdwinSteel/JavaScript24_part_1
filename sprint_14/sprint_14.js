@@ -65,9 +65,11 @@ document.querySelector('.b-4').onclick = () => document.querySelector('.out-4').
 // Task 5
 // Перепишите функцию t05 как стрелочную.
 
-function t05(str) {
-    return str[0].toUpperCase() + str.toLowerCase().slice(1);
-}
+// function t05(str) {
+//     return str[0].toUpperCase() + str.toLowerCase().slice(1);
+// }
+
+const t05 = (str) => str[0].toUpperCase() + str.toLowerCase().slice(1);
 
 document.querySelector('.b-5').onclick = () => document.querySelector('.out-5').textContent = t05('hErAlD');
 
@@ -247,7 +249,6 @@ document.querySelector('.b-20').onclick = () => {
 }
 
 // *************************************************************************
-// Task 5
 // Task 6
 // Task 7
 // Task 8
@@ -268,3 +269,4 @@ document.querySelector('.b-20').onclick = () => {
 // Task 2 -- ok
 // Task 3 -- ok
 // Task 4 -- ok
+// Task 5 -- ok
