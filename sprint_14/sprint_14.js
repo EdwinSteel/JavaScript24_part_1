@@ -31,7 +31,13 @@ document.querySelector('.b-2').onclick = () => t02(10, 22);
 // Task 3
 // Перепишите функцию t03 как стрелочную.
 
-function t03(a, b) {
+// function t03(a, b) {
+//     let c = a.toLowerCase();
+//     let d = b.toLowerCase();
+//     return (c > d) ? c : d;
+// }
+
+const t03 = (a, b) => {
     let c = a.toLowerCase();
     let d = b.toLowerCase();
     return (c > d) ? c : d;
@@ -236,7 +242,6 @@ document.querySelector('.b-20').onclick = () => {
 }
 
 // *************************************************************************
-// Task 3
 // Task 4
 // Task 5
 // Task 6
@@ -257,3 +262,4 @@ document.querySelector('.b-20').onclick = () => {
 // ***************************
 // Task 1 -- ok
 // Task 2 -- ok
+// Task 3 -- ok
