@@ -49,7 +49,12 @@ document.querySelector('.b-3').onclick = () => document.querySelector('.out-3').
 // Task 4
 // Перепишите функцию t04 как стрелочную.
 
-function t04(min, max) {
+// function t04(min, max) {
+//     let rand = min + Math.random() * (max + 1 - min);
+//     return Math.floor(rand);
+// }
+
+const t04 = (min, max) => {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
 }
@@ -242,7 +247,6 @@ document.querySelector('.b-20').onclick = () => {
 }
 
 // *************************************************************************
-// Task 4
 // Task 5
 // Task 6
 // Task 7
@@ -263,3 +267,4 @@ document.querySelector('.b-20').onclick = () => {
 // Task 1 -- ok
 // Task 2 -- ok
 // Task 3 -- ok
+// Task 4 -- ok
