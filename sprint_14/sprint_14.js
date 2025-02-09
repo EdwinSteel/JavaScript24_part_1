@@ -128,12 +128,26 @@ document.querySelector('.b-8').onclick = () => {
 // Task 9
 // Перепишите функцию t09 как стрелочную.
 
-function t09(list) {
+// function t09(list) {
+//     const ul = document.querySelector(list);
+//     const liElements = ul.querySelectorAll('li');
+//     for (let i = 0; i < liElements.length; i++) {
+//         liElements[i].insertAdjacentText('afterbegin', (i + 1) + '. ');
+//     }
+// }
+
+const t09 = (list) => {
+    if (t09.isRun) {
+        return false;
+    }
+
     const ul = document.querySelector(list);
     const liElements = ul.querySelectorAll('li');
     for (let i = 0; i < liElements.length; i++) {
         liElements[i].insertAdjacentText('afterbegin', (i + 1) + '. ');
     }
+
+    t09.isRun = true;
 }
 
 document.querySelector('.b-9').onclick = () => t09('.list-9');
@@ -267,8 +281,6 @@ document.querySelector('.b-20').onclick = () => {
 // *************************************************************************
 // Task 6
 
-// Task 8
-// Task 9
 // Task 10
 // Task 11
 // Task 12
@@ -287,4 +299,7 @@ document.querySelector('.b-20').onclick = () => {
 // Task 4 -- ok
 // Task 5 -- ok
 // Task 7 -- ok
+// Task 8 -- ok
+// Task 9 -- ok
+
 
