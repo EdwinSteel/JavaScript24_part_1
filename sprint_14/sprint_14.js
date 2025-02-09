@@ -156,7 +156,18 @@ document.querySelector('.b-9').onclick = () => t09('.list-9');
 // Task 10
 // Перепишите функцию t10 как стрелочную.
 
-function t10(f) {
+// function t10(f) {
+//     const p = document.querySelector(f);
+//     const spans = p.querySelectorAll('span');
+//     for (let i = 0; i < spans.length; i++) {
+//         const text = spans[i].textContent;
+//         const mark = document.createElement('mark');
+//         mark.textContent = text;
+//         spans[i].replaceWith(mark);
+//     }
+// }
+
+const t10 = (f) => {
     const p = document.querySelector(f);
     const spans = p.querySelectorAll('span');
     for (let i = 0; i < spans.length; i++) {
@@ -168,6 +179,7 @@ function t10(f) {
 }
 
 document.querySelector('.b-10').onclick = () => t10('.p-10');
+
 
 // Task 11
 // Напишите стрелочную функцию t11, которая получает value из input.i-11 и возвращает true если число в input больше нуля и false если равно или меньше.
@@ -281,7 +293,6 @@ document.querySelector('.b-20').onclick = () => {
 // *************************************************************************
 // Task 6
 
-// Task 10
 // Task 11
 // Task 12
 // Task 13
@@ -301,5 +312,6 @@ document.querySelector('.b-20').onclick = () => {
 // Task 7 -- ok
 // Task 8 -- ok
 // Task 9 -- ok
+// Task 10 -- ok
 
 
