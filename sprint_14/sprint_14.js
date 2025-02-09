@@ -89,9 +89,11 @@ document.querySelector('.b-6').onclick = () => document.querySelector('.out-6').
 // Task 7
 // Перепишите функцию t07 как стрелочную.
 
-function t07(password, length) {
-    return password.length >= length;
-}
+// function t07(password, length) {
+//     return password.length >= length;
+// }
+
+const t07 = (password, length) => password.length >= length;
 
 document.querySelector('.b-7').onclick = () => document.querySelector('.out-7').textContent = t07('While the Gods Laugh', 9);
 
@@ -99,15 +101,27 @@ document.querySelector('.b-7').onclick = () => document.querySelector('.out-7').
 // Task 8
 // Перепишите функцию t08 как стрелочную.
 
-function t08(url) {
+// function t08(url) {
+//     const img = document.createElement('img');
+//     img.src = url;
+//     return img;
+// }
+
+const t08 = (url) => {
     const img = document.createElement('img');
     img.src = url;
     return img;
-}
+    }
 
 document.querySelector('.b-8').onclick = () => {
+    if(t08.isRun) {
+        return false;
+    }
+ 
     const image = t08('./images/elric.jpg');
     document.querySelector('.out-8').append(image);
+
+    t08.isRun = true;
 }
 
 
@@ -252,7 +266,7 @@ document.querySelector('.b-20').onclick = () => {
 
 // *************************************************************************
 // Task 6
-// Task 7
+
 // Task 8
 // Task 9
 // Task 10
@@ -272,3 +286,5 @@ document.querySelector('.b-20').onclick = () => {
 // Task 3 -- ok
 // Task 4 -- ok
 // Task 5 -- ok
+// Task 7 -- ok
+
