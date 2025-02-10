@@ -77,13 +77,13 @@ document.querySelector('.b-5').onclick = () => document.querySelector('.out-5').
 // Task 6
 // Перепишите функцию t06 как стрелочную.
 
-function t06(str) {
-    return str === str.toLowerCase();
-}
+// function t06(str) {
+//     return str === str.toLowerCase();
+// }
+
+const t06 = (str) => str === str.toLowerCase();
 
 document.querySelector('.b-6').onclick = () => document.querySelector('.out-6').textContent = t06('Elric');
-
-
 
 
 // Task 7
@@ -297,7 +297,6 @@ document.querySelector('.b-20').onclick = () => {
 }
 
 // *************************************************************************
-// Task 6
 
 // Task 12
 // Task 13
@@ -314,6 +313,7 @@ document.querySelector('.b-20').onclick = () => {
 // Task 3 -- ok
 // Task 4 -- ok
 // Task 5 -- ok
+// Task 6 -- ok
 // Task 7 -- ok
 // Task 8 -- ok
 // Task 9 -- ok
