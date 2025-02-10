@@ -89,9 +89,11 @@ document.querySelector('.b-6').onclick = () => document.querySelector('.out-6').
 // Task 7
 // Перепишите функцию t07 как стрелочную.
 
-function t07(password, length) {
-    return password.length >= length;
-}
+// function t07(password, length) {
+//     return password.length >= length;
+// }
+
+const t07 = (password, length) => password.length >= length;
 
 document.querySelector('.b-7').onclick = () => document.querySelector('.out-7').textContent = t07('While the Gods Laugh', 9);
 
@@ -99,27 +101,53 @@ document.querySelector('.b-7').onclick = () => document.querySelector('.out-7').
 // Task 8
 // Перепишите функцию t08 как стрелочную.
 
-function t08(url) {
+// function t08(url) {
+//     const img = document.createElement('img');
+//     img.src = url;
+//     return img;
+// }
+
+const t08 = (url) => {
     const img = document.createElement('img');
     img.src = url;
     return img;
-}
+    }
 
 document.querySelector('.b-8').onclick = () => {
+    if(t08.isRun) {
+        return false;
+    }
+ 
     const image = t08('./images/elric.jpg');
     document.querySelector('.out-8').append(image);
+
+    t08.isRun = true;
 }
 
 
 // Task 9
 // Перепишите функцию t09 как стрелочную.
 
-function t09(list) {
+// function t09(list) {
+//     const ul = document.querySelector(list);
+//     const liElements = ul.querySelectorAll('li');
+//     for (let i = 0; i < liElements.length; i++) {
+//         liElements[i].insertAdjacentText('afterbegin', (i + 1) + '. ');
+//     }
+// }
+
+const t09 = (list) => {
+    if (t09.isRun) {
+        return false;
+    }
+
     const ul = document.querySelector(list);
     const liElements = ul.querySelectorAll('li');
     for (let i = 0; i < liElements.length; i++) {
         liElements[i].insertAdjacentText('afterbegin', (i + 1) + '. ');
     }
+
+    t09.isRun = true;
 }
 
 document.querySelector('.b-9').onclick = () => t09('.list-9');
@@ -128,7 +156,18 @@ document.querySelector('.b-9').onclick = () => t09('.list-9');
 // Task 10
 // Перепишите функцию t10 как стрелочную.
 
-function t10(f) {
+// function t10(f) {
+//     const p = document.querySelector(f);
+//     const spans = p.querySelectorAll('span');
+//     for (let i = 0; i < spans.length; i++) {
+//         const text = spans[i].textContent;
+//         const mark = document.createElement('mark');
+//         mark.textContent = text;
+//         spans[i].replaceWith(mark);
+//     }
+// }
+
+const t10 = (f) => {
     const p = document.querySelector(f);
     const spans = p.querySelectorAll('span');
     for (let i = 0; i < spans.length; i++) {
@@ -140,6 +179,7 @@ function t10(f) {
 }
 
 document.querySelector('.b-10').onclick = () => t10('.p-10');
+
 
 // Task 11
 // Напишите стрелочную функцию t11, которая получает value из input.i-11 и возвращает true если число в input больше нуля и false если равно или меньше.
@@ -252,10 +292,7 @@ document.querySelector('.b-20').onclick = () => {
 
 // *************************************************************************
 // Task 6
-// Task 7
-// Task 8
-// Task 9
-// Task 10
+
 // Task 11
 // Task 12
 // Task 13
@@ -272,3 +309,9 @@ document.querySelector('.b-20').onclick = () => {
 // Task 3 -- ok
 // Task 4 -- ok
 // Task 5 -- ok
+// Task 7 -- ok
+// Task 8 -- ok
+// Task 9 -- ok
+// Task 10 -- ok
+
+
