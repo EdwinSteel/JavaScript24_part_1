@@ -186,6 +186,12 @@ document.querySelector('.b-10').onclick = () => t10('.p-10');
 
 // тут напишите функцию t11
 
+const t11 = () => {
+    let i11 = +document.querySelector('.i-11').value;
+
+    return i11 > 0 ? true : false;
+}
+
 document.querySelector('.b-11').onclick = () => document.querySelector('.out-11').textContent = t11();
 
 
@@ -293,7 +299,6 @@ document.querySelector('.b-20').onclick = () => {
 // *************************************************************************
 // Task 6
 
-// Task 11
 // Task 12
 // Task 13
 // Task 14
@@ -313,5 +318,6 @@ document.querySelector('.b-20').onclick = () => {
 // Task 8 -- ok
 // Task 9 -- ok
 // Task 10 -- ok
+// Task 11 -- ok
 
 
