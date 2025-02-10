@@ -81,9 +81,9 @@ function t06(str) {
     return str === str.toLowerCase();
 }
 
-// const t06 = 
-
 document.querySelector('.b-6').onclick = () => document.querySelector('.out-6').textContent = t06('Elric');
+
+
 
 
 // Task 7
