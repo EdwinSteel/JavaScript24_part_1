@@ -205,8 +205,17 @@ document.querySelector('.b-11').onclick = () => document.querySelector('.out-11'
 
 
 // тут напишите функцию t12
-const t12 = () => {
-    console.log(t); // моя строка
+const t12 = (t) => {
+    // console.log(t); // моя строка
+    // return t;
+    
+    switch (t) {
+        case >= 0 && <=20:
+            return 'cold';           
+    
+        default:
+            break;
+    }
 }
 
 document.querySelector('.range-12').oninput = () => {
