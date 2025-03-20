@@ -210,7 +210,7 @@ const t12 = (t) => {
     // return t;
     
     switch (t) {
-        case >= 0 && <=20:
+        case (>= 0 && <=20):
             return 'cold';           
     
         default:
