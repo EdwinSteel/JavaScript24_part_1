@@ -203,20 +203,19 @@ document.querySelector('.b-11').onclick = () => document.querySelector('.out-11'
 // от 51 до 100 возвращает строку 'very hot'
 // все температуры указаны "включительно"
 
-
 // тут напишите функцию t12
 const t12 = (t) => {
-    // console.log(t); // моя строка
-    // return t;
-    
-    switch (t) {
-        case (>= 0 && <=20):
-            return 'cold';           
-    
-        default:
-            break;
-    }
-}
+
+    if (t >= 0 && t <= 20) {
+        return 'cold';
+      } else if (t >= 21 && t <= 35) {
+        return 'normal';
+      } else if (t >= 36 && t <= 50) {
+        return 'hot';
+      } else if (t >= 51 && t <= 100) {
+        return 'very hot';
+      }       
+    }    
 
 document.querySelector('.range-12').oninput = () => {
     const t = +document.querySelector('.range-12').value;
