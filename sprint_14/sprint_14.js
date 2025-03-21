@@ -241,10 +241,8 @@ document.querySelector('.b-13').onclick = () => {
 // Напишите стрелочную функцию t14, которая получает аргумент - число и возвращает true если число четное и false в противном случае.
 
 // тут напишите функцию t14
-const t14 = (n) => {
-    
+const t14 = (n) => {    
     return n % 2 === 0 ? true : false;
-
 }
 
 document.querySelector('.b-14').onclick = () => {
