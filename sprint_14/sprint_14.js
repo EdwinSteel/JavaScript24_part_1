@@ -227,6 +227,9 @@ document.querySelector('.range-12').oninput = () => {
 // Напишите стрелочную функцию t13, которая получает аргумент - строку и возвращает строку очищенную от пробелов.
 
 // тут напишите функцию t13
+const t13 = (str) => {
+    return str.trim();
+}
 
 document.querySelector('.b-13').onclick = () => {
     let str = '  Stormbringer    ';
@@ -309,7 +312,6 @@ document.querySelector('.b-20').onclick = () => {
 
 // *************************************************************************
 
-// Task 13
 // Task 14
 // Task 15
 // Task 16
@@ -330,5 +332,6 @@ document.querySelector('.b-20').onclick = () => {
 // Task 10 -- ok
 // Task 11 -- ok
 // Task 12 -- ok
+// Task 13 -- ok
 
 
