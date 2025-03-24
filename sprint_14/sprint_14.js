@@ -255,8 +255,11 @@ document.querySelector('.b-14').onclick = () => {
 // Напишите стрелочную функцию t15, которая получает аргумент - имя класса и проверяет есть ли такой элемент на странице. Возвращает true если есть и false если нет.
 
 // тут напишите функцию t15
-const t15 = () => {
-    
+const t15 = (className) => {
+    console.log(className);
+    return document.classList.contains();
+    // console.log(document.classList.contains(className));
+                         
 }
 
 document.querySelector('.b-15').onclick = () => {
