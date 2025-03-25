@@ -204,7 +204,7 @@ document.querySelector('.b-11').onclick = () => document.querySelector('.out-11'
 // все температуры указаны "включительно"
 
 // тут напишите функцию t12
-const t12 = (t) => {
+const t12 = (t) => {    
 
     if (t >= 0 && t <= 20) {
         return 'cold';
@@ -270,6 +270,7 @@ document.querySelector('.b-15').onclick = () => {
 // Напишите стрелочную функцию t16, которая получает аргумент - строку и возвращает true, если строка содержит символ '@'  и false если не содержит.
 
 // тут напишите функцию t16
+
 
 document.querySelector('.b-16').onclick = () => {
     document.querySelector('.out-16').textContent = t16('example@mail.ua');
