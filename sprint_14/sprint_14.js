@@ -284,6 +284,12 @@ document.querySelector('.b-16').onclick = () => {
 // Напишите стрелочную функцию t17, которая возвращает число, такое, чтобы выражение ниже давало true.
 
 // тут пишите стрелочную функцию t17
+const t17 = (elemInt) => {
+    elemInt === 15 - 5;
+    
+    console.log(elemInt);
+
+}
 
 document.querySelector('.b-17').onclick = () => {
     document.querySelector('.out-17').textContent = (t17() + 5 === 15);
