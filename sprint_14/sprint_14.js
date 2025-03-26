@@ -270,6 +270,9 @@ document.querySelector('.b-15').onclick = () => {
 // Напишите стрелочную функцию t16, которая получает аргумент - строку и возвращает true, если строка содержит символ '@'  и false если не содержит.
 
 // тут напишите функцию t16
+const t16 = (elementStr) => {
+    return elementStr.includes('@');
+}
 
 document.querySelector('.b-16').onclick = () => {
     document.querySelector('.out-16').textContent = t16('example@mail.ua');
@@ -320,7 +323,6 @@ document.querySelector('.b-20').onclick = () => {
 
 // *************************************************************************
 
-// Task 16
 // Task 17
 // Task 18
 // Task 19
@@ -341,5 +343,6 @@ document.querySelector('.b-20').onclick = () => {
 // Task 13 -- ok
 // Task 14 -- ok
 // Task 15 -- ok
+// Task 16 -- ok
 
 
