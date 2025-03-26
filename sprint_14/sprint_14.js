@@ -283,12 +283,7 @@ document.querySelector('.b-16').onclick = () => {
 // Напишите стрелочную функцию t17, которая возвращает число, такое, чтобы выражение ниже давало true.
 
 // тут пишите стрелочную функцию t17
-const t17 = (elemInt) => {
-    return elemInt === 15 - 5;
-    
-    console.log(elemInt);
-
-}
+const t17 = () => 15 - 5;
 
 document.querySelector('.b-17').onclick = () => {
     document.querySelector('.out-17').textContent = (t17() + 5 === 15);
@@ -298,19 +293,21 @@ document.querySelector('.b-17').onclick = () => {
 // Task 18
 // Напишите стрелочную функцию t18, которая возвращает число, такое, чтобы выражение ниже давало true.
 
-
 // тут пишите стрелочную функцию t18
+const t18 = () => 100 / 50;
 
 document.querySelector('.b-18').onclick = () => {
     document.querySelector('.out-18').textContent = ((100 - 10 * t18()) / t18 ()) === 40;
 }
 
 
-
 // Task 19
 // Напишите стрелочную функцию t19, которая возвращает булево значение, такое, чтобы выражение ниже давало true.
 
 // тут пишите стрелочную функцию t19
+const t19 = () => {
+    
+}
 
 document.querySelector('.b-19').onclick = () => {
     document.querySelector('.out-19').textContent = !t19();
@@ -328,8 +325,6 @@ document.querySelector('.b-20').onclick = () => {
 
 // *************************************************************************
 
-// Task 17
-// Task 18
 // Task 19
 // Task 20
 // ***************************
@@ -349,5 +344,7 @@ document.querySelector('.b-20').onclick = () => {
 // Task 14 -- ok
 // Task 15 -- ok
 // Task 16 -- ok
+// Task 17 -- ok
+// Task 18 -- ok
 
 
