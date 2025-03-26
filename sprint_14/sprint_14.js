@@ -285,7 +285,7 @@ document.querySelector('.b-16').onclick = () => {
 
 // тут пишите стрелочную функцию t17
 const t17 = (elemInt) => {
-    elemInt === 15 - 5;
+    return elemInt === 15 - 5;
     
     console.log(elemInt);
 
