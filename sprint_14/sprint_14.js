@@ -204,7 +204,7 @@ document.querySelector('.b-11').onclick = () => document.querySelector('.out-11'
 // все температуры указаны "включительно"
 
 // тут напишите функцию t12
-const t12 = (t) => {
+const t12 = (t) => {    
 
     if (t >= 0 && t <= 20) {
         return 'cold';
@@ -273,6 +273,7 @@ document.querySelector('.b-15').onclick = () => {
 const t16 = (elementStr) => {
     return elementStr.includes('@');
 }
+
 
 document.querySelector('.b-16').onclick = () => {
     document.querySelector('.out-16').textContent = t16('example@mail.ua');
