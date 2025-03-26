@@ -274,7 +274,6 @@ const t16 = (elementStr) => {
     return elementStr.includes('@');
 }
 
-
 document.querySelector('.b-16').onclick = () => {
     document.querySelector('.out-16').textContent = t16('example@mail.ua');
 }
