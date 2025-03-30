@@ -114,7 +114,7 @@ const t08 = (url) => {
     }
 
 document.querySelector('.b-8').onclick = () => {
-    if(t08.isRun) {
+    if (t08.isRun) {
         return false;
     }
  
@@ -204,7 +204,8 @@ document.querySelector('.b-11').onclick = () => document.querySelector('.out-11'
 // все температуры указаны "включительно"
 
 // тут напишите функцию t12
-const t12 = (t) => {    
+const t12 = (t) => {
+    console.log(t);
 
     if (t >= 0 && t <= 20) {
         return 'cold';
@@ -227,9 +228,7 @@ document.querySelector('.range-12').oninput = () => {
 // Напишите стрелочную функцию t13, которая получает аргумент - строку и возвращает строку очищенную от пробелов.
 
 // тут напишите функцию t13
-const t13 = (str) => {
-    return str.trim();
-}
+const t13 = (str) => str.trim();
 
 document.querySelector('.b-13').onclick = () => {
     let str = '  Stormbringer    ';
