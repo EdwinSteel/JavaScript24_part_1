@@ -316,9 +316,7 @@ document.querySelector('.b-19').onclick = () => {
 // Напишите стрелочную функцию t20, которая возвращает булево значение, такое, чтобы выражение ниже давало true.
 
 // тут пишите стрелочную функцию t20
-const t20 = () => {
-
-}
+const t20 = () => true;
 
 document.querySelector('.b-20').onclick = () => {
     document.querySelector('.out-20').textContent = (true !== !t20());
