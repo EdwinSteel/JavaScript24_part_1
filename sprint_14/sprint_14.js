@@ -294,7 +294,7 @@ document.querySelector('.b-17').onclick = () => {
 // Напишите стрелочную функцию t18, которая возвращает число, такое, чтобы выражение ниже давало true.
 
 // тут пишите стрелочную функцию t18
-const t18 = () => 100 / 50;
+const t18 = () => 2;
 
 document.querySelector('.b-18').onclick = () => {
     document.querySelector('.out-18').textContent = ((100 - 10 * t18()) / t18 ()) === 40;
@@ -305,9 +305,7 @@ document.querySelector('.b-18').onclick = () => {
 // Напишите стрелочную функцию t19, которая возвращает булево значение, такое, чтобы выражение ниже давало true.
 
 // тут пишите стрелочную функцию t19
-const t19 = () => {
-    
-}
+const t19 = () => false;
 
 document.querySelector('.b-19').onclick = () => {
     document.querySelector('.out-19').textContent = !t19();
@@ -318,6 +316,9 @@ document.querySelector('.b-19').onclick = () => {
 // Напишите стрелочную функцию t20, которая возвращает булево значение, такое, чтобы выражение ниже давало true.
 
 // тут пишите стрелочную функцию t20
+const t20 = () => {
+
+}
 
 document.querySelector('.b-20').onclick = () => {
     document.querySelector('.out-20').textContent = (true !== !t20());
