@@ -3,7 +3,9 @@
 
 let p1 = document.querySelector(".p-1");
 let out1 = document.querySelector(".out-1");
-const t01 = () => (out1.textContent += "1");
+const t01 = () => {
+  out1.textContent += "1";
+};
 
 // Тут напишите событие.
 
@@ -155,7 +157,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 1
 // Task 2
 // Task 3
 // Task 4
@@ -176,4 +177,5 @@ const t20 = () => {};
 // Task 19
 // Task 20
 // **********************************
+// Task 1 -- ok
 //  -- ok
