@@ -26,9 +26,15 @@ b2.addEventListener("dblclick", t02);
 // Task 3
 // Добавьте через addEventListener событие 'mouseup' на кнопку .p-3. При событии запускается стрелочная функция t03, которая выводит в .out-3 строку 'mouseup'.
 
-// const t03 =
+let p3 = document.querySelector(".p-3");
+let out3 = document.querySelector(".out-3");
+const t03 = () => {
+  out3.textContent = "mouseup";
+  // console.log('"mouseup"');
+};
 
 // Тут напишите событие.
+p3.addEventListener("mouseup", t03);
 
 // Task 4
 // Добавьте через addEventListener событие 'mousedown' на кнопку .p-4. При событии  запускается стрелочная функция t04, которая при выводит в .out-4 строку 'mousedown'.
@@ -162,7 +168,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 3
 // Task 4
 // Task 5
 // Task 6
@@ -183,4 +188,5 @@ const t20 = () => {};
 // **********************************
 // Task 1 -- ok
 // Task 2 -- ok
+// Task 3 -- ok
 //  -- ok
