@@ -14,9 +14,14 @@ p1.addEventListener("click", t01);
 // Task 2
 // Добавьте через addEventListener событие 'dblclick' на кнопку .b-2. При событии запускается стрелочная функция t02, которая окращивает .out-2 в backgroundColor 'orange'.
 
-// const t02 =
+let b2 = document.querySelector(".b-2");
+let out2 = document.querySelector(".out-2");
+const t02 = () => {
+  out2.style.backgroundColor = "orange";
+};
 
 // Тут напишите событие.
+b2.addEventListener("dblclick", t02);
 
 // Task 3
 // Добавьте через addEventListener событие 'mouseup' на кнопку .p-3. При событии запускается стрелочная функция t03, которая выводит в .out-3 строку 'mouseup'.
@@ -157,7 +162,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 2
 // Task 3
 // Task 4
 // Task 5
@@ -178,4 +182,5 @@ const t20 = () => {};
 // Task 20
 // **********************************
 // Task 1 -- ok
+// Task 2 -- ok
 //  -- ok
