@@ -43,7 +43,7 @@ let p4 = document.querySelector(".p-4");
 let out4 = document.querySelector(".out-4");
 const t04 = () => {
   out4.textContent = "'mousedown'";
-  console.log("mousedown");
+  // console.log("mousedown");
 };
 
 // Тут напишите событие.
