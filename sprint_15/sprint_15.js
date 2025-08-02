@@ -39,9 +39,15 @@ p3.addEventListener("mouseup", t03);
 // Task 4
 // Добавьте через addEventListener событие 'mousedown' на кнопку .p-4. При событии  запускается стрелочная функция t04, которая при выводит в .out-4 строку 'mousedown'.
 
-// const t04 =
+let p4 = document.querySelector(".p-4");
+let out4 = document.querySelector(".out-4");
+const t04 = () => {
+  out4.textContent = "'mousedown'";
+  console.log("mousedown");
+};
 
 // Тут напишите событие.
+p4.addEventListener("mousedown", t04);
 
 // Task 5
 // Добавьте через addEventListener событие 'mouseover' на .block-5.  При событии запускается стрелочная функция t05, которая выводит в .out-5 строку 'mousedown'.
@@ -168,7 +174,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 4
 // Task 5
 // Task 6
 // Task 7
@@ -189,4 +194,5 @@ const t20 = () => {};
 // Task 1 -- ok
 // Task 2 -- ok
 // Task 3 -- ok
+// Task 4 -- ok
 //  -- ok
