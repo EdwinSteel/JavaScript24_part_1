@@ -52,9 +52,15 @@ p4.addEventListener("mousedown", t04);
 // Task 5
 // Добавьте через addEventListener событие 'mouseover' на .block-5.  При событии запускается стрелочная функция t05, которая выводит в .out-5 строку 'mousedown'.
 
-// const t05 =
+let blk5 = document.querySelector(".block-5");
+let out5 = document.querySelector(".out-5");
+const t05 = () => {
+  out5.textContent = "mousedown";
+  // console.log("mousedown -- ????????");
+};
 
 // Тут напишите событие.
+blk5.addEventListener("mouseover", t05);
 
 // Task 6
 // Добавьте через addEventListener событие 'mouseout' на .block-6.  При событии запускается стрелочная функция t06, которая добавляет классу .block-6 класс 'bg-orange'.
@@ -174,7 +180,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 5
 // Task 6
 // Task 7
 // Task 8
@@ -195,4 +200,5 @@ const t20 = () => {};
 // Task 2 -- ok
 // Task 3 -- ok
 // Task 4 -- ok
+// Task 5 -- ok
 //  -- ok
