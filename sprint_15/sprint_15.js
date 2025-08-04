@@ -92,13 +92,14 @@ b7.addEventListener("click", t07);
 // Добавьте событие mousemove на блок .block-8. При событии запускается стрелочная функция t08.
 
 let w = 100;
-
+let blk8 = document.querySelector(".block-8");
 const t08 = () => {
   w++;
   document.querySelector(".block-8").style.width = w + "px";
 };
 
 // тут добавьте событие
+blk8.addEventListener("mousemove", t08);
 
 // Task 9
 // Добавьте событие click на .block-9. При клике запускается функция t09 (стрелочная). Функция при срабатывании поворачивает блок .block-9 на 15 градусов.
@@ -192,7 +193,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 8
 // Task 9
 // Task 10
 // Task 11
@@ -213,4 +213,5 @@ const t20 = () => {};
 // Task 5 -- ok
 // Task 6 -- ok
 // Task 7 -- ok
+// Task 8 -- ok
 //  -- ok
