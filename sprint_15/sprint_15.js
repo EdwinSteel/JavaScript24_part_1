@@ -77,9 +77,13 @@ blk6.addEventListener("mouseout", t06);
 // Task 7
 // Добавьте событие click на кнопку .b-7, по событию запускается стрелочная функция t07. Функция отключает событие contextmenu на блоке .block-7.
 
-// const t07 =
+let b7 = document.querySelector(".b-7");
+const t07 = () => {
+  console.log("Функция отключает событие contextmenu на блоке .block-7");
+};
 
 // Тут напишите событие.
+b7.addEventListener("click", t07);
 
 // Task 8
 // Добавьте событие mousemove на блок .block-8. При событии запускается стрелочная функция t08.
