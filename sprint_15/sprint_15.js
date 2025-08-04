@@ -65,9 +65,14 @@ blk5.addEventListener("mouseover", t05);
 // Task 6
 // Добавьте через addEventListener событие 'mouseout' на .block-6.  При событии запускается стрелочная функция t06, которая добавляет классу .block-6 класс 'bg-orange'.
 
-// const t06 =
+let blk6 = document.querySelector(".block-6");
+const t06 = () => {
+  blk6.classList.add("bg-orange");
+  // console.log('el.classList.add("new-className")');
+};
 
 // Тут напишите событие.
+blk6.addEventListener("mouseout", t06);
 
 // Task 7
 // Добавьте событие click на кнопку .b-7, по событию запускается стрелочная функция t07. Функция отключает событие contextmenu на блоке .block-7.
@@ -180,7 +185,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 6
 // Task 7
 // Task 8
 // Task 9
@@ -201,4 +205,5 @@ const t20 = () => {};
 // Task 3 -- ok
 // Task 4 -- ok
 // Task 5 -- ok
+// Task 6 -- ok
 //  -- ok
