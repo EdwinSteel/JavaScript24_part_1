@@ -125,6 +125,7 @@ const blockSize = () => {
   document.querySelector(".block-10").style.width = w + "px";
 };
 
+// const t10 = () => {};
 const t10 = () => {};
 
 document.querySelector(".b-10").addEventListener("click", t10);
