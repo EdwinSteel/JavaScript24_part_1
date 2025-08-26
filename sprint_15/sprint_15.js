@@ -126,7 +126,9 @@ const blockSize = () => {
 };
 
 // const t10 = () => {};
-const t10 = () => {};
+const t10 = () => {
+  console.log("task-10");
+};
 
 document.querySelector(".b-10").addEventListener("click", t10);
 
