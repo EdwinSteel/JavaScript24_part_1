@@ -146,9 +146,15 @@ document.querySelector(".b-11").addEventListener("click", t11);
 // Task 12
 // Добавьте на input.i-12 событие input с помощью addEventListener. При событии запускается стрелочная функция t12. Функция должна получать value из input.i-12 и выводить в .out-12.
 
+let i12 = document.querySelector(".i-12");
+
 // тут напишите функцию t12
+const t12 = () => {
+  document.querySelector(".out-12").textContent = i12.value;
+};
 
 // тут напишите событие
+i12.addEventListener("input", t12);
 
 // Task 13
 // Добавьте событие copy на input.i-13. При срабатывании события запускается функция t13, которая выводит в .out-13 строку 'copy'.
@@ -207,8 +213,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 11
-// Task 12
 // Task 13
 // Task 14
 // Task 15
@@ -228,4 +232,6 @@ const t20 = () => {};
 // Task 8 -- ok
 // Task 9 -- ok -- ПРОВЕРИТЬ !!!
 // Task 10 -- ok
+// Task 11 -- ok
+// Task 12 -- ok
 //  -- ok
