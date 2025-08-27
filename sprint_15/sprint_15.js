@@ -127,7 +127,7 @@ const blockSize = () => {
 
 // const t10 = () => {};
 const t10 = () => {
-  console.log("task-10");
+  document.querySelector(".block-10").addEventListener("mousemove", blockSize);
 };
 
 document.querySelector(".b-10").addEventListener("click", t10);
@@ -203,7 +203,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 10
 // Task 11
 // Task 12
 // Task 13
@@ -224,4 +223,5 @@ const t20 = () => {};
 // Task 7 -- ok
 // Task 8 -- ok
 // Task 9 -- ok -- ПРОВЕРИТЬ !!!
+// Task 10 -- ok
 //  -- ok
