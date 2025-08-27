@@ -135,7 +135,11 @@ document.querySelector(".b-10").addEventListener("click", t10);
 // Task 11
 // При клике на кнопке .b-11 запускается функция t11. Функция должна удалять через removeEventListener событие mousemove на блоке .block-10.
 
-const t11 = () => {};
+const t11 = () => {
+  document
+    .querySelector(".block-10")
+    .removeEventListener("mousemove", blockSize);
+};
 
 document.querySelector(".b-11").addEventListener("click", t11);
 
