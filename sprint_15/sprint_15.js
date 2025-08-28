@@ -159,9 +159,12 @@ i12.addEventListener("input", t12);
 // Task 13
 // Добавьте событие copy на input.i-13. При срабатывании события запускается функция t13, которая выводит в .out-13 строку 'copy'.
 
-const t13 = () => {};
+const t13 = () => {
+  document.querySelector(".out-13").textContent = "copy";
+};
 
 // тут напишите событие
+document.querySelector(".i-13").addEventListener("copy", t13);
 
 // Task 14
 // Добавьте событие paste на input.i-14. При срабатывании события запускается функция t14, которая выводит в .out-14 вставленный в input.i-14 текст.
@@ -213,7 +216,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 13
 // Task 14
 // Task 15
 // Task 16
@@ -234,4 +236,5 @@ const t20 = () => {};
 // Task 10 -- ok
 // Task 11 -- ok
 // Task 12 -- ok
+// Task 13 -- ok
 //  -- ok
