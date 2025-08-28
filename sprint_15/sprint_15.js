@@ -169,9 +169,19 @@ document.querySelector(".i-13").addEventListener("copy", t13);
 // Task 14
 // Добавьте событие paste на input.i-14. При срабатывании события запускается функция t14, которая выводит в .out-14 вставленный в input.i-14 текст.
 
-const t14 = () => {};
+let i14 = document.querySelector(".i-14");
+
+const t14 = () => {
+  console.log("task-14");
+  console.log(i14.value);
+  console.log(i14);
+  const outText = i14.value;
+
+  document.querySelector(".out-14").textContent = outText;
+};
 
 // тут напишите событие
+i14.addEventListener("paste", t14);
 
 // Task 15
 // Добавьте событие cut на input.i-15. При срабатывании события запускается функция t15, которая добавляет .i-15 атрибут placeholder с текстом 'cut'
