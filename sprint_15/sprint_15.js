@@ -222,9 +222,15 @@ i16.addEventListener('blur', t17);
 // Task 18
 // Добавьте событие click на кнопку .b-18. По клику запускается стрелочная функция t18, которая ищет элемент с tabindex = 18 и делает элемент focus().
 
-const t18 = () => {};
+let b18 = document.querySelector('.b-18');
+
+// const t18 = () => {};
+const t18 = () => {
+  
+};
 
 // тут напишите событие
+b18.addEventListener('click', t18);
 
 // Task 19
 // Добавьте событие canсel на input .i-19. По клику запускается стрелочная функция t19, которая выводит в .out-19 текст 'Cancel'.
