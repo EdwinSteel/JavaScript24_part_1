@@ -166,7 +166,7 @@ const t13 = () => {
 // тут напишите событие
 document.querySelector(".i-13").addEventListener("copy", t13);
 
-// Task 14
+// Task 14 -- Не уверен что я сделал правильно !!!
 // Добавьте событие paste на input.i-14. При срабатывании события запускается функция t14, которая выводит в .out-14 вставленный в input.i-14 текст.
 
 let i14 = document.querySelector(".i-14");
@@ -186,9 +186,15 @@ i14.addEventListener("paste", t14);
 // Task 15
 // Добавьте событие cut на input.i-15. При срабатывании события запускается функция t15, которая добавляет .i-15 атрибут placeholder с текстом 'cut'
 
-const t15 = () => {};
+let i15 = document.querySelector('.i-15');
+
+// const t15 = () => {};
+const t15 = () => {
+  i15.setAttribute('placeholder', 'cut');
+}
 
 // тут напишите событие
+i15.addEventListener('cut', t15);
 
 // Task 16
 // Добавьте событие focus на input.i-16. При срабатывании события запускается функция t16, которая добавляет .i-16 класс  'focus-input'.
