@@ -201,7 +201,6 @@ i15.addEventListener('cut', t15);
 
 let i16 = document.querySelector('.i-16');
 
-// const t16 = () => {};
 const t16 = () => {
   i16.classList.add('focus-input');
 };
@@ -212,9 +211,13 @@ i16.addEventListener('focus', t16);
 // Task 17
 // Добавьте событие blur на input.i-16. При срабатывании события запускается функция t17, которая удаляет .i-16 класс  'focus-input'.
 
-const t17 = () => {};
+// const t17 = () => {};
+const t17 = () => {
+i16.classList.remove('focus-input');
+};
 
 // тут напишите событие
+i16.addEventListener('blur', t17);
 
 // Task 18
 // Добавьте событие click на кнопку .b-18. По клику запускается стрелочная функция t18, которая ищет элемент с tabindex = 18 и делает элемент focus().
@@ -238,7 +241,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 17
 // Task 18
 // Task 19
 // Task 20
@@ -259,4 +261,5 @@ const t20 = () => {};
 // Task 14 -- ok
 // Task 15 -- ok
 // Task 16 -- ok
+// Task 17 -- ok
 //  -- ok
