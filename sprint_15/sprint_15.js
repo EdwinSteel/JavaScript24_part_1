@@ -234,10 +234,14 @@ b18.addEventListener('click', t18);
 
 // Task 19
 // Добавьте событие canсel на input .i-19. По клику запускается стрелочная функция t19, которая выводит в .out-19 текст 'Cancel'.
+let i19 = document.querySelector('.i-19');
 
-const t19 = () => {};
+const t19 = () => {
+  document.querySelector('.out-19').textContent = 'Cancel';
+};
 
 // тут напишите событие
+i19.addEventListener('click', t19);
 
 // Task 20
 // Добавьте событие dragstart на .block-20. По событию запускается стрелочная функция t20. Функция выводит в .out-20 строку 'drag'.
@@ -247,7 +251,6 @@ const t20 = () => {};
 // тут напишите событие
 
 // *************************************************************
-// Task 18
 // Task 19
 // Task 20
 // **********************************
@@ -268,4 +271,5 @@ const t20 = () => {};
 // Task 15 -- ok
 // Task 16 -- ok
 // Task 17 -- ok
+// Task 18 -- ok
 //  -- ok
