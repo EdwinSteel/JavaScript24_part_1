@@ -226,7 +226,7 @@ let b18 = document.querySelector('.b-18');
 
 // const t18 = () => {};
 const t18 = () => {
-  
+  document.querySelector('[tabindex = "18"]').focus();
 };
 
 // тут напишите событие
