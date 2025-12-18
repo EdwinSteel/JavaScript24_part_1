@@ -245,13 +245,16 @@ i19.addEventListener('click', t19);
 
 // Task 20
 // Добавьте событие dragstart на .block-20. По событию запускается стрелочная функция t20. Функция выводит в .out-20 строку 'drag'.
+let block20 = document.querySelector('.block-20');
 
-const t20 = () => {};
+const t20 = () => {
+  document.querySelector('.out-20').textContent = 'drag';
+};
 
 // тут напишите событие
+block20.addEventListener('dragstart', t20);
 
 // *************************************************************
-// Task 20
 // **********************************
 // Task 1 -- ok
 // Task 2 -- ok
@@ -272,4 +275,5 @@ const t20 = () => {};
 // Task 17 -- ok
 // Task 18 -- ok
 // Task 19 -- !!!!!!! ????????
+// Task 20 -- ok
 //  -- ok
