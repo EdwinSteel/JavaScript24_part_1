@@ -253,27 +253,3 @@ const t20 = () => {
 
 // тут напишите событие
 block20.addEventListener('dragstart', t20);
-
-// *************************************************************
-// **********************************
-// Task 1 -- ok
-// Task 2 -- ok
-// Task 3 -- ok
-// Task 4 -- ok
-// Task 5 -- ok
-// Task 6 -- ok
-// Task 7 -- ok
-// Task 8 -- ok
-// Task 9 -- ok -- ПРОВЕРИТЬ !!!
-// Task 10 -- ok
-// Task 11 -- ok
-// Task 12 -- ok
-// Task 13 -- ok
-// Task 14 -- ok
-// Task 15 -- ok
-// Task 16 -- ok
-// Task 17 -- ok
-// Task 18 -- ok
-// Task 19 -- !!!!!!! ????????
-// Task 20 -- ok
-//  -- ok
